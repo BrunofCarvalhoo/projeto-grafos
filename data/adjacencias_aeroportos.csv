@@ -15,6 +15,9 @@ REC, POA, hub, "conexão via hub nacional", 270.0
 REC, MAO, hub, "conexão via hub nacional", 245.0
 REC, BEL, hub, "conexão via hub nacional", 160.0
 REC, THE, regional, "estão na mesma região", 105.0
+REC, MCZ, regional, "estão na mesma região", 50.0
+REC, SLZ, regional, "estão na mesma região", 115.0
+REC, AJU, regional, "estão na mesma região", 80.0
 SSA, FOR, regional, "estão na mesma região", 105.0
 SSA, NAT, regional, "estão na mesma região", 90.0
 SSA, JPA, regional, "estão na mesma região", 90.0
@@ -28,6 +31,10 @@ SSA, GYN, hub, "conexão via hub nacional", 125.0
 SSA, CWB, hub, "conexão via hub nacional", 180.0
 SSA, POA, hub, "conexão via hub nacional", 230.0
 SSA, THE, regional, "estão na mesma região", 110.0
+SSA, MCZ, regional, "estão na mesma região", 70.0
+SSA, SLZ, regional, "estão na mesma região", 135.0
+SSA, AJU, regional, "estão na mesma região", 65.0
+SSA, CGB, hub, "conexão via hub nacional", 180.0
 FOR,NAT,regional,"estão na mesma região",60.0
 FOR,GRU,hub,"conexão via hub nacional",205.0
 FOR,CGH,hub,"conexão via hub nacional",220.0
@@ -37,6 +44,7 @@ FOR,BSB,hub,"conexão via hub nacional",165.0
 FOR,MAO,hub,"conexão via hub nacional",210.0
 FOR,BEL,hub,"conexão via hub nacional",180.0
 FOR,THE,regional,"estão na mesma região",65.0
+FOR, SLZ, regional, "estão na mesma região", 80.0
 NAT,GRU,hub,"conexão via hub nacional",215.0
 NAT,CGH,hub,"conexão via hub nacional",215.0
 NAT,GIG,hub,"conexão via hub nacional",195.0
@@ -47,6 +55,7 @@ JPA, CGH, hub, "conexão via hub nacional", 210.0
 JPA, GIG, hub, "conexão via hub nacional", 190.0
 JPA, CNF, hub, "conexão via hub nacional", 155.0
 JPA, BSB, hub, "conexão via hub nacional", 165.0
+JPA, MCZ, regional, "estão na mesma região", 55.0
 GRU, GIG, regioal, "estão na mesma região", 65.0
 GRU, CNF, regional, "estão na mesma região", 70.0
 GRU, VIX, regional, "estão na mesma região", 90.0
@@ -60,6 +69,14 @@ GRU, BEL, hub, "conexão via hub nacional", 205.0
 GRU, PVH, hub, "conexão via hub nacional", 220.0
 GRU, RBR, hub, "conexão via hub nacional", 235.0
 GRU, THE, hub, "conexão via hub nacional", 180.0
+GRU, MCZ, hub, "conexão via hub nacional", 185.0
+GRU, SLZ, hub, "conexão via hub nacional", 220.0
+GRU, AJU, hub, "conexão via hub nacional", 160.0
+GRU, CGB, hub, "conexão via hub nacional", 135.0
+GRU, CGR, hub, "conexão via hub nacional", 110.0
+GRU, MCP, hub, "conexão via hub nacional", 230.0
+GRU, BVB, hub, "conexão via hub nacional", 290.0
+GRU, PMW, hub, "conexão via hub nacional", 145.0
 CGH, GIG, regional, "estão na mesma região", 60.0
 CGH, CNF, regional, "estão na mesma região", 85.0
 CGH, VIX, regional, "estão na mesma região", 95.0
@@ -69,6 +86,11 @@ CGH, CWB, hub, "conexão via hub nacional", 60.0
 CGH, FLN, hub, "conexão via hub nacional", 85.0
 CGH, POA, hub, "conexão via hub nacional", 105.0
 CGH, THE, hub, "conexão via hub nacional", 210.0
+CGH, MCZ, hub, "conexão via hub nacional", 190.0
+CGH, SLZ, hub, "conexão via hub nacional", 210.0
+CGH, AJU, hub, "conexão via hub nacional", 160.0
+CGH, CGB, hub, "conexão via hub nacional", 135.0
+CGH, CGR, hub, "conexão via hub nacional", 110.0
 GIG, CNF, regional, "estão na mesma região", 65.0
 GIG, VIX, regional, "estão na mesma região", 80.0
 GIG, BSB, hub, "conexão via hub nacional", 110.0
@@ -79,6 +101,10 @@ GIG, POA, hub, "conexão via hub nacional", 130.0
 GIG, MAO, hub, "conexão via hub nacional", 245.0
 GIG, BEL, hub, "conexão via hub nacional", 210.0
 GIG, THE, hub, "conexão via hub nacional", 175.0
+GIG, MCZ, hub, "conexão via hub nacional", 165.0
+GIG, SLZ, hub, "conexão via hub nacional", 205.0
+GIG, AJU, hub, "conexão via hub nacional", 145.0
+GIG, CGB, hub, "conexão via hub nacional", 160.0
 CNF, VIX, regional, "estão na mesma região", 65.0
 CNF, BSB, hub, "conexão via hub nacional", 80.0
 CNF, GYN, hub, "conexão via hub nacional", 85.0
@@ -90,6 +116,12 @@ CNF, BEL, hub, "conexão via hub nacional", 180.0
 CNF, PVH, hub, "conexão via hub nacional", 215.0
 CNF, RBR, hub, "conexão via hub nacional", 245.0
 CNF, THE, hub, "conexão via hub nacional", 150.0
+CNF, MCZ, hub, "conexão via hub nacional", 135.0
+CNF, SLZ, hub, "conexão via hub nacional", 170.0
+CNF, AJU, hub, "conexão via hub nacional", 125.0
+CNF, CGB, hub, "conexão via hub nacional", 130.0
+CNF, CGR, hub, "conexão via hub nacional", 120.0
+CNF, PMW, hub, "conexão via hub nacional", 115.0 
 VIX, BSB, hub, "conexão via hub nacional", 80.0
 BSB, GYN, regional, "estão na mesma região", 50.0
 BSB, CWB, hub, "conexão via hub nacional", 125.0
@@ -100,8 +132,26 @@ BSB, BEL, hub, "conexão via hub nacional", 150.0
 BSB, PVH, hub, "conexão via hub nacional", 170.0
 BSB, RBR, hub, "conexão via hub nacional", 205.0
 BSB, THE, hub, "conexão via hub nacional",135.0
+BSB, MCZ, hub, "conexão via hub nacional", 145.0
+BSB, SLZ, hub, "conexão via hub nacional", 155.0
+BSB, AJU, hub, "conexão via hub nacional", 135.0
+BSB, CGB, regional, "estão na mesma região", 100.0
+BSB, CGR, regional, "estão na mesma região", 100.0
+BSB, MCP, hub, "conexão via hub nacional", 165.0
+BSB, BVB, hub, "conexão via hub nacional", 210.0
+BSB, PMW, regional, "estão na mesma região", 80.0
 CWB, POA, regional, "estão na mesma região", 75.0
 FLN, POA, regional, "estão na mesma região", 65.0
 MAO, BEL, regional, "estão na mesma região", 125.0
 MAO, PVH, regional, "estão na mesma região", 125.0
 MAO, RBR, regional, "estão na mesma região", 115.0
+MAO, BVB, regional, "estão na mesma região", 80.0
+MCZ, NAT, regional, "estão na mesma região", 65.0
+MCZ, GYN, hub, "conexão via hub nacional", 155.0
+MCZ, CWB, hub, "conexão via hub nacional", 200.0
+MCZ, POA, hub, "conexão via hub nacional", 240.0
+SLZ, BEL, hub, "conexão via hub nacional", 65.0
+CGB, GYN, regional, "estão na mesma região", 90.0
+CGB, PVH, hub, "conexão via hub nacional", 180.0
+MCP, BEL, regional, "estão na mesma região", 55.0
+PMW, GYN, regional, "estão na mesma região", 85.0
