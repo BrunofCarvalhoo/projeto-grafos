@@ -37,3 +37,8 @@ FOR,BSB,hub,"conexão via hub nacional",165.0
 FOR,MAO,hub,"conexão via hub nacional",210.0
 FOR,BEL,hub,"conexão via hub nacional",180.0
 FOR,THE,regional,"estão na mesma região",65.0
+NAT,GRU,hub,"conexão via hub nacional",215.0
+NAT,CGH,hub,"conexão via hub nacional",215.0
+NAT,GIG,hub,"conexão via hub nacional",195.0
+NAT,CNF,hub,"conexão via hub nacional",165.0
+NAT,BSB,hub,"conexão via hub nacional",170.0
