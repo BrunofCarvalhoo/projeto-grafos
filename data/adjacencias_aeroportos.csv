@@ -69,3 +69,13 @@ CGH, CWB, hub, "conexão via hub nacional", 60.0
 CGH, FLN, hub, "conexão via hub nacional", 85.0
 CGH, POA, hub, "conexão via hub nacional", 105.0
 CGH, THE, hub, "conexão via hub nacional", 210.0
+GIG, CNF, regional, "estão na mesma região", 65.0
+GIG, VIX, regional, "estão na mesma região", 80.0
+GIG, BSB, hub, "conexão via hub nacional", 110.0
+GIG, GYN, hub, "conexão via hub nacional", 105.0
+GIG, CWB, hub, "conexão via hub nacional", 90.0
+GIG, FLN, hub, "conexão via hub nacional", 100.0
+GIG, POA, hub, "conexão via hub nacional", 130.0
+GIG, MAO, hub, "conexão via hub nacional", 245.0
+GIG, BEL, hub, "conexão via hub nacional", 210.0
+GIG, THE, hub, "conexão via hub nacional", 175.0
