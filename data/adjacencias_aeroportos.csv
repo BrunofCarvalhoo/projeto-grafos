@@ -79,3 +79,14 @@ GIG, POA, hub, "conexão via hub nacional", 130.0
 GIG, MAO, hub, "conexão via hub nacional", 245.0
 GIG, BEL, hub, "conexão via hub nacional", 210.0
 GIG, THE, hub, "conexão via hub nacional", 175.0
+CNF, VIX, regional, "estão na mesma região", 65.0
+CNF, BSB, hub, "conexão via hub nacional", 80.0
+CNF, GYN, hub, "conexão via hub nacional", 85.0
+CNF, CWB, hub, "conexão via hub nacional", 100.0
+CNF, FLN, hub, "conexão via hub nacional", 115.0
+CNF, POA, hub, "conexão via hub nacional", 135.0
+CNF, MAO, hub, "conexão via hub nacional", 215.0
+CNF, BEL, hub, "conexão via hub nacional", 180.0
+CNF, PVH, hub, "conexão via hub nacional", 215.0
+CNF, RBR, hub, "conexão via hub nacional", 245.0
+CNF, THE, hub, "conexão via hub nacional", 150.0
