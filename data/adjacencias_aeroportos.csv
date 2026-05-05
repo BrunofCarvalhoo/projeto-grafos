@@ -1,0 +1,17 @@
+origem,destino,tipo_conexao,justificativa,peso
+REC, SSA, regional, "estão na mesma região", 85.0
+REC, FOR, regional, "estão na mesma região", 80.0
+REC, NAT, regional, "estão na mesma região", 65.0
+REC, JPA, regional, "estão na mesma região", 45.0
+REC, GRU, hub, "conexão via hub nacional", 195.0
+REC, CGH, hub, "conexão via hub nacional", 200.0
+REC, GIG, hub, "conexão via hub nacional", 175.0
+REC, CNF, hub, "conexão via hub nacional", 150.0
+REC, VIX, hub, "conexão via hub nacional", 140.0
+REC, BSB, hub, "conexão via hub nacional", 160.0
+REC, GYN, hub, "conexão via hub nacional", 165.0
+REC, FLN, hub, "conexão via hub nacional", 240.0
+REC, POA, hub, "conexão via hub nacional", 270.0
+REC, MAO, hub, "conexão via hub nacional", 245.0
+REC, BEL, hub, "conexão via hub nacional", 160.0
+REC, THE, hub, "conexão via hub nacional", 105.0
