@@ -60,4 +60,12 @@ GRU, BEL, hub, "conexão via hub nacional", 205.0
 GRU, PVH, hub, "conexão via hub nacional", 220.0
 GRU, RBR, hub, "conexão via hub nacional", 235.0
 GRU, THE, hub, "conexão via hub nacional", 180.0
-
+CGH, GIG, regional, "estão na mesma região", 60.0
+CGH, CNF, regional, "estão na mesma região", 85.0
+CGH, VIX, regional, "estão na mesma região", 95.0
+CGH, BSB, hub, "conexão via hub nacional", 110.0
+CGH, GYN, hub, "conexão via hub nacional", 105.0
+CGH, CWB, hub, "conexão via hub nacional", 60.0
+CGH, FLN, hub, "conexão via hub nacional", 85.0
+CGH, POA, hub, "conexão via hub nacional", 105.0
+CGH, THE, hub, "conexão via hub nacional", 210.0
