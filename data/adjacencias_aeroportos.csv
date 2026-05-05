@@ -47,3 +47,17 @@ JPA, CGH, hub, "conexão via hub nacional", 210.0
 JPA, GIG, hub, "conexão via hub nacional", 190.0
 JPA, CNF, hub, "conexão via hub nacional", 155.0
 JPA, BSB, hub, "conexão via hub nacional", 165.0
+GRU, GIG, regioal, "estão na mesma região", 65.0
+GRU, CNF, regional, "estão na mesma região", 70.0
+GRU, VIX, regional, "estão na mesma região", 90.0
+GRU, BSB, hub, "conexão via hub nacional", 105.0
+GRU, GYN, hub, "conexão via hub nacional", 95.0
+GRU, CWB, hub, "conexão via hub nacional", 65.0
+GRU, FLN, hub, "conexão via hub nacional", 80.0
+GRU, POA, hub, "conexão via hub nacional", 105.0
+GRU, MAO, hub, "conexão via hub nacional", 230.0
+GRU, BEL, hub, "conexão via hub nacional", 205.0
+GRU, PVH, hub, "conexão via hub nacional", 220.0
+GRU, RBR, hub, "conexão via hub nacional", 235.0
+GRU, THE, hub, "conexão via hub nacional", 180.0
+
