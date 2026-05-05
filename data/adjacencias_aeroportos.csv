@@ -28,3 +28,12 @@ SSA, GYN, hub, "conexão via hub nacional", 125.0
 SSA, CWB, hub, "conexão via hub nacional", 180.0
 SSA, POA, hub, "conexão via hub nacional", 230.0
 SSA, THE, regional, "estão na mesma região", 110.0
+FOR,NAT,regional,"estão na mesma região",60.0
+FOR,GRU,hub,"conexão via hub nacional",205.0
+FOR,CGH,hub,"conexão via hub nacional",220.0
+FOR,GIG,hub,"conexão via hub nacional",200.0
+FOR,CNF,hub,"conexão via hub nacional",170.0
+FOR,BSB,hub,"conexão via hub nacional",165.0
+FOR,MAO,hub,"conexão via hub nacional",210.0
+FOR,BEL,hub,"conexão via hub nacional",180.0
+FOR,THE,regional,"estão na mesma região",65.0
