@@ -100,6 +100,7 @@ BSB, BEL, hub, "conexão via hub nacional", 150.0
 BSB, PVH, hub, "conexão via hub nacional", 170.0
 BSB, RBR, hub, "conexão via hub nacional", 205.0
 BSB, THE, hub, "conexão via hub nacional",135.0
+CWB, POA, regional, "estão na mesma região", 75.0
 FLN, POA, regional, "estão na mesma região", 65.0
 MAO, BEL, regional, "estão na mesma região", 125.0
 MAO, PVH, regional, "estão na mesma região", 125.0
