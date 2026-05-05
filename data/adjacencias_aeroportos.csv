@@ -42,3 +42,8 @@ NAT,CGH,hub,"conexão via hub nacional",215.0
 NAT,GIG,hub,"conexão via hub nacional",195.0
 NAT,CNF,hub,"conexão via hub nacional",165.0
 NAT,BSB,hub,"conexão via hub nacional",170.0
+JPA, GRU, hub, "conexão via hub nacional", 210.0
+JPA, CGH, hub, "conexão via hub nacional", 210.0
+JPA, GIG, hub, "conexão via hub nacional", 190.0
+JPA, CNF, hub, "conexão via hub nacional", 155.0
+JPA, BSB, hub, "conexão via hub nacional", 165.0
