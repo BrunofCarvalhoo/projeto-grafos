@@ -91,3 +91,12 @@ CNF, PVH, hub, "conexão via hub nacional", 215.0
 CNF, RBR, hub, "conexão via hub nacional", 245.0
 CNF, THE, hub, "conexão via hub nacional", 150.0
 VIX, BSB, hub, "conexão via hub nacional", 80.0
+BSB, GYN, regional, "estão na mesma região", 50.0
+BSB, CWB, hub, "conexão via hub nacional", 125.0
+BSB, FLN, hub, "conexão via hub nacional", 140.0
+BSB, POA, hub, "conexão via hub nacional", 165.0
+BSB, MAO, hub, "conexão via hub nacional", 180.0
+BSB, BEL, hub, "conexão via hub nacional", 150.0
+BSB, PVH, hub, "conexão via hub nacional", 170.0
+BSB, RBR, hub, "conexão via hub nacional", 205.0
+BSB, THE, hub, "conexão via hub nacional",135.0
