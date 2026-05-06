@@ -1,27 +1,27 @@
 {
    "nordeste":{
-        "ordem":"",
-        "tamanho":"",
-        "densidade":""
+        "ordem":"9",
+        "tamanho":"20",
+        "densidade":"0,0474"
    },
    "norte":{
-        "ordem":"",
-        "tamanho":"",
-        "densidade":""
+        "ordem":"7",
+        "tamanho":"5",
+        "densidade":"0,7"
    },
    "sudeste":{
-        "ordem":"",
-        "tamanho":"",
-        "densidade":""
+        "ordem":"5",
+        "tamanho":"9",
+        "densidade":"0,1389"
    },
    "sul":{
-        "ordem":"",
-        "tamanho":"",
-        "densidade":""
+        "ordem":"3",
+        "tamanho":"9",
+        "densidade":"0,0833"
    },
    "centro-oeste":{
-        "ordem":"",
-        "tamanho":"",
-        "densidade":""
+        "ordem":"4",
+        "tamanho":"6",
+        "densidade":"0,2667"
    } 
 }
