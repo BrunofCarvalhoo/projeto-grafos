@@ -1,5 +1,5 @@
 import csv
-from graph import Grafo
+from .graph import Grafo
 
 def ler_grafo_csv(vertice, aresta, numero_vertice=28):
     grafo = Grafo(numero_vertice)
