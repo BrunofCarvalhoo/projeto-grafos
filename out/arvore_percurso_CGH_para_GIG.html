@@ -51,34 +51,38 @@
 
       nodes = new vis.DataSet([
         {
-          "color": "#90EE90",
-          "font": { "color": "black" },
-          "id": "CGH",
-          "label": "CGH",
-          "shape": "dot",
-          "size": 35,
-          "title": "aeroportoporto CGH"
+                "color": "#90EE90",
+                "font": {
+                        "color": "black"
+                },
+                "id": "CGH",
+                "label": "CGH",
+                "shape": "dot",
+                "size": 35,
+                "title": "aeroportoporto CGH"
         },
         {
-          "color": "#90EE90",
-          "font": { "color": "black" },
-          "id": "GIG",
-          "label": "GIG",
-          "shape": "dot",
-          "size": 35,
-          "title": "aeroportoporto GIG"
+                "color": "#90EE90",
+                "font": {
+                        "color": "black"
+                },
+                "id": "GIG",
+                "label": "GIG",
+                "shape": "dot",
+                "size": 35,
+                "title": "aeroportoporto GIG"
         }
-      ]);
+]);
 
       edges = new vis.DataSet([
         {
-          "color": "#90EE90",
-          "from": "CGH",
-          "label": "60.0",
-          "to": "GIG",
-          "width": 4
+                "color": "#90EE90",
+                "from": "CGH",
+                "label": "60.0",
+                "to": "GIG",
+                "width": 4
         }
-      ]);
+]);
 
       nodeColors = {};
       allNodes = nodes.get({ returnType: "Object" });

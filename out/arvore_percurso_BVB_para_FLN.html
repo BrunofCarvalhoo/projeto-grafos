@@ -43,66 +43,64 @@
     var allNodes;
     var allEdges;
     var nodeColors;
-    var originalNodes;
     var network;
-    var container;
-    var options, data;
-
-    var filter = {
-      item: '',
-      property: '',
-      value: []
-    };
+    var data;
 
     function drawGraph() {
       var container = document.getElementById('mynetwork');
 
       nodes = new vis.DataSet([
         {
-          "color": "#90EE90",
-          "font": { "color": "black" },
-          "id": "BVB",
-          "label": "BVB",
-          "shape": "dot",
-          "size": 35,
-          "title": "aeroportoporto BVB"
+                "color": "#90EE90",
+                "font": {
+                        "color": "black"
+                },
+                "id": "BVB",
+                "label": "BVB",
+                "shape": "dot",
+                "size": 35,
+                "title": "aeroportoporto BVB"
         },
         {
-          "color": "#90EE90",
-          "font": { "color": "black" },
-          "id": "BSB",
-          "label": "BSB",
-          "shape": "dot",
-          "size": 35,
-          "title": "aeroportoporto BSB"
+                "color": "#90EE90",
+                "font": {
+                        "color": "black"
+                },
+                "id": "BSB",
+                "label": "BSB",
+                "shape": "dot",
+                "size": 35,
+                "title": "aeroportoporto BSB"
         },
         {
-          "color": "#90EE90",
-          "font": { "color": "black" },
-          "id": "FLN",
-          "label": "FLN",
-          "shape": "dot",
-          "size": 35,
-          "title": "aeroportoporto FLN"
+                "color": "#90EE90",
+                "font": {
+                        "color": "black"
+                },
+                "id": "FLN",
+                "label": "FLN",
+                "shape": "dot",
+                "size": 35,
+                "title": "aeroportoporto FLN"
         }
-      ]);
+]);
 
       edges = new vis.DataSet([
         {
-          "color": "#90EE90",
-          "from": "BVB",
-          "label": "210.0",
-          "to": "BSB",
-          "width": 4
+                "color": "#90EE90",
+                "from": "BVB",
+                "label": "210.0",
+                "to": "BSB",
+                "width": 4
         },
         {
-          "color": "#90EE90",
-          "from": "BSB",
-          "label": "140.0",
-          "to": "FLN",
-          "width": 4
+                "color": "#90EE90",
+                "from": "BSB",
+                "label": "140.0",
+                "to": "FLN",
+                "width": 4
         }
-      ]);
+]);
 
       nodeColors = {};
       allNodes = nodes.get({ returnType: "Object" });
