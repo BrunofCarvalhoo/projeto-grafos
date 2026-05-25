@@ -28,7 +28,7 @@ def main():
         img_distribuicao = pasta_out / "distribuicao_graus.png"
         img_ranking = pasta_out / "ranking_graus_aeroportos.png"
         img_comparacao = pasta_out / "comparacao_regioes.png"
-
+        img_comparacao_densidade = pasta_out / "densidade_regioes.png"
         col1, col2 = st.columns(2)
         
         with col1:
@@ -47,6 +47,10 @@ def main():
                 st.image(Image.open(img_ranking), caption="Ranking de Grau por Aeroporto (IATA)", use_container_width=True)
             else:
                 st.warning("O arquivo 'ranking_graus_aeroportos.png' não foi encontrado na pasta 'out/'.")
+            if img_comparacao_densidade.exists():
+                st.image(Image.open(img_comparacao_densidade), caption="Comparação de Densidade de Conexões por Região", use_container_width=True)
+            else:
+                st.warning("O arquivo 'densidade_regioes.png' não foi encontrado na pasta 'out/'.")
 
 
     elif pagina == "2. Árvores de Percurso (Menor Caminho)":

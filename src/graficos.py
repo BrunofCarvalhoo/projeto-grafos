@@ -58,16 +58,43 @@ def comparacao_por_regiao(arquivo_regioes, arquivo_saida):
     plt.savefig(arquivo_saida, bbox_inches='tight')
     plt.close()
 
+def comparacao_densidade_por_regiao(arquivo_regioes, arquivo_saida):
+    with open(arquivo_regioes, 'r', encoding='utf-8') as f:
+        dados = json.load(f)
+    df_regioes = pd.DataFrame.from_dict(dados, orient='index').reset_index()
+    df_regioes.rename(columns={'index': 'regiao'}, inplace=True)
+    df_regioes['densidade'] = df_regioes['densidade'].str.replace(',', '.').astype(float)
+    
+    df_regioes['regiao'] = df_regioes['regiao'].str.title()
+    df_regioes = df_regioes.sort_values(by='densidade', ascending=False)
+    
+    plt.figure(figsize=(10, 6))
+    plt.bar(df_regioes['regiao'], df_regioes['densidade'], 
+            color="#33E245", edgecolor='black', label='Densidade de Conexões') 
+    
+    plt.title('Comparação de Densidade de Conexões por Região', fontsize=14, pad=15)
+    plt.xlabel('Regiões', fontsize=12)
+    plt.ylabel('Densidade de Conexões', fontsize=12)
+    
+    plt.legend(loc='upper right')
+    plt.xticks(rotation=45, ha='right') 
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
+    
+    plt.savefig(arquivo_saida, bbox_inches='tight')
+    plt.close()
+
+
 def main():
     arquivo_grau = 'out/graus.csv'
     arquivo_regioes = 'out/regioes.json'
     arquivo_saida_distribuicao_graus = 'out/distribuicao_graus.png'
     arquivo_saida_ranking_graus_aeroportos = 'out/ranking_graus_aeroportos.png' 
     arquivo_saida_comparacao_regioes = 'out/comparacao_regioes.png'
-    
+    arquivo_saida_densidade_regioes = 'out/densidade_regioes.png'
     distribuicao_graus(arquivo_grau, arquivo_saida_distribuicao_graus)
     graus_por_aeroporto(arquivo_grau, arquivo_saida_ranking_graus_aeroportos)
     comparacao_por_regiao(arquivo_regioes, arquivo_saida_comparacao_regioes)
+    comparacao_densidade_por_regiao(arquivo_regioes, arquivo_saida_densidade_regioes)
 
 if __name__ == "__main__":
     main()
