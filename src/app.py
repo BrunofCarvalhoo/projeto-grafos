@@ -286,7 +286,7 @@ def pagina_arvores(pasta_out):
         with open(opcoes[rota], "r", encoding="utf-8") as f:
             html = f.read()
         st.markdown(f"**Grafo Interativo da Rota:** `{rota}`")
-        components.html(html, height=650, scrolling=False)
+        components.html(html, height=520, scrolling=False)
 
 
 def main():
