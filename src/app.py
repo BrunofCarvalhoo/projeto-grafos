@@ -29,6 +29,8 @@ def main():
         img_ranking = pasta_out / "ranking_graus_aeroportos.png"
         img_comparacao = pasta_out / "comparacao_regioes.png"
         img_comparacao_densidade = pasta_out / "densidade_regioes.png"
+        img_mapa_calor = pasta_out / "mapa_calor_distancias.png"
+        img_ranking_rotas_distancia = pasta_out / "ranking_rotas_distancia.png"
         col1, col2 = st.columns(2)
         
         with col1:
@@ -41,6 +43,11 @@ def main():
                 st.image(Image.open(img_comparacao), caption="Comparação de Conexões (Tamanho da Rede) por Região", use_container_width=True)
             else:
                 st.warning("O arquivo 'comparacao_regioes.png' não foi encontrado na pasta 'out/'.")
+            
+            if img_mapa_calor.exists():
+                st.image(Image.open(img_mapa_calor), caption="Mapa de Calor das Distâncias entre Aeroportos", use_container_width=True)
+            else:
+                st.warning("O arquivo 'mapa_calor_distancias.png' não foi encontrado na pasta 'out/'.")
 
         with col2:
             if img_ranking.exists():
@@ -51,6 +58,10 @@ def main():
                 st.image(Image.open(img_comparacao_densidade), caption="Comparação de Densidade de Conexões por Região", use_container_width=True)
             else:
                 st.warning("O arquivo 'densidade_regioes.png' não foi encontrado na pasta 'out/'.")
+            if img_ranking_rotas_distancia.exists():
+                st.image(Image.open(img_ranking_rotas_distancia), caption="Ranking de Rotas por Custo do Menor Caminho", use_container_width=True)
+            else:
+                st.warning("O arquivo 'ranking_rotas_distancia.png' não foi encontrado na pasta 'out/'.")
 
 
     elif pagina == "2. Árvores de Percurso (Menor Caminho)":

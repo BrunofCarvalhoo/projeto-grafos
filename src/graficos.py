@@ -83,18 +83,70 @@ def comparacao_densidade_por_regiao(arquivo_regioes, arquivo_saida):
     plt.savefig(arquivo_saida, bbox_inches='tight')
     plt.close()
 
+def mapa_calor_distancias(arquivo_distancias, arquivo_saida):
+    df = pd.read_csv(arquivo_distancias)
+
+    matriz = df.pivot(index='origem', columns='destino', values='custo')
+
+    plt.figure(figsize=(10, 7))
+    plt.imshow(matriz, cmap='YlOrRd', aspect='auto')
+
+    plt.colorbar(label='Custo do menor caminho')
+    plt.title('Mapa de Calor das Distâncias Mínimas entre Aeroportos', fontsize=14, pad=15)
+    plt.xlabel('Destino', fontsize=12)
+    plt.ylabel('Origem', fontsize=12)
+
+    plt.xticks(range(len(matriz.columns)), matriz.columns, rotation=45)
+    plt.yticks(range(len(matriz.index)), matriz.index)
+
+    plt.savefig(arquivo_saida, bbox_inches='tight')
+    plt.close()
+
+def ranking_rotas_por_distancia(arquivo_distancias, arquivo_saida):
+    df = pd.read_csv(arquivo_distancias)
+
+    df['rota'] = df['origem'] + ' → ' + df['destino']
+    df = df.sort_values(by='custo', ascending=True)
+
+    menores = df.head(5)
+    maiores = df.tail(5).sort_values(by='custo', ascending=True)
+
+    ranking = pd.concat([menores, maiores])
+
+    normalizador = plt.Normalize(ranking['custo'].min(), ranking['custo'].max())
+    cores = plt.cm.Blues(normalizador(ranking['custo']))
+
+    fig, ax = plt.subplots(figsize=(12, 7))
+    ax.barh(ranking['rota'], ranking['custo'], color=cores, edgecolor='black')
+    barra_cores = plt.cm.ScalarMappable(cmap='Blues', norm=normalizador)
+    barra_cores.set_array([])
+    fig.colorbar(barra_cores, ax=ax, label='Custo do menor caminho')
+
+    ax.set_title('Rotas com Menor e Maior Custo no Menor Caminho', fontsize=14, pad=15)
+    ax.set_xlabel('Custo do Menor Caminho', fontsize=12)
+    ax.set_ylabel('Rotas', fontsize=12)
+    ax.grid(axis='x', linestyle='--', alpha=0.7)
+
+    plt.savefig(arquivo_saida, bbox_inches='tight')
+    plt.close()
 
 def main():
     arquivo_grau = 'out/graus.csv'
     arquivo_regioes = 'out/regioes.json'
+    arquivo_distancias = 'out/distancias_rotas.csv'
     arquivo_saida_distribuicao_graus = 'out/distribuicao_graus.png'
     arquivo_saida_ranking_graus_aeroportos = 'out/ranking_graus_aeroportos.png' 
     arquivo_saida_comparacao_regioes = 'out/comparacao_regioes.png'
     arquivo_saida_densidade_regioes = 'out/densidade_regioes.png'
+    arquivo_saida_mapa_calor_distancias = 'out/mapa_calor_distancias.png'
+    arquivo_saida_ranking_rotas_distancia = 'out/ranking_rotas_distancia.png'
+    
     distribuicao_graus(arquivo_grau, arquivo_saida_distribuicao_graus)
     graus_por_aeroporto(arquivo_grau, arquivo_saida_ranking_graus_aeroportos)
     comparacao_por_regiao(arquivo_regioes, arquivo_saida_comparacao_regioes)
     comparacao_densidade_por_regiao(arquivo_regioes, arquivo_saida_densidade_regioes)
+    mapa_calor_distancias(arquivo_distancias, arquivo_saida_mapa_calor_distancias)
+    ranking_rotas_por_distancia(arquivo_distancias, arquivo_saida_ranking_rotas_distancia)
 
 if __name__ == "__main__":
     main()
