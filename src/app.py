@@ -6,6 +6,10 @@ import json
 import plotly.express as px
 
 
+PALETA_GRAFICOS = ["#264653", "#2A9D8F", "#E9C46A", "#F4A261", "#E76F51"]
+ESCALA_CONTINUA = "YlGnBu"
+
+
 @st.cache_data
 def carregar_dados(pasta_projeto: Path):
     pasta_out = pasta_projeto / "out"
@@ -72,7 +76,7 @@ def pagina_analise(df_grau, df_regioes, df_distancias):
         nbins=10,
         title="Distribuição dos Graus dos Aeroportos",
         labels={"grau": "Grau", "count": "Quantidade de Aeroportos", "regiao": "Região"},
-        color_discrete_sequence=px.colors.qualitative.Set2,
+        color_discrete_sequence=PALETA_GRAFICOS,
     )
     fig_dist.update_layout(bargap=0.1, legend_title="Região")
     st.plotly_chart(fig_dist, use_container_width=True)
@@ -106,7 +110,7 @@ def pagina_analise(df_grau, df_regioes, df_distancias):
         hover_data=["cidade"],
         title="Ranking de Grau por Aeroporto (IATA)",
         labels={"aeroporto": "Aeroporto (IATA)", "grau": "Grau", "regiao": "Região"},
-        color_discrete_sequence=px.colors.qualitative.Set2,
+        color_discrete_sequence=PALETA_GRAFICOS,
     )
     fig_rank.update_layout(xaxis_tickangle=-45, legend_title="Região")
     st.plotly_chart(fig_rank, use_container_width=True)
@@ -136,44 +140,11 @@ def pagina_analise(df_grau, df_regioes, df_distancias):
             text="tamanho",
             title="Comparação de Conexões (Tamanho da Rede) por Região",
             labels={"regiao": "Região", "tamanho": "Número de Conexões"},
-            color_discrete_sequence=px.colors.qualitative.Set1,
+            color_discrete_sequence=PALETA_GRAFICOS,
         )
         fig_conn.update_traces(textposition="outside")
         fig_conn.update_layout(showlegend=False)
         st.plotly_chart(fig_conn, use_container_width=True)
-
-        #Mapa de Calor
-        st.subheader("Mapa de Calor das Distâncias entre Aeroportos")
-
-        origens_disp = sorted(df_distancias["origem"].unique())
-        destinos_disp = sorted(df_distancias["destino"].unique())
-
-        col_hm1, col_hm2 = st.columns(2)
-        with col_hm1:
-            origens_sel = st.multiselect(
-                "Origens", origens_disp, default=origens_disp, key="hm_origens"
-            )
-        with col_hm2:
-            destinos_sel = st.multiselect(
-                "Destinos", destinos_disp, default=destinos_disp, key="hm_destinos"
-            )
-
-        df_hm = df_distancias[
-            df_distancias["origem"].isin(origens_sel)
-            & df_distancias["destino"].isin(destinos_sel)
-        ]
-        if not df_hm.empty:
-            matriz = df_hm.pivot(index="origem", columns="destino", values="custo")
-            fig_hm = px.imshow(
-                matriz,
-                color_continuous_scale="YlOrRd",
-                title="Mapa de Calor das Distâncias Mínimas entre Aeroportos",
-                labels={"color": "Custo do menor caminho", "x": "Destino", "y": "Origem"},
-                text_auto=True,
-            )
-            st.plotly_chart(fig_hm, use_container_width=True)
-        else:
-            st.warning("Nenhuma rota encontrada para a seleção atual.")
 
     with col2:
         #Densidade por Região 
@@ -196,57 +167,94 @@ def pagina_analise(df_grau, df_regioes, df_distancias):
             text=df_den["densidade"].map("{:.4f}".format),
             title="Comparação de Densidade de Conexões por Região",
             labels={"regiao": "Região", "densidade": "Densidade"},
-            color_discrete_sequence=px.colors.qualitative.Pastel,
+            color_discrete_sequence=PALETA_GRAFICOS,
         )
         fig_den.update_traces(textposition="outside")
         fig_den.update_layout(showlegend=False, xaxis_tickangle=-30)
         st.plotly_chart(fig_den, use_container_width=True)
 
-        #Ranking de Rotas por Distância 
-        st.subheader("Ranking de Rotas por Custo do Menor Caminho")
+    st.divider()
 
-        aeroportos_rot = sorted(
-            set(df_distancias["origem"].unique()) | set(df_distancias["destino"].unique())
+    #Mapa de Calor
+    st.subheader("Mapa de Calor das Distâncias entre Aeroportos")
+
+    origens_disp = sorted(df_distancias["origem"].unique())
+    destinos_disp = sorted(df_distancias["destino"].unique())
+
+    col_hm1, col_hm2 = st.columns(2)
+    with col_hm1:
+        origens_sel = st.multiselect(
+            "Origens", origens_disp, default=origens_disp, key="hm_origens"
         )
-        aeroportos_sel = st.multiselect(
-            "Filtrar por aeroporto (origem ou destino)",
-            options=aeroportos_rot,
-            default=[],
-            key="rot_aeroportos",
-            placeholder="Todos os aeroportos",
+    with col_hm2:
+        destinos_sel = st.multiselect(
+            "Destinos", destinos_disp, default=destinos_disp, key="hm_destinos"
         )
 
-        col_rot1, col_rot2 = st.columns(2)
-        with col_rot1:
-            n_menores = st.slider("Menores rotas", 1, 10, 5, key="rot_menores")
-        with col_rot2:
-            n_maiores = st.slider("Maiores rotas", 1, 10, 5, key="rot_maiores")
-
-        df_rot = df_distancias.copy()
-        if aeroportos_sel:
-            df_rot = df_rot[
-                df_rot["origem"].isin(aeroportos_sel) | df_rot["destino"].isin(aeroportos_sel)
-            ]
-
-        df_rot["rota"] = df_rot["origem"] + " → " + df_rot["destino"]
-        df_sorted = df_rot.sort_values("custo")
-        menores = df_sorted.head(n_menores)
-        maiores = df_sorted.tail(n_maiores).sort_values("custo")
-        ranking = pd.concat([menores, maiores]).drop_duplicates()
-
-        fig_rot = px.bar(
-            ranking,
-            y="rota",
-            x="custo",
-            orientation="h",
-            color="custo",
-            color_continuous_scale="Blues",
-            hover_data=["caminho"],
-            title="Rotas com Menor e Maior Custo no Menor Caminho",
-            labels={"rota": "Rota", "custo": "Custo do Menor Caminho"},
+    df_hm = df_distancias[
+        df_distancias["origem"].isin(origens_sel)
+        & df_distancias["destino"].isin(destinos_sel)
+    ]
+    if not df_hm.empty:
+        matriz = df_hm.pivot(index="origem", columns="destino", values="custo")
+        fig_hm = px.imshow(
+            matriz,
+            color_continuous_scale=ESCALA_CONTINUA,
+            title="Mapa de Calor das Distâncias Mínimas entre Aeroportos",
+            labels={"color": "Custo do menor caminho", "x": "Destino", "y": "Origem"},
+            text_auto=True,
         )
-        fig_rot.update_layout(yaxis={"categoryorder": "total ascending"})
-        st.plotly_chart(fig_rot, use_container_width=True)
+        st.plotly_chart(fig_hm, use_container_width=True)
+    else:
+        st.warning("Nenhuma rota encontrada para a seleção atual.")
+
+    st.divider()
+
+    #Ranking de Rotas por Distância 
+    st.subheader("Ranking de Rotas por Custo do Menor Caminho")
+
+    aeroportos_rot = sorted(
+        set(df_distancias["origem"].unique()) | set(df_distancias["destino"].unique())
+    )
+    aeroportos_sel = st.multiselect(
+        "Filtrar por aeroporto (origem ou destino)",
+        options=aeroportos_rot,
+        default=[],
+        key="rot_aeroportos",
+        placeholder="Todos os aeroportos",
+    )
+
+    col_rot1, col_rot2 = st.columns(2)
+    with col_rot1:
+        n_menores = st.slider("Menores rotas", 1, 10, 5, key="rot_menores")
+    with col_rot2:
+        n_maiores = st.slider("Maiores rotas", 1, 10, 5, key="rot_maiores")
+
+    df_rot = df_distancias.copy()
+    if aeroportos_sel:
+        df_rot = df_rot[
+            df_rot["origem"].isin(aeroportos_sel) | df_rot["destino"].isin(aeroportos_sel)
+        ]
+
+    df_rot["rota"] = df_rot["origem"] + " → " + df_rot["destino"]
+    df_sorted = df_rot.sort_values("custo")
+    menores = df_sorted.head(n_menores)
+    maiores = df_sorted.tail(n_maiores).sort_values("custo")
+    ranking = pd.concat([menores, maiores]).drop_duplicates()
+
+    fig_rot = px.bar(
+        ranking,
+        y="rota",
+        x="custo",
+        orientation="h",
+        color="custo",
+        color_continuous_scale=ESCALA_CONTINUA,
+        hover_data=["caminho"],
+        title="Rotas com Menor e Maior Custo no Menor Caminho",
+        labels={"rota": "Rota", "custo": "Custo do Menor Caminho"},
+    )
+    fig_rot.update_layout(yaxis={"categoryorder": "total ascending"})
+    st.plotly_chart(fig_rot, use_container_width=True)
 
 
 def pagina_arvores(pasta_out):
