@@ -3,9 +3,10 @@ Projeto de grafos e avd
 
 ## Como rodar o projeto:
 
-- Primeiro precisamos criar um ambiente virtual:
+- Primeiro precisamos criar um ambiente virtual e ativa-lo:
 ```bash
 python -m venv venv
+.\venv\Scripts\Activate.ps1
 ```
 
 - Depois vamos instalar as bibliotecas necessárias:
