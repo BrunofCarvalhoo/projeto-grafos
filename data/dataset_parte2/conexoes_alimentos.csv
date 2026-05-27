@@ -1,0 +1,2555 @@
+origem,destino,tipo_conexao,justificativa,peso
+Breads,Cheeses,cafe_da_manha,pão com laticínio,257.6
+Breads,Yogurts,cafe_da_manha,pão com laticínio,164.4
+Breads,Greek-style yogurts,cafe_da_manha,pão com laticínio,181.2
+Breads,Plain yogurts,cafe_da_manha,pão com laticínio,158.2
+Breads,Low-fat yogurts,cafe_da_manha,pão com laticínio,147.7
+Breads,Milks,cafe_da_manha,pão com laticínio,183.2
+Breads,UHT Milks,cafe_da_manha,pão com laticínio,156.1
+Breads,Grated cheese,cafe_da_manha,pão com laticínio,328.2
+Breads,Cow cheeses,cafe_da_manha,pão com laticínio,266.6
+Breads,Ricotta,cafe_da_manha,pão com laticínio,196.6
+Breads,Condensed milks,cafe_da_manha,pão com laticínio,270.6
+Breads,Milk jams,cafe_da_manha,pão com laticínio,271.0
+Breads,Dairies,cafe_da_manha,pão com laticínio,220.4
+Breads,Dairy drinks,cafe_da_manha,pão com laticínio,155.2
+Sliced breads,Cheeses,cafe_da_manha,pão com laticínio,250.6
+Sliced breads,Yogurts,cafe_da_manha,pão com laticínio,157.3
+Sliced breads,Greek-style yogurts,cafe_da_manha,pão com laticínio,174.1
+Sliced breads,Plain yogurts,cafe_da_manha,pão com laticínio,151.2
+Sliced breads,Low-fat yogurts,cafe_da_manha,pão com laticínio,140.7
+Sliced breads,Milks,cafe_da_manha,pão com laticínio,176.2
+Sliced breads,UHT Milks,cafe_da_manha,pão com laticínio,149.1
+Sliced breads,Grated cheese,cafe_da_manha,pão com laticínio,321.1
+Sliced breads,Cow cheeses,cafe_da_manha,pão com laticínio,259.5
+Sliced breads,Ricotta,cafe_da_manha,pão com laticínio,189.5
+Sliced breads,Condensed milks,cafe_da_manha,pão com laticínio,263.5
+Sliced breads,Milk jams,cafe_da_manha,pão com laticínio,263.9
+Sliced breads,Dairies,cafe_da_manha,pão com laticínio,213.4
+Sliced breads,Dairy drinks,cafe_da_manha,pão com laticínio,148.2
+Wholemeal breads,Cheeses,cafe_da_manha,pão com laticínio,232.2
+Wholemeal breads,Yogurts,cafe_da_manha,pão com laticínio,138.9
+Wholemeal breads,Greek-style yogurts,cafe_da_manha,pão com laticínio,155.7
+Wholemeal breads,Plain yogurts,cafe_da_manha,pão com laticínio,132.8
+Wholemeal breads,Low-fat yogurts,cafe_da_manha,pão com laticínio,122.2
+Wholemeal breads,Milks,cafe_da_manha,pão com laticínio,157.8
+Wholemeal breads,UHT Milks,cafe_da_manha,pão com laticínio,130.6
+Wholemeal breads,Grated cheese,cafe_da_manha,pão com laticínio,302.7
+Wholemeal breads,Cow cheeses,cafe_da_manha,pão com laticínio,241.1
+Wholemeal breads,Ricotta,cafe_da_manha,pão com laticínio,171.1
+Wholemeal breads,Condensed milks,cafe_da_manha,pão com laticínio,245.1
+Wholemeal breads,Milk jams,cafe_da_manha,pão com laticínio,245.5
+Wholemeal breads,Dairies,cafe_da_manha,pão com laticínio,194.9
+Wholemeal breads,Dairy drinks,cafe_da_manha,pão com laticínio,129.8
+Panettone,Cheeses,cafe_da_manha,pão com laticínio,315.3
+Panettone,Yogurts,cafe_da_manha,pão com laticínio,222.1
+Panettone,Greek-style yogurts,cafe_da_manha,pão com laticínio,238.8
+Panettone,Plain yogurts,cafe_da_manha,pão com laticínio,215.9
+Panettone,Low-fat yogurts,cafe_da_manha,pão com laticínio,205.3
+Panettone,Milks,cafe_da_manha,pão com laticínio,240.9
+Panettone,UHT Milks,cafe_da_manha,pão com laticínio,213.8
+Panettone,Grated cheese,cafe_da_manha,pão com laticínio,385.9
+Panettone,Cow cheeses,cafe_da_manha,pão com laticínio,324.2
+Panettone,Ricotta,cafe_da_manha,pão com laticínio,254.2
+Panettone,Condensed milks,cafe_da_manha,pão com laticínio,328.2
+Panettone,Milk jams,cafe_da_manha,pão com laticínio,328.6
+Panettone,Dairies,cafe_da_manha,pão com laticínio,278.1
+Panettone,Dairy drinks,cafe_da_manha,pão com laticínio,212.9
+Sandwiches,Cheeses,cafe_da_manha,pão com laticínio,250.9
+Sandwiches,Yogurts,cafe_da_manha,pão com laticínio,157.7
+Sandwiches,Greek-style yogurts,cafe_da_manha,pão com laticínio,174.4
+Sandwiches,Plain yogurts,cafe_da_manha,pão com laticínio,151.6
+Sandwiches,Low-fat yogurts,cafe_da_manha,pão com laticínio,141.0
+Sandwiches,Milks,cafe_da_manha,pão com laticínio,176.6
+Sandwiches,UHT Milks,cafe_da_manha,pão com laticínio,149.4
+Sandwiches,Grated cheese,cafe_da_manha,pão com laticínio,321.5
+Sandwiches,Cow cheeses,cafe_da_manha,pão com laticínio,259.9
+Sandwiches,Ricotta,cafe_da_manha,pão com laticínio,189.8
+Sandwiches,Condensed milks,cafe_da_manha,pão com laticínio,263.9
+Sandwiches,Milk jams,cafe_da_manha,pão com laticínio,264.3
+Sandwiches,Dairies,cafe_da_manha,pão com laticínio,213.7
+Sandwiches,Dairy drinks,cafe_da_manha,pão com laticínio,148.6
+Tapioca,Cheeses,cafe_da_manha,pão com laticínio,252.9
+Tapioca,Yogurts,cafe_da_manha,pão com laticínio,159.7
+Tapioca,Greek-style yogurts,cafe_da_manha,pão com laticínio,176.4
+Tapioca,Plain yogurts,cafe_da_manha,pão com laticínio,153.6
+Tapioca,Low-fat yogurts,cafe_da_manha,pão com laticínio,143.0
+Tapioca,Milks,cafe_da_manha,pão com laticínio,178.6
+Tapioca,UHT Milks,cafe_da_manha,pão com laticínio,151.4
+Tapioca,Grated cheese,cafe_da_manha,pão com laticínio,323.5
+Tapioca,Cow cheeses,cafe_da_manha,pão com laticínio,261.9
+Tapioca,Ricotta,cafe_da_manha,pão com laticínio,191.8
+Tapioca,Condensed milks,cafe_da_manha,pão com laticínio,265.9
+Tapioca,Milk jams,cafe_da_manha,pão com laticínio,266.3
+Tapioca,Dairies,cafe_da_manha,pão com laticínio,215.7
+Tapioca,Dairy drinks,cafe_da_manha,pão com laticínio,150.6
+Crackers (Appetizers),Cheeses,cafe_da_manha,pão com laticínio,339.8
+Crackers (Appetizers),Yogurts,cafe_da_manha,pão com laticínio,246.5
+Crackers (Appetizers),Greek-style yogurts,cafe_da_manha,pão com laticínio,263.2
+Crackers (Appetizers),Plain yogurts,cafe_da_manha,pão com laticínio,240.3
+Crackers (Appetizers),Low-fat yogurts,cafe_da_manha,pão com laticínio,229.8
+Crackers (Appetizers),Milks,cafe_da_manha,pão com laticínio,265.4
+Crackers (Appetizers),UHT Milks,cafe_da_manha,pão com laticínio,238.2
+Crackers (Appetizers),Grated cheese,cafe_da_manha,pão com laticínio,410.3
+Crackers (Appetizers),Cow cheeses,cafe_da_manha,pão com laticínio,348.6
+Crackers (Appetizers),Ricotta,cafe_da_manha,pão com laticínio,278.6
+Crackers (Appetizers),Condensed milks,cafe_da_manha,pão com laticínio,352.6
+Crackers (Appetizers),Milk jams,cafe_da_manha,pão com laticínio,353.1
+Crackers (Appetizers),Dairies,cafe_da_manha,pão com laticínio,302.5
+Crackers (Appetizers),Dairy drinks,cafe_da_manha,pão com laticínio,237.3
+Galletas,Cheeses,cafe_da_manha,pão com laticínio,338.7
+Galletas,Yogurts,cafe_da_manha,pão com laticínio,245.5
+Galletas,Greek-style yogurts,cafe_da_manha,pão com laticínio,262.2
+Galletas,Plain yogurts,cafe_da_manha,pão com laticínio,239.3
+Galletas,Low-fat yogurts,cafe_da_manha,pão com laticínio,228.8
+Galletas,Milks,cafe_da_manha,pão com laticínio,264.3
+Galletas,UHT Milks,cafe_da_manha,pão com laticínio,237.2
+Galletas,Grated cheese,cafe_da_manha,pão com laticínio,409.2
+Galletas,Cow cheeses,cafe_da_manha,pão com laticínio,347.6
+Galletas,Ricotta,cafe_da_manha,pão com laticínio,277.6
+Galletas,Condensed milks,cafe_da_manha,pão com laticínio,351.6
+Galletas,Milk jams,cafe_da_manha,pão com laticínio,352.1
+Galletas,Dairies,cafe_da_manha,pão com laticínio,301.5
+Galletas,Dairy drinks,cafe_da_manha,pão com laticínio,236.3
+Cakes,Cheeses,cafe_da_manha,pão com laticínio,300.3
+Cakes,Yogurts,cafe_da_manha,pão com laticínio,207.1
+Cakes,Greek-style yogurts,cafe_da_manha,pão com laticínio,223.8
+Cakes,Plain yogurts,cafe_da_manha,pão com laticínio,200.9
+Cakes,Low-fat yogurts,cafe_da_manha,pão com laticínio,190.3
+Cakes,Milks,cafe_da_manha,pão com laticínio,225.9
+Cakes,UHT Milks,cafe_da_manha,pão com laticínio,198.8
+Cakes,Grated cheese,cafe_da_manha,pão com laticínio,370.9
+Cakes,Cow cheeses,cafe_da_manha,pão com laticínio,309.2
+Cakes,Ricotta,cafe_da_manha,pão com laticínio,239.2
+Cakes,Condensed milks,cafe_da_manha,pão com laticínio,313.2
+Cakes,Milk jams,cafe_da_manha,pão com laticínio,313.6
+Cakes,Dairies,cafe_da_manha,pão com laticínio,263.1
+Cakes,Dairy drinks,cafe_da_manha,pão com laticínio,197.9
+Mueslis,Cheeses,cafe_da_manha,pão com laticínio,313.1
+Mueslis,Yogurts,cafe_da_manha,pão com laticínio,219.8
+Mueslis,Greek-style yogurts,cafe_da_manha,pão com laticínio,236.6
+Mueslis,Plain yogurts,cafe_da_manha,pão com laticínio,213.7
+Mueslis,Low-fat yogurts,cafe_da_manha,pão com laticínio,203.1
+Mueslis,Milks,cafe_da_manha,pão com laticínio,238.7
+Mueslis,UHT Milks,cafe_da_manha,pão com laticínio,211.5
+Mueslis,Grated cheese,cafe_da_manha,pão com laticínio,383.6
+Mueslis,Cow cheeses,cafe_da_manha,pão com laticínio,322.0
+Mueslis,Ricotta,cafe_da_manha,pão com laticínio,251.9
+Mueslis,Condensed milks,cafe_da_manha,pão com laticínio,326.0
+Mueslis,Milk jams,cafe_da_manha,pão com laticínio,326.4
+Mueslis,Dairies,cafe_da_manha,pão com laticínio,275.8
+Mueslis,Dairy drinks,cafe_da_manha,pão com laticínio,210.7
+Breads,Jams,cafe_da_manha,pão com pasta ou cobertura,226.3
+Breads,Butters,cafe_da_manha,pão com pasta ou cobertura,469.9
+Breads,Peanut butters,cafe_da_manha,pão com pasta ou cobertura,366.9
+Breads,Honeys,cafe_da_manha,pão com pasta ou cobertura,269.8
+Breads,Margarines,cafe_da_manha,pão com pasta ou cobertura,390.6
+Breads,Sweet spreads,cafe_da_manha,pão com pasta ou cobertura,231.6
+Breads,Unsalted butters,cafe_da_manha,pão com pasta ou cobertura,389.4
+Breads,Milk powders,cafe_da_manha,pão com pasta ou cobertura,339.4
+Breads,Cocoa and chocolate powders,cafe_da_manha,pão com pasta ou cobertura,288.4
+Breads,Chocolate-powders,cafe_da_manha,pão com pasta ou cobertura,243.7
+Sliced breads,Jams,cafe_da_manha,pão com pasta ou cobertura,219.3
+Sliced breads,Butters,cafe_da_manha,pão com pasta ou cobertura,462.9
+Sliced breads,Peanut butters,cafe_da_manha,pão com pasta ou cobertura,359.9
+Sliced breads,Honeys,cafe_da_manha,pão com pasta ou cobertura,262.7
+Sliced breads,Margarines,cafe_da_manha,pão com pasta ou cobertura,383.6
+Sliced breads,Sweet spreads,cafe_da_manha,pão com pasta ou cobertura,224.6
+Sliced breads,Unsalted butters,cafe_da_manha,pão com pasta ou cobertura,382.3
+Sliced breads,Milk powders,cafe_da_manha,pão com pasta ou cobertura,332.3
+Sliced breads,Cocoa and chocolate powders,cafe_da_manha,pão com pasta ou cobertura,281.4
+Sliced breads,Chocolate-powders,cafe_da_manha,pão com pasta ou cobertura,236.7
+Wholemeal breads,Jams,cafe_da_manha,pão com pasta ou cobertura,200.8
+Wholemeal breads,Butters,cafe_da_manha,pão com pasta ou cobertura,444.4
+Wholemeal breads,Peanut butters,cafe_da_manha,pão com pasta ou cobertura,341.4
+Wholemeal breads,Honeys,cafe_da_manha,pão com pasta ou cobertura,244.2
+Wholemeal breads,Margarines,cafe_da_manha,pão com pasta ou cobertura,365.1
+Wholemeal breads,Sweet spreads,cafe_da_manha,pão com pasta ou cobertura,206.1
+Wholemeal breads,Unsalted butters,cafe_da_manha,pão com pasta ou cobertura,363.9
+Wholemeal breads,Milk powders,cafe_da_manha,pão com pasta ou cobertura,313.9
+Wholemeal breads,Cocoa and chocolate powders,cafe_da_manha,pão com pasta ou cobertura,262.9
+Wholemeal breads,Chocolate-powders,cafe_da_manha,pão com pasta ou cobertura,218.2
+Panettone,Jams,cafe_da_manha,pão com pasta ou cobertura,284.0
+Panettone,Butters,cafe_da_manha,pão com pasta ou cobertura,527.6
+Panettone,Peanut butters,cafe_da_manha,pão com pasta ou cobertura,424.6
+Panettone,Honeys,cafe_da_manha,pão com pasta ou cobertura,327.4
+Panettone,Margarines,cafe_da_manha,pão com pasta ou cobertura,448.2
+Panettone,Sweet spreads,cafe_da_manha,pão com pasta ou cobertura,289.2
+Panettone,Unsalted butters,cafe_da_manha,pão com pasta ou cobertura,447.0
+Panettone,Milk powders,cafe_da_manha,pão com pasta ou cobertura,397.0
+Panettone,Cocoa and chocolate powders,cafe_da_manha,pão com pasta ou cobertura,346.1
+Panettone,Chocolate-powders,cafe_da_manha,pão com pasta ou cobertura,301.4
+Sandwiches,Jams,cafe_da_manha,pão com pasta ou cobertura,219.6
+Sandwiches,Butters,cafe_da_manha,pão com pasta ou cobertura,463.2
+Sandwiches,Peanut butters,cafe_da_manha,pão com pasta ou cobertura,360.2
+Sandwiches,Honeys,cafe_da_manha,pão com pasta ou cobertura,263.1
+Sandwiches,Margarines,cafe_da_manha,pão com pasta ou cobertura,383.9
+Sandwiches,Sweet spreads,cafe_da_manha,pão com pasta ou cobertura,224.9
+Sandwiches,Unsalted butters,cafe_da_manha,pão com pasta ou cobertura,382.7
+Sandwiches,Milk powders,cafe_da_manha,pão com pasta ou cobertura,332.6
+Sandwiches,Cocoa and chocolate powders,cafe_da_manha,pão com pasta ou cobertura,281.7
+Sandwiches,Chocolate-powders,cafe_da_manha,pão com pasta ou cobertura,237.0
+Tapioca,Jams,cafe_da_manha,pão com pasta ou cobertura,221.6
+Tapioca,Butters,cafe_da_manha,pão com pasta ou cobertura,465.2
+Tapioca,Peanut butters,cafe_da_manha,pão com pasta ou cobertura,362.2
+Tapioca,Honeys,cafe_da_manha,pão com pasta ou cobertura,265.1
+Tapioca,Margarines,cafe_da_manha,pão com pasta ou cobertura,385.9
+Tapioca,Sweet spreads,cafe_da_manha,pão com pasta ou cobertura,226.9
+Tapioca,Unsalted butters,cafe_da_manha,pão com pasta ou cobertura,384.7
+Tapioca,Milk powders,cafe_da_manha,pão com pasta ou cobertura,334.6
+Tapioca,Cocoa and chocolate powders,cafe_da_manha,pão com pasta ou cobertura,283.7
+Tapioca,Chocolate-powders,cafe_da_manha,pão com pasta ou cobertura,239.0
+Crackers (Appetizers),Jams,cafe_da_manha,pão com pasta ou cobertura,308.4
+Crackers (Appetizers),Butters,cafe_da_manha,pão com pasta ou cobertura,552.0
+Crackers (Appetizers),Peanut butters,cafe_da_manha,pão com pasta ou cobertura,449.0
+Crackers (Appetizers),Honeys,cafe_da_manha,pão com pasta ou cobertura,351.9
+Crackers (Appetizers),Margarines,cafe_da_manha,pão com pasta ou cobertura,472.7
+Crackers (Appetizers),Sweet spreads,cafe_da_manha,pão com pasta ou cobertura,313.7
+Crackers (Appetizers),Unsalted butters,cafe_da_manha,pão com pasta ou cobertura,471.5
+Crackers (Appetizers),Milk powders,cafe_da_manha,pão com pasta ou cobertura,421.4
+Crackers (Appetizers),Cocoa and chocolate powders,cafe_da_manha,pão com pasta ou cobertura,370.5
+Crackers (Appetizers),Chocolate-powders,cafe_da_manha,pão com pasta ou cobertura,325.8
+Galletas,Jams,cafe_da_manha,pão com pasta ou cobertura,307.4
+Galletas,Butters,cafe_da_manha,pão com pasta ou cobertura,551.0
+Galletas,Peanut butters,cafe_da_manha,pão com pasta ou cobertura,448.0
+Galletas,Honeys,cafe_da_manha,pão com pasta ou cobertura,350.8
+Galletas,Margarines,cafe_da_manha,pão com pasta ou cobertura,471.7
+Galletas,Sweet spreads,cafe_da_manha,pão com pasta ou cobertura,312.6
+Galletas,Unsalted butters,cafe_da_manha,pão com pasta ou cobertura,470.4
+Galletas,Milk powders,cafe_da_manha,pão com pasta ou cobertura,420.4
+Galletas,Cocoa and chocolate powders,cafe_da_manha,pão com pasta ou cobertura,369.5
+Galletas,Chocolate-powders,cafe_da_manha,pão com pasta ou cobertura,324.8
+Cakes,Jams,cafe_da_manha,pão com pasta ou cobertura,269.0
+Cakes,Butters,cafe_da_manha,pão com pasta ou cobertura,512.6
+Cakes,Peanut butters,cafe_da_manha,pão com pasta ou cobertura,409.6
+Cakes,Honeys,cafe_da_manha,pão com pasta ou cobertura,312.4
+Cakes,Margarines,cafe_da_manha,pão com pasta ou cobertura,433.2
+Cakes,Sweet spreads,cafe_da_manha,pão com pasta ou cobertura,274.2
+Cakes,Unsalted butters,cafe_da_manha,pão com pasta ou cobertura,432.0
+Cakes,Milk powders,cafe_da_manha,pão com pasta ou cobertura,382.0
+Cakes,Cocoa and chocolate powders,cafe_da_manha,pão com pasta ou cobertura,331.1
+Cakes,Chocolate-powders,cafe_da_manha,pão com pasta ou cobertura,286.4
+Mueslis,Jams,cafe_da_manha,pão com pasta ou cobertura,281.8
+Mueslis,Butters,cafe_da_manha,pão com pasta ou cobertura,525.4
+Mueslis,Peanut butters,cafe_da_manha,pão com pasta ou cobertura,422.4
+Mueslis,Honeys,cafe_da_manha,pão com pasta ou cobertura,325.1
+Mueslis,Margarines,cafe_da_manha,pão com pasta ou cobertura,446.0
+Mueslis,Sweet spreads,cafe_da_manha,pão com pasta ou cobertura,287.0
+Mueslis,Unsalted butters,cafe_da_manha,pão com pasta ou cobertura,444.8
+Mueslis,Milk powders,cafe_da_manha,pão com pasta ou cobertura,394.8
+Mueslis,Cocoa and chocolate powders,cafe_da_manha,pão com pasta ou cobertura,343.8
+Mueslis,Chocolate-powders,cafe_da_manha,pão com pasta ou cobertura,299.1
+Breads,Coffees,cafe_da_manha,pão acompanhado de bebida,201.2
+Breads,Teas,cafe_da_manha,pão acompanhado de bebida,129.3
+Breads,Herbal teas,cafe_da_manha,pão acompanhado de bebida,126.5
+Breads,Sweetened beverages,cafe_da_manha,pão acompanhado de bebida,163.5
+Breads,Sodas,cafe_da_manha,pão acompanhado de bebida,152.6
+Breads,Juices and nectars,cafe_da_manha,pão acompanhado de bebida,158.8
+Breads,Fruit juices,cafe_da_manha,pão acompanhado de bebida,149.9
+Breads,Orange juices,cafe_da_manha,pão acompanhado de bebida,154.2
+Breads,Grape nectars,cafe_da_manha,pão acompanhado de bebida,153.3
+Breads,Fruit nectars,cafe_da_manha,pão acompanhado de bebida,148.7
+Breads,Coconut waters,cafe_da_manha,pão acompanhado de bebida,136.8
+Breads,Energy drinks,cafe_da_manha,pão acompanhado de bebida,159.9
+Breads,Beverages,cafe_da_manha,pão acompanhado de bebida,187.3
+Breads,Beers,cafe_da_manha,pão acompanhado de bebida,155.6
+Sliced breads,Coffees,cafe_da_manha,pão acompanhado de bebida,194.2
+Sliced breads,Teas,cafe_da_manha,pão acompanhado de bebida,122.2
+Sliced breads,Herbal teas,cafe_da_manha,pão acompanhado de bebida,119.5
+Sliced breads,Sweetened beverages,cafe_da_manha,pão acompanhado de bebida,156.4
+Sliced breads,Sodas,cafe_da_manha,pão acompanhado de bebida,145.6
+Sliced breads,Juices and nectars,cafe_da_manha,pão acompanhado de bebida,151.8
+Sliced breads,Fruit juices,cafe_da_manha,pão acompanhado de bebida,142.9
+Sliced breads,Orange juices,cafe_da_manha,pão acompanhado de bebida,147.2
+Sliced breads,Grape nectars,cafe_da_manha,pão acompanhado de bebida,146.3
+Sliced breads,Fruit nectars,cafe_da_manha,pão acompanhado de bebida,141.6
+Sliced breads,Coconut waters,cafe_da_manha,pão acompanhado de bebida,129.8
+Sliced breads,Energy drinks,cafe_da_manha,pão acompanhado de bebida,152.8
+Sliced breads,Beverages,cafe_da_manha,pão acompanhado de bebida,180.2
+Sliced breads,Beers,cafe_da_manha,pão acompanhado de bebida,148.5
+Wholemeal breads,Coffees,cafe_da_manha,pão acompanhado de bebida,175.8
+Wholemeal breads,Teas,cafe_da_manha,pão acompanhado de bebida,103.8
+Wholemeal breads,Herbal teas,cafe_da_manha,pão acompanhado de bebida,101.0
+Wholemeal breads,Sweetened beverages,cafe_da_manha,pão acompanhado de bebida,138.0
+Wholemeal breads,Sodas,cafe_da_manha,pão acompanhado de bebida,127.1
+Wholemeal breads,Juices and nectars,cafe_da_manha,pão acompanhado de bebida,133.3
+Wholemeal breads,Fruit juices,cafe_da_manha,pão acompanhado de bebida,124.5
+Wholemeal breads,Orange juices,cafe_da_manha,pão acompanhado de bebida,128.8
+Wholemeal breads,Grape nectars,cafe_da_manha,pão acompanhado de bebida,127.8
+Wholemeal breads,Fruit nectars,cafe_da_manha,pão acompanhado de bebida,123.2
+Wholemeal breads,Coconut waters,cafe_da_manha,pão acompanhado de bebida,111.3
+Wholemeal breads,Energy drinks,cafe_da_manha,pão acompanhado de bebida,134.4
+Wholemeal breads,Beverages,cafe_da_manha,pão acompanhado de bebida,161.8
+Wholemeal breads,Beers,cafe_da_manha,pão acompanhado de bebida,130.1
+Panettone,Coffees,cafe_da_manha,pão acompanhado de bebida,258.9
+Panettone,Teas,cafe_da_manha,pão acompanhado de bebida,187.0
+Panettone,Herbal teas,cafe_da_manha,pão acompanhado de bebida,184.2
+Panettone,Sweetened beverages,cafe_da_manha,pão acompanhado de bebida,221.2
+Panettone,Sodas,cafe_da_manha,pão acompanhado de bebida,210.2
+Panettone,Juices and nectars,cafe_da_manha,pão acompanhado de bebida,216.4
+Panettone,Fruit juices,cafe_da_manha,pão acompanhado de bebida,207.6
+Panettone,Orange juices,cafe_da_manha,pão acompanhado de bebida,211.9
+Panettone,Grape nectars,cafe_da_manha,pão acompanhado de bebida,211.0
+Panettone,Fruit nectars,cafe_da_manha,pão acompanhado de bebida,206.3
+Panettone,Coconut waters,cafe_da_manha,pão acompanhado de bebida,194.5
+Panettone,Energy drinks,cafe_da_manha,pão acompanhado de bebida,217.6
+Panettone,Beverages,cafe_da_manha,pão acompanhado de bebida,244.9
+Panettone,Beers,cafe_da_manha,pão acompanhado de bebida,213.2
+Sandwiches,Coffees,cafe_da_manha,pão acompanhado de bebida,194.6
+Sandwiches,Teas,cafe_da_manha,pão acompanhado de bebida,122.6
+Sandwiches,Herbal teas,cafe_da_manha,pão acompanhado de bebida,119.8
+Sandwiches,Sweetened beverages,cafe_da_manha,pão acompanhado de bebida,156.8
+Sandwiches,Sodas,cafe_da_manha,pão acompanhado de bebida,145.9
+Sandwiches,Juices and nectars,cafe_da_manha,pão acompanhado de bebida,152.1
+Sandwiches,Fruit juices,cafe_da_manha,pão acompanhado de bebida,143.2
+Sandwiches,Orange juices,cafe_da_manha,pão acompanhado de bebida,147.6
+Sandwiches,Grape nectars,cafe_da_manha,pão acompanhado de bebida,146.7
+Sandwiches,Fruit nectars,cafe_da_manha,pão acompanhado de bebida,141.9
+Sandwiches,Coconut waters,cafe_da_manha,pão acompanhado de bebida,130.1
+Sandwiches,Energy drinks,cafe_da_manha,pão acompanhado de bebida,153.2
+Sandwiches,Beverages,cafe_da_manha,pão acompanhado de bebida,180.6
+Sandwiches,Beers,cafe_da_manha,pão acompanhado de bebida,148.8
+Tapioca,Coffees,cafe_da_manha,pão acompanhado de bebida,196.6
+Tapioca,Teas,cafe_da_manha,pão acompanhado de bebida,124.6
+Tapioca,Herbal teas,cafe_da_manha,pão acompanhado de bebida,121.8
+Tapioca,Sweetened beverages,cafe_da_manha,pão acompanhado de bebida,158.8
+Tapioca,Sodas,cafe_da_manha,pão acompanhado de bebida,147.9
+Tapioca,Juices and nectars,cafe_da_manha,pão acompanhado de bebida,154.1
+Tapioca,Fruit juices,cafe_da_manha,pão acompanhado de bebida,145.2
+Tapioca,Orange juices,cafe_da_manha,pão acompanhado de bebida,149.6
+Tapioca,Grape nectars,cafe_da_manha,pão acompanhado de bebida,148.7
+Tapioca,Fruit nectars,cafe_da_manha,pão acompanhado de bebida,143.9
+Tapioca,Coconut waters,cafe_da_manha,pão acompanhado de bebida,132.1
+Tapioca,Energy drinks,cafe_da_manha,pão acompanhado de bebida,155.2
+Tapioca,Beverages,cafe_da_manha,pão acompanhado de bebida,182.6
+Tapioca,Beers,cafe_da_manha,pão acompanhado de bebida,150.8
+Crackers (Appetizers),Coffees,cafe_da_manha,pão acompanhado de bebida,283.4
+Crackers (Appetizers),Teas,cafe_da_manha,pão acompanhado de bebida,211.4
+Crackers (Appetizers),Herbal teas,cafe_da_manha,pão acompanhado de bebida,208.6
+Crackers (Appetizers),Sweetened beverages,cafe_da_manha,pão acompanhado de bebida,245.6
+Crackers (Appetizers),Sodas,cafe_da_manha,pão acompanhado de bebida,234.7
+Crackers (Appetizers),Juices and nectars,cafe_da_manha,pão acompanhado de bebida,240.9
+Crackers (Appetizers),Fruit juices,cafe_da_manha,pão acompanhado de bebida,232.0
+Crackers (Appetizers),Orange juices,cafe_da_manha,pão acompanhado de bebida,236.3
+Crackers (Appetizers),Grape nectars,cafe_da_manha,pão acompanhado de bebida,235.4
+Crackers (Appetizers),Fruit nectars,cafe_da_manha,pão acompanhado de bebida,230.8
+Crackers (Appetizers),Coconut waters,cafe_da_manha,pão acompanhado de bebida,218.9
+Crackers (Appetizers),Energy drinks,cafe_da_manha,pão acompanhado de bebida,242.0
+Crackers (Appetizers),Beverages,cafe_da_manha,pão acompanhado de bebida,269.4
+Crackers (Appetizers),Beers,cafe_da_manha,pão acompanhado de bebida,237.7
+Galletas,Coffees,cafe_da_manha,pão acompanhado de bebida,282.3
+Galletas,Teas,cafe_da_manha,pão acompanhado de bebida,210.4
+Galletas,Herbal teas,cafe_da_manha,pão acompanhado de bebida,207.6
+Galletas,Sweetened beverages,cafe_da_manha,pão acompanhado de bebida,244.6
+Galletas,Sodas,cafe_da_manha,pão acompanhado de bebida,233.7
+Galletas,Juices and nectars,cafe_da_manha,pão acompanhado de bebida,239.9
+Galletas,Fruit juices,cafe_da_manha,pão acompanhado de bebida,231.0
+Galletas,Orange juices,cafe_da_manha,pão acompanhado de bebida,235.3
+Galletas,Grape nectars,cafe_da_manha,pão acompanhado de bebida,234.4
+Galletas,Fruit nectars,cafe_da_manha,pão acompanhado de bebida,229.7
+Galletas,Coconut waters,cafe_da_manha,pão acompanhado de bebida,217.9
+Galletas,Energy drinks,cafe_da_manha,pão acompanhado de bebida,241.0
+Galletas,Beverages,cafe_da_manha,pão acompanhado de bebida,268.4
+Galletas,Beers,cafe_da_manha,pão acompanhado de bebida,236.6
+Cakes,Coffees,cafe_da_manha,pão acompanhado de bebida,243.9
+Cakes,Teas,cafe_da_manha,pão acompanhado de bebida,172.0
+Cakes,Herbal teas,cafe_da_manha,pão acompanhado de bebida,169.2
+Cakes,Sweetened beverages,cafe_da_manha,pão acompanhado de bebida,206.2
+Cakes,Sodas,cafe_da_manha,pão acompanhado de bebida,195.2
+Cakes,Juices and nectars,cafe_da_manha,pão acompanhado de bebida,201.4
+Cakes,Fruit juices,cafe_da_manha,pão acompanhado de bebida,192.6
+Cakes,Orange juices,cafe_da_manha,pão acompanhado de bebida,196.9
+Cakes,Grape nectars,cafe_da_manha,pão acompanhado de bebida,196.0
+Cakes,Fruit nectars,cafe_da_manha,pão acompanhado de bebida,191.3
+Cakes,Coconut waters,cafe_da_manha,pão acompanhado de bebida,179.5
+Cakes,Energy drinks,cafe_da_manha,pão acompanhado de bebida,202.6
+Cakes,Beverages,cafe_da_manha,pão acompanhado de bebida,229.9
+Cakes,Beers,cafe_da_manha,pão acompanhado de bebida,198.2
+Mueslis,Coffees,cafe_da_manha,pão acompanhado de bebida,256.6
+Mueslis,Teas,cafe_da_manha,pão acompanhado de bebida,184.7
+Mueslis,Herbal teas,cafe_da_manha,pão acompanhado de bebida,181.9
+Mueslis,Sweetened beverages,cafe_da_manha,pão acompanhado de bebida,218.9
+Mueslis,Sodas,cafe_da_manha,pão acompanhado de bebida,208.0
+Mueslis,Juices and nectars,cafe_da_manha,pão acompanhado de bebida,214.2
+Mueslis,Fruit juices,cafe_da_manha,pão acompanhado de bebida,205.3
+Mueslis,Orange juices,cafe_da_manha,pão acompanhado de bebida,209.7
+Mueslis,Grape nectars,cafe_da_manha,pão acompanhado de bebida,208.8
+Mueslis,Fruit nectars,cafe_da_manha,pão acompanhado de bebida,204.1
+Mueslis,Coconut waters,cafe_da_manha,pão acompanhado de bebida,192.2
+Mueslis,Energy drinks,cafe_da_manha,pão acompanhado de bebida,215.3
+Mueslis,Beverages,cafe_da_manha,pão acompanhado de bebida,242.7
+Mueslis,Beers,cafe_da_manha,pão acompanhado de bebida,211.0
+Cheeses,Jams,cafe_da_manha,laticínio com pasta ou cobertura,234.5
+Cheeses,Butters,cafe_da_manha,laticínio com pasta ou cobertura,478.1
+Cheeses,Peanut butters,cafe_da_manha,laticínio com pasta ou cobertura,375.1
+Cheeses,Honeys,cafe_da_manha,laticínio com pasta ou cobertura,277.9
+Cheeses,Margarines,cafe_da_manha,laticínio com pasta ou cobertura,398.8
+Cheeses,Sweet spreads,cafe_da_manha,laticínio com pasta ou cobertura,239.8
+Cheeses,Unsalted butters,cafe_da_manha,laticínio com pasta ou cobertura,397.5
+Cheeses,Milk powders,cafe_da_manha,laticínio com pasta ou cobertura,347.5
+Cheeses,Cocoa and chocolate powders,cafe_da_manha,laticínio com pasta ou cobertura,296.6
+Cheeses,Chocolate-powders,cafe_da_manha,laticínio com pasta ou cobertura,251.9
+Yogurts,Jams,cafe_da_manha,laticínio com pasta ou cobertura,141.2
+Yogurts,Butters,cafe_da_manha,laticínio com pasta ou cobertura,384.8
+Yogurts,Peanut butters,cafe_da_manha,laticínio com pasta ou cobertura,281.8
+Yogurts,Honeys,cafe_da_manha,laticínio com pasta ou cobertura,184.7
+Yogurts,Margarines,cafe_da_manha,laticínio com pasta ou cobertura,305.5
+Yogurts,Sweet spreads,cafe_da_manha,laticínio com pasta ou cobertura,146.5
+Yogurts,Unsalted butters,cafe_da_manha,laticínio com pasta ou cobertura,304.3
+Yogurts,Milk powders,cafe_da_manha,laticínio com pasta ou cobertura,254.2
+Yogurts,Cocoa and chocolate powders,cafe_da_manha,laticínio com pasta ou cobertura,203.3
+Yogurts,Chocolate-powders,cafe_da_manha,laticínio com pasta ou cobertura,158.6
+Greek-style yogurts,Jams,cafe_da_manha,laticínio com pasta ou cobertura,158.0
+Greek-style yogurts,Butters,cafe_da_manha,laticínio com pasta ou cobertura,401.6
+Greek-style yogurts,Peanut butters,cafe_da_manha,laticínio com pasta ou cobertura,298.6
+Greek-style yogurts,Honeys,cafe_da_manha,laticínio com pasta ou cobertura,201.4
+Greek-style yogurts,Margarines,cafe_da_manha,laticínio com pasta ou cobertura,322.2
+Greek-style yogurts,Sweet spreads,cafe_da_manha,laticínio com pasta ou cobertura,163.2
+Greek-style yogurts,Unsalted butters,cafe_da_manha,laticínio com pasta ou cobertura,321.0
+Greek-style yogurts,Milk powders,cafe_da_manha,laticínio com pasta ou cobertura,271.0
+Greek-style yogurts,Cocoa and chocolate powders,cafe_da_manha,laticínio com pasta ou cobertura,220.1
+Greek-style yogurts,Chocolate-powders,cafe_da_manha,laticínio com pasta ou cobertura,175.3
+Plain yogurts,Jams,cafe_da_manha,laticínio com pasta ou cobertura,135.1
+Plain yogurts,Butters,cafe_da_manha,laticínio com pasta ou cobertura,378.7
+Plain yogurts,Peanut butters,cafe_da_manha,laticínio com pasta ou cobertura,275.7
+Plain yogurts,Honeys,cafe_da_manha,laticínio com pasta ou cobertura,178.5
+Plain yogurts,Margarines,cafe_da_manha,laticínio com pasta ou cobertura,299.4
+Plain yogurts,Sweet spreads,cafe_da_manha,laticínio com pasta ou cobertura,140.3
+Plain yogurts,Unsalted butters,cafe_da_manha,laticínio com pasta ou cobertura,298.1
+Plain yogurts,Milk powders,cafe_da_manha,laticínio com pasta ou cobertura,248.1
+Plain yogurts,Cocoa and chocolate powders,cafe_da_manha,laticínio com pasta ou cobertura,197.2
+Plain yogurts,Chocolate-powders,cafe_da_manha,laticínio com pasta ou cobertura,152.4
+Low-fat yogurts,Jams,cafe_da_manha,laticínio com pasta ou cobertura,124.5
+Low-fat yogurts,Butters,cafe_da_manha,laticínio com pasta ou cobertura,368.1
+Low-fat yogurts,Peanut butters,cafe_da_manha,laticínio com pasta ou cobertura,265.1
+Low-fat yogurts,Honeys,cafe_da_manha,laticínio com pasta ou cobertura,167.9
+Low-fat yogurts,Margarines,cafe_da_manha,laticínio com pasta ou cobertura,288.8
+Low-fat yogurts,Sweet spreads,cafe_da_manha,laticínio com pasta ou cobertura,129.8
+Low-fat yogurts,Unsalted butters,cafe_da_manha,laticínio com pasta ou cobertura,287.6
+Low-fat yogurts,Milk powders,cafe_da_manha,laticínio com pasta ou cobertura,237.5
+Low-fat yogurts,Cocoa and chocolate powders,cafe_da_manha,laticínio com pasta ou cobertura,186.6
+Low-fat yogurts,Chocolate-powders,cafe_da_manha,laticínio com pasta ou cobertura,141.9
+Milks,Jams,cafe_da_manha,laticínio com pasta ou cobertura,160.1
+Milks,Butters,cafe_da_manha,laticínio com pasta ou cobertura,403.7
+Milks,Peanut butters,cafe_da_manha,laticínio com pasta ou cobertura,300.7
+Milks,Honeys,cafe_da_manha,laticínio com pasta ou cobertura,203.5
+Milks,Margarines,cafe_da_manha,laticínio com pasta ou cobertura,324.4
+Milks,Sweet spreads,cafe_da_manha,laticínio com pasta ou cobertura,165.3
+Milks,Unsalted butters,cafe_da_manha,laticínio com pasta ou cobertura,323.1
+Milks,Milk powders,cafe_da_manha,laticínio com pasta ou cobertura,273.1
+Milks,Cocoa and chocolate powders,cafe_da_manha,laticínio com pasta ou cobertura,222.2
+Milks,Chocolate-powders,cafe_da_manha,laticínio com pasta ou cobertura,177.4
+UHT Milks,Jams,cafe_da_manha,laticínio com pasta ou cobertura,132.9
+UHT Milks,Butters,cafe_da_manha,laticínio com pasta ou cobertura,376.6
+UHT Milks,Peanut butters,cafe_da_manha,laticínio com pasta ou cobertura,273.6
+UHT Milks,Honeys,cafe_da_manha,laticínio com pasta ou cobertura,176.3
+UHT Milks,Margarines,cafe_da_manha,laticínio com pasta ou cobertura,297.2
+UHT Milks,Sweet spreads,cafe_da_manha,laticínio com pasta ou cobertura,138.2
+UHT Milks,Unsalted butters,cafe_da_manha,laticínio com pasta ou cobertura,296.0
+UHT Milks,Milk powders,cafe_da_manha,laticínio com pasta ou cobertura,245.9
+UHT Milks,Cocoa and chocolate powders,cafe_da_manha,laticínio com pasta ou cobertura,195.0
+UHT Milks,Chocolate-powders,cafe_da_manha,laticínio com pasta ou cobertura,150.3
+Grated cheese,Jams,cafe_da_manha,laticínio com pasta ou cobertura,305.0
+Grated cheese,Butters,cafe_da_manha,laticínio com pasta ou cobertura,548.6
+Grated cheese,Peanut butters,cafe_da_manha,laticínio com pasta ou cobertura,445.6
+Grated cheese,Honeys,cafe_da_manha,laticínio com pasta ou cobertura,348.4
+Grated cheese,Margarines,cafe_da_manha,laticínio com pasta ou cobertura,469.3
+Grated cheese,Sweet spreads,cafe_da_manha,laticínio com pasta ou cobertura,310.3
+Grated cheese,Unsalted butters,cafe_da_manha,laticínio com pasta ou cobertura,468.1
+Grated cheese,Milk powders,cafe_da_manha,laticínio com pasta ou cobertura,418.0
+Grated cheese,Cocoa and chocolate powders,cafe_da_manha,laticínio com pasta ou cobertura,367.1
+Grated cheese,Chocolate-powders,cafe_da_manha,laticínio com pasta ou cobertura,322.4
+Cow cheeses,Jams,cafe_da_manha,laticínio com pasta ou cobertura,243.4
+Cow cheeses,Butters,cafe_da_manha,laticínio com pasta ou cobertura,487.0
+Cow cheeses,Peanut butters,cafe_da_manha,laticínio com pasta ou cobertura,384.0
+Cow cheeses,Honeys,cafe_da_manha,laticínio com pasta ou cobertura,286.8
+Cow cheeses,Margarines,cafe_da_manha,laticínio com pasta ou cobertura,407.7
+Cow cheeses,Sweet spreads,cafe_da_manha,laticínio com pasta ou cobertura,248.7
+Cow cheeses,Unsalted butters,cafe_da_manha,laticínio com pasta ou cobertura,406.4
+Cow cheeses,Milk powders,cafe_da_manha,laticínio com pasta ou cobertura,356.4
+Cow cheeses,Cocoa and chocolate powders,cafe_da_manha,laticínio com pasta ou cobertura,305.5
+Cow cheeses,Chocolate-powders,cafe_da_manha,laticínio com pasta ou cobertura,260.8
+Ricotta,Jams,cafe_da_manha,laticínio com pasta ou cobertura,173.4
+Ricotta,Butters,cafe_da_manha,laticínio com pasta ou cobertura,417.0
+Ricotta,Peanut butters,cafe_da_manha,laticínio com pasta ou cobertura,314.0
+Ricotta,Honeys,cafe_da_manha,laticínio com pasta ou cobertura,216.8
+Ricotta,Margarines,cafe_da_manha,laticínio com pasta ou cobertura,337.7
+Ricotta,Sweet spreads,cafe_da_manha,laticínio com pasta ou cobertura,178.6
+Ricotta,Unsalted butters,cafe_da_manha,laticínio com pasta ou cobertura,336.4
+Ricotta,Milk powders,cafe_da_manha,laticínio com pasta ou cobertura,286.4
+Ricotta,Cocoa and chocolate powders,cafe_da_manha,laticínio com pasta ou cobertura,235.4
+Ricotta,Chocolate-powders,cafe_da_manha,laticínio com pasta ou cobertura,190.8
+Condensed milks,Jams,cafe_da_manha,laticínio com pasta ou cobertura,247.4
+Condensed milks,Butters,cafe_da_manha,laticínio com pasta ou cobertura,491.0
+Condensed milks,Peanut butters,cafe_da_manha,laticínio com pasta ou cobertura,388.0
+Condensed milks,Honeys,cafe_da_manha,laticínio com pasta ou cobertura,290.8
+Condensed milks,Margarines,cafe_da_manha,laticínio com pasta ou cobertura,411.7
+Condensed milks,Sweet spreads,cafe_da_manha,laticínio com pasta ou cobertura,252.7
+Condensed milks,Unsalted butters,cafe_da_manha,laticínio com pasta ou cobertura,410.4
+Condensed milks,Milk powders,cafe_da_manha,laticínio com pasta ou cobertura,360.4
+Condensed milks,Cocoa and chocolate powders,cafe_da_manha,laticínio com pasta ou cobertura,309.5
+Condensed milks,Chocolate-powders,cafe_da_manha,laticínio com pasta ou cobertura,264.8
+Milk jams,Jams,cafe_da_manha,laticínio com pasta ou cobertura,247.8
+Milk jams,Butters,cafe_da_manha,laticínio com pasta ou cobertura,491.4
+Milk jams,Peanut butters,cafe_da_manha,laticínio com pasta ou cobertura,388.4
+Milk jams,Honeys,cafe_da_manha,laticínio com pasta ou cobertura,291.2
+Milk jams,Margarines,cafe_da_manha,laticínio com pasta ou cobertura,412.1
+Milk jams,Sweet spreads,cafe_da_manha,laticínio com pasta ou cobertura,253.1
+Milk jams,Unsalted butters,cafe_da_manha,laticínio com pasta ou cobertura,410.9
+Milk jams,Milk powders,cafe_da_manha,laticínio com pasta ou cobertura,360.9
+Milk jams,Cocoa and chocolate powders,cafe_da_manha,laticínio com pasta ou cobertura,309.9
+Milk jams,Chocolate-powders,cafe_da_manha,laticínio com pasta ou cobertura,265.2
+Dairies,Jams,cafe_da_manha,laticínio com pasta ou cobertura,197.2
+Dairies,Butters,cafe_da_manha,laticínio com pasta ou cobertura,440.9
+Dairies,Peanut butters,cafe_da_manha,laticínio com pasta ou cobertura,337.9
+Dairies,Honeys,cafe_da_manha,laticínio com pasta ou cobertura,240.7
+Dairies,Margarines,cafe_da_manha,laticínio com pasta ou cobertura,361.5
+Dairies,Sweet spreads,cafe_da_manha,laticínio com pasta ou cobertura,202.5
+Dairies,Unsalted butters,cafe_da_manha,laticínio com pasta ou cobertura,360.3
+Dairies,Milk powders,cafe_da_manha,laticínio com pasta ou cobertura,310.2
+Dairies,Cocoa and chocolate powders,cafe_da_manha,laticínio com pasta ou cobertura,259.3
+Dairies,Chocolate-powders,cafe_da_manha,laticínio com pasta ou cobertura,214.6
+Dairy drinks,Jams,cafe_da_manha,laticínio com pasta ou cobertura,132.1
+Dairy drinks,Butters,cafe_da_manha,laticínio com pasta ou cobertura,375.7
+Dairy drinks,Peanut butters,cafe_da_manha,laticínio com pasta ou cobertura,272.7
+Dairy drinks,Honeys,cafe_da_manha,laticínio com pasta ou cobertura,175.5
+Dairy drinks,Margarines,cafe_da_manha,laticínio com pasta ou cobertura,296.4
+Dairy drinks,Sweet spreads,cafe_da_manha,laticínio com pasta ou cobertura,137.3
+Dairy drinks,Unsalted butters,cafe_da_manha,laticínio com pasta ou cobertura,295.1
+Dairy drinks,Milk powders,cafe_da_manha,laticínio com pasta ou cobertura,245.1
+Dairy drinks,Cocoa and chocolate powders,cafe_da_manha,laticínio com pasta ou cobertura,194.2
+Dairy drinks,Chocolate-powders,cafe_da_manha,laticínio com pasta ou cobertura,149.4
+Cheeses,Breakfast cereals,cafe_da_manha,laticínio com cereal,303.2
+Cheeses,Rolled oats,cafe_da_manha,laticínio com cereal,294.4
+Cheeses,Cereals and their products,cafe_da_manha,laticínio com cereal,300.7
+Cheeses,Oat brans,cafe_da_manha,laticínio com cereal,278.2
+Cheeses,Rices,cafe_da_manha,laticínio com cereal,265.8
+Cheeses,Pastas,cafe_da_manha,laticínio com cereal,270.7
+Cheeses,Instant noodles,cafe_da_manha,laticínio com cereal,311.9
+Cheeses,Wheat flours,cafe_da_manha,laticínio com cereal,300.9
+Cheeses,Cereals and potatoes,cafe_da_manha,laticínio com cereal,335.1
+Yogurts,Breakfast cereals,cafe_da_manha,laticínio com cereal,210.0
+Yogurts,Rolled oats,cafe_da_manha,laticínio com cereal,201.2
+Yogurts,Cereals and their products,cafe_da_manha,laticínio com cereal,207.5
+Yogurts,Oat brans,cafe_da_manha,laticínio com cereal,185.0
+Yogurts,Rices,cafe_da_manha,laticínio com cereal,172.5
+Yogurts,Pastas,cafe_da_manha,laticínio com cereal,177.5
+Yogurts,Instant noodles,cafe_da_manha,laticínio com cereal,218.6
+Yogurts,Wheat flours,cafe_da_manha,laticínio com cereal,207.7
+Yogurts,Cereals and potatoes,cafe_da_manha,laticínio com cereal,241.8
+Greek-style yogurts,Breakfast cereals,cafe_da_manha,laticínio com cereal,226.7
+Greek-style yogurts,Rolled oats,cafe_da_manha,laticínio com cereal,217.9
+Greek-style yogurts,Cereals and their products,cafe_da_manha,laticínio com cereal,224.2
+Greek-style yogurts,Oat brans,cafe_da_manha,laticínio com cereal,201.7
+Greek-style yogurts,Rices,cafe_da_manha,laticínio com cereal,189.2
+Greek-style yogurts,Pastas,cafe_da_manha,laticínio com cereal,194.2
+Greek-style yogurts,Instant noodles,cafe_da_manha,laticínio com cereal,235.3
+Greek-style yogurts,Wheat flours,cafe_da_manha,laticínio com cereal,224.4
+Greek-style yogurts,Cereals and potatoes,cafe_da_manha,laticínio com cereal,258.6
+Plain yogurts,Breakfast cereals,cafe_da_manha,laticínio com cereal,203.8
+Plain yogurts,Rolled oats,cafe_da_manha,laticínio com cereal,195.0
+Plain yogurts,Cereals and their products,cafe_da_manha,laticínio com cereal,201.3
+Plain yogurts,Oat brans,cafe_da_manha,laticínio com cereal,178.8
+Plain yogurts,Rices,cafe_da_manha,laticínio com cereal,166.3
+Plain yogurts,Pastas,cafe_da_manha,laticínio com cereal,171.3
+Plain yogurts,Instant noodles,cafe_da_manha,laticínio com cereal,212.4
+Plain yogurts,Wheat flours,cafe_da_manha,laticínio com cereal,201.5
+Plain yogurts,Cereals and potatoes,cafe_da_manha,laticínio com cereal,235.7
+Low-fat yogurts,Breakfast cereals,cafe_da_manha,laticínio com cereal,193.2
+Low-fat yogurts,Rolled oats,cafe_da_manha,laticínio com cereal,184.4
+Low-fat yogurts,Cereals and their products,cafe_da_manha,laticínio com cereal,190.8
+Low-fat yogurts,Oat brans,cafe_da_manha,laticínio com cereal,168.2
+Low-fat yogurts,Rices,cafe_da_manha,laticínio com cereal,155.8
+Low-fat yogurts,Pastas,cafe_da_manha,laticínio com cereal,160.8
+Low-fat yogurts,Instant noodles,cafe_da_manha,laticínio com cereal,201.9
+Low-fat yogurts,Wheat flours,cafe_da_manha,laticínio com cereal,190.9
+Low-fat yogurts,Cereals and potatoes,cafe_da_manha,laticínio com cereal,225.1
+Milks,Breakfast cereals,cafe_da_manha,laticínio com cereal,228.8
+Milks,Rolled oats,cafe_da_manha,laticínio com cereal,220.0
+Milks,Cereals and their products,cafe_da_manha,laticínio com cereal,226.3
+Milks,Oat brans,cafe_da_manha,laticínio com cereal,203.8
+Milks,Rices,cafe_da_manha,laticínio com cereal,191.3
+Milks,Pastas,cafe_da_manha,laticínio com cereal,196.3
+Milks,Instant noodles,cafe_da_manha,laticínio com cereal,237.4
+Milks,Wheat flours,cafe_da_manha,laticínio com cereal,226.5
+Milks,Cereals and potatoes,cafe_da_manha,laticínio com cereal,260.6
+UHT Milks,Breakfast cereals,cafe_da_manha,laticínio com cereal,201.7
+UHT Milks,Rolled oats,cafe_da_manha,laticínio com cereal,192.8
+UHT Milks,Cereals and their products,cafe_da_manha,laticínio com cereal,199.2
+UHT Milks,Oat brans,cafe_da_manha,laticínio com cereal,176.7
+UHT Milks,Rices,cafe_da_manha,laticínio com cereal,164.2
+UHT Milks,Pastas,cafe_da_manha,laticínio com cereal,169.2
+UHT Milks,Instant noodles,cafe_da_manha,laticínio com cereal,210.3
+UHT Milks,Wheat flours,cafe_da_manha,laticínio com cereal,199.3
+UHT Milks,Cereals and potatoes,cafe_da_manha,laticínio com cereal,233.5
+Grated cheese,Breakfast cereals,cafe_da_manha,laticínio com cereal,373.8
+Grated cheese,Rolled oats,cafe_da_manha,laticínio com cereal,364.9
+Grated cheese,Cereals and their products,cafe_da_manha,laticínio com cereal,371.2
+Grated cheese,Oat brans,cafe_da_manha,laticínio com cereal,348.8
+Grated cheese,Rices,cafe_da_manha,laticínio com cereal,336.3
+Grated cheese,Pastas,cafe_da_manha,laticínio com cereal,341.2
+Grated cheese,Instant noodles,cafe_da_manha,laticínio com cereal,382.4
+Grated cheese,Wheat flours,cafe_da_manha,laticínio com cereal,371.4
+Grated cheese,Cereals and potatoes,cafe_da_manha,laticínio com cereal,405.6
+Cow cheeses,Breakfast cereals,cafe_da_manha,laticínio com cereal,312.1
+Cow cheeses,Rolled oats,cafe_da_manha,laticínio com cereal,303.3
+Cow cheeses,Cereals and their products,cafe_da_manha,laticínio com cereal,309.6
+Cow cheeses,Oat brans,cafe_da_manha,laticínio com cereal,287.1
+Cow cheeses,Rices,cafe_da_manha,laticínio com cereal,274.6
+Cow cheeses,Pastas,cafe_da_manha,laticínio com cereal,279.6
+Cow cheeses,Instant noodles,cafe_da_manha,laticínio com cereal,320.8
+Cow cheeses,Wheat flours,cafe_da_manha,laticínio com cereal,309.8
+Cow cheeses,Cereals and potatoes,cafe_da_manha,laticínio com cereal,344.0
+Ricotta,Breakfast cereals,cafe_da_manha,laticínio com cereal,242.1
+Ricotta,Rolled oats,cafe_da_manha,laticínio com cereal,233.3
+Ricotta,Cereals and their products,cafe_da_manha,laticínio com cereal,239.6
+Ricotta,Oat brans,cafe_da_manha,laticínio com cereal,217.1
+Ricotta,Rices,cafe_da_manha,laticínio com cereal,204.6
+Ricotta,Pastas,cafe_da_manha,laticínio com cereal,209.6
+Ricotta,Instant noodles,cafe_da_manha,laticínio com cereal,250.8
+Ricotta,Wheat flours,cafe_da_manha,laticínio com cereal,239.8
+Ricotta,Cereals and potatoes,cafe_da_manha,laticínio com cereal,273.9
+Condensed milks,Breakfast cereals,cafe_da_manha,laticínio com cereal,316.1
+Condensed milks,Rolled oats,cafe_da_manha,laticínio com cereal,307.3
+Condensed milks,Cereals and their products,cafe_da_manha,laticínio com cereal,313.6
+Condensed milks,Oat brans,cafe_da_manha,laticínio com cereal,291.1
+Condensed milks,Rices,cafe_da_manha,laticínio com cereal,278.6
+Condensed milks,Pastas,cafe_da_manha,laticínio com cereal,283.6
+Condensed milks,Instant noodles,cafe_da_manha,laticínio com cereal,324.8
+Condensed milks,Wheat flours,cafe_da_manha,laticínio com cereal,313.8
+Condensed milks,Cereals and potatoes,cafe_da_manha,laticínio com cereal,348.0
+Milk jams,Breakfast cereals,cafe_da_manha,laticínio com cereal,316.6
+Milk jams,Rolled oats,cafe_da_manha,laticínio com cereal,307.8
+Milk jams,Cereals and their products,cafe_da_manha,laticínio com cereal,314.1
+Milk jams,Oat brans,cafe_da_manha,laticínio com cereal,291.6
+Milk jams,Rices,cafe_da_manha,laticínio com cereal,279.1
+Milk jams,Pastas,cafe_da_manha,laticínio com cereal,284.1
+Milk jams,Instant noodles,cafe_da_manha,laticínio com cereal,325.2
+Milk jams,Wheat flours,cafe_da_manha,laticínio com cereal,314.2
+Milk jams,Cereals and potatoes,cafe_da_manha,laticínio com cereal,348.4
+Dairies,Breakfast cereals,cafe_da_manha,laticínio com cereal,266.0
+Dairies,Rolled oats,cafe_da_manha,laticínio com cereal,257.1
+Dairies,Cereals and their products,cafe_da_manha,laticínio com cereal,263.5
+Dairies,Oat brans,cafe_da_manha,laticínio com cereal,241.0
+Dairies,Rices,cafe_da_manha,laticínio com cereal,228.5
+Dairies,Pastas,cafe_da_manha,laticínio com cereal,233.5
+Dairies,Instant noodles,cafe_da_manha,laticínio com cereal,274.6
+Dairies,Wheat flours,cafe_da_manha,laticínio com cereal,263.6
+Dairies,Cereals and potatoes,cafe_da_manha,laticínio com cereal,297.8
+Dairy drinks,Breakfast cereals,cafe_da_manha,laticínio com cereal,200.8
+Dairy drinks,Rolled oats,cafe_da_manha,laticínio com cereal,192.0
+Dairy drinks,Cereals and their products,cafe_da_manha,laticínio com cereal,198.3
+Dairy drinks,Oat brans,cafe_da_manha,laticínio com cereal,175.8
+Dairy drinks,Rices,cafe_da_manha,laticínio com cereal,163.3
+Dairy drinks,Pastas,cafe_da_manha,laticínio com cereal,168.3
+Dairy drinks,Instant noodles,cafe_da_manha,laticínio com cereal,209.4
+Dairy drinks,Wheat flours,cafe_da_manha,laticínio com cereal,198.5
+Dairy drinks,Cereals and potatoes,cafe_da_manha,laticínio com cereal,232.7
+Breakfast cereals,Jams,cafe_da_manha,cereal com pasta ou mel,271.9
+Breakfast cereals,Butters,cafe_da_manha,cereal com pasta ou mel,515.5
+Breakfast cereals,Peanut butters,cafe_da_manha,cereal com pasta ou mel,412.5
+Breakfast cereals,Honeys,cafe_da_manha,cereal com pasta ou mel,315.3
+Breakfast cereals,Margarines,cafe_da_manha,cereal com pasta ou mel,436.2
+Breakfast cereals,Sweet spreads,cafe_da_manha,cereal com pasta ou mel,277.1
+Breakfast cereals,Unsalted butters,cafe_da_manha,cereal com pasta ou mel,434.9
+Breakfast cereals,Milk powders,cafe_da_manha,cereal com pasta ou mel,384.9
+Breakfast cereals,Cocoa and chocolate powders,cafe_da_manha,cereal com pasta ou mel,334.0
+Breakfast cereals,Chocolate-powders,cafe_da_manha,cereal com pasta ou mel,289.2
+Rolled oats,Jams,cafe_da_manha,cereal com pasta ou mel,263.1
+Rolled oats,Butters,cafe_da_manha,cereal com pasta ou mel,506.7
+Rolled oats,Peanut butters,cafe_da_manha,cereal com pasta ou mel,403.7
+Rolled oats,Honeys,cafe_da_manha,cereal com pasta ou mel,306.5
+Rolled oats,Margarines,cafe_da_manha,cereal com pasta ou mel,427.4
+Rolled oats,Sweet spreads,cafe_da_manha,cereal com pasta ou mel,268.4
+Rolled oats,Unsalted butters,cafe_da_manha,cereal com pasta ou mel,426.1
+Rolled oats,Milk powders,cafe_da_manha,cereal com pasta ou mel,376.1
+Rolled oats,Cocoa and chocolate powders,cafe_da_manha,cereal com pasta ou mel,325.1
+Rolled oats,Chocolate-powders,cafe_da_manha,cereal com pasta ou mel,280.4
+Cereals and their products,Jams,cafe_da_manha,cereal com pasta ou mel,269.4
+Cereals and their products,Butters,cafe_da_manha,cereal com pasta ou mel,513.0
+Cereals and their products,Peanut butters,cafe_da_manha,cereal com pasta ou mel,410.0
+Cereals and their products,Honeys,cafe_da_manha,cereal com pasta ou mel,312.8
+Cereals and their products,Margarines,cafe_da_manha,cereal com pasta ou mel,433.7
+Cereals and their products,Sweet spreads,cafe_da_manha,cereal com pasta ou mel,274.6
+Cereals and their products,Unsalted butters,cafe_da_manha,cereal com pasta ou mel,432.4
+Cereals and their products,Milk powders,cafe_da_manha,cereal com pasta ou mel,382.4
+Cereals and their products,Cocoa and chocolate powders,cafe_da_manha,cereal com pasta ou mel,331.5
+Cereals and their products,Chocolate-powders,cafe_da_manha,cereal com pasta ou mel,286.8
+Oat brans,Jams,cafe_da_manha,cereal com pasta ou mel,246.9
+Oat brans,Butters,cafe_da_manha,cereal com pasta ou mel,490.5
+Oat brans,Peanut butters,cafe_da_manha,cereal com pasta ou mel,387.5
+Oat brans,Honeys,cafe_da_manha,cereal com pasta ou mel,290.3
+Oat brans,Margarines,cafe_da_manha,cereal com pasta ou mel,411.2
+Oat brans,Sweet spreads,cafe_da_manha,cereal com pasta ou mel,252.2
+Oat brans,Unsalted butters,cafe_da_manha,cereal com pasta ou mel,409.9
+Oat brans,Milk powders,cafe_da_manha,cereal com pasta ou mel,359.9
+Oat brans,Cocoa and chocolate powders,cafe_da_manha,cereal com pasta ou mel,309.0
+Oat brans,Chocolate-powders,cafe_da_manha,cereal com pasta ou mel,264.2
+Rices,Jams,cafe_da_manha,cereal com pasta ou mel,234.4
+Rices,Butters,cafe_da_manha,cereal com pasta ou mel,478.0
+Rices,Peanut butters,cafe_da_manha,cereal com pasta ou mel,375.0
+Rices,Honeys,cafe_da_manha,cereal com pasta ou mel,277.9
+Rices,Margarines,cafe_da_manha,cereal com pasta ou mel,398.7
+Rices,Sweet spreads,cafe_da_manha,cereal com pasta ou mel,239.7
+Rices,Unsalted butters,cafe_da_manha,cereal com pasta ou mel,397.5
+Rices,Milk powders,cafe_da_manha,cereal com pasta ou mel,347.4
+Rices,Cocoa and chocolate powders,cafe_da_manha,cereal com pasta ou mel,296.5
+Rices,Chocolate-powders,cafe_da_manha,cereal com pasta ou mel,251.8
+Pastas,Jams,cafe_da_manha,cereal com pasta ou mel,239.4
+Pastas,Butters,cafe_da_manha,cereal com pasta ou mel,483.0
+Pastas,Peanut butters,cafe_da_manha,cereal com pasta ou mel,380.0
+Pastas,Honeys,cafe_da_manha,cereal com pasta ou mel,282.8
+Pastas,Margarines,cafe_da_manha,cereal com pasta ou mel,403.7
+Pastas,Sweet spreads,cafe_da_manha,cereal com pasta ou mel,244.7
+Pastas,Unsalted butters,cafe_da_manha,cereal com pasta ou mel,402.4
+Pastas,Milk powders,cafe_da_manha,cereal com pasta ou mel,352.4
+Pastas,Cocoa and chocolate powders,cafe_da_manha,cereal com pasta ou mel,301.5
+Pastas,Chocolate-powders,cafe_da_manha,cereal com pasta ou mel,256.8
+Instant noodles,Jams,cafe_da_manha,cereal com pasta ou mel,280.5
+Instant noodles,Butters,cafe_da_manha,cereal com pasta ou mel,524.1
+Instant noodles,Peanut butters,cafe_da_manha,cereal com pasta ou mel,421.1
+Instant noodles,Honeys,cafe_da_manha,cereal com pasta ou mel,323.9
+Instant noodles,Margarines,cafe_da_manha,cereal com pasta ou mel,444.8
+Instant noodles,Sweet spreads,cafe_da_manha,cereal com pasta ou mel,285.8
+Instant noodles,Unsalted butters,cafe_da_manha,cereal com pasta ou mel,443.6
+Instant noodles,Milk powders,cafe_da_manha,cereal com pasta ou mel,393.5
+Instant noodles,Cocoa and chocolate powders,cafe_da_manha,cereal com pasta ou mel,342.6
+Instant noodles,Chocolate-powders,cafe_da_manha,cereal com pasta ou mel,297.9
+Wheat flours,Jams,cafe_da_manha,cereal com pasta ou mel,269.6
+Wheat flours,Butters,cafe_da_manha,cereal com pasta ou mel,513.2
+Wheat flours,Peanut butters,cafe_da_manha,cereal com pasta ou mel,410.2
+Wheat flours,Honeys,cafe_da_manha,cereal com pasta ou mel,313.0
+Wheat flours,Margarines,cafe_da_manha,cereal com pasta ou mel,433.9
+Wheat flours,Sweet spreads,cafe_da_manha,cereal com pasta ou mel,274.9
+Wheat flours,Unsalted butters,cafe_da_manha,cereal com pasta ou mel,432.6
+Wheat flours,Milk powders,cafe_da_manha,cereal com pasta ou mel,382.6
+Wheat flours,Cocoa and chocolate powders,cafe_da_manha,cereal com pasta ou mel,331.6
+Wheat flours,Chocolate-powders,cafe_da_manha,cereal com pasta ou mel,286.9
+Cereals and potatoes,Jams,cafe_da_manha,cereal com pasta ou mel,303.8
+Cereals and potatoes,Butters,cafe_da_manha,cereal com pasta ou mel,547.4
+Cereals and potatoes,Peanut butters,cafe_da_manha,cereal com pasta ou mel,444.4
+Cereals and potatoes,Honeys,cafe_da_manha,cereal com pasta ou mel,347.1
+Cereals and potatoes,Margarines,cafe_da_manha,cereal com pasta ou mel,468.0
+Cereals and potatoes,Sweet spreads,cafe_da_manha,cereal com pasta ou mel,309.0
+Cereals and potatoes,Unsalted butters,cafe_da_manha,cereal com pasta ou mel,466.8
+Cereals and potatoes,Milk powders,cafe_da_manha,cereal com pasta ou mel,416.8
+Cereals and potatoes,Cocoa and chocolate powders,cafe_da_manha,cereal com pasta ou mel,365.8
+Cereals and potatoes,Chocolate-powders,cafe_da_manha,cereal com pasta ou mel,321.1
+Breakfast cereals,Coffees,cafe_da_manha,cereal acompanhado de bebida,246.8
+Breakfast cereals,Teas,cafe_da_manha,cereal acompanhado de bebida,174.9
+Breakfast cereals,Herbal teas,cafe_da_manha,cereal acompanhado de bebida,172.1
+Breakfast cereals,Sweetened beverages,cafe_da_manha,cereal acompanhado de bebida,209.1
+Breakfast cereals,Sodas,cafe_da_manha,cereal acompanhado de bebida,198.2
+Breakfast cereals,Juices and nectars,cafe_da_manha,cereal acompanhado de bebida,204.4
+Breakfast cereals,Fruit juices,cafe_da_manha,cereal acompanhado de bebida,195.5
+Breakfast cereals,Orange juices,cafe_da_manha,cereal acompanhado de bebida,199.8
+Breakfast cereals,Grape nectars,cafe_da_manha,cereal acompanhado de bebida,198.9
+Breakfast cereals,Fruit nectars,cafe_da_manha,cereal acompanhado de bebida,194.2
+Breakfast cereals,Coconut waters,cafe_da_manha,cereal acompanhado de bebida,182.4
+Breakfast cereals,Energy drinks,cafe_da_manha,cereal acompanhado de bebida,205.5
+Breakfast cereals,Beverages,cafe_da_manha,cereal acompanhado de bebida,232.9
+Breakfast cereals,Beers,cafe_da_manha,cereal acompanhado de bebida,201.1
+Rolled oats,Coffees,cafe_da_manha,cereal acompanhado de bebida,238.0
+Rolled oats,Teas,cafe_da_manha,cereal acompanhado de bebida,166.1
+Rolled oats,Herbal teas,cafe_da_manha,cereal acompanhado de bebida,163.2
+Rolled oats,Sweetened beverages,cafe_da_manha,cereal acompanhado de bebida,200.2
+Rolled oats,Sodas,cafe_da_manha,cereal acompanhado de bebida,189.3
+Rolled oats,Juices and nectars,cafe_da_manha,cereal acompanhado de bebida,195.6
+Rolled oats,Fruit juices,cafe_da_manha,cereal acompanhado de bebida,186.7
+Rolled oats,Orange juices,cafe_da_manha,cereal acompanhado de bebida,191.0
+Rolled oats,Grape nectars,cafe_da_manha,cereal acompanhado de bebida,190.1
+Rolled oats,Fruit nectars,cafe_da_manha,cereal acompanhado de bebida,185.4
+Rolled oats,Coconut waters,cafe_da_manha,cereal acompanhado de bebida,173.6
+Rolled oats,Energy drinks,cafe_da_manha,cereal acompanhado de bebida,196.7
+Rolled oats,Beverages,cafe_da_manha,cereal acompanhado de bebida,224.1
+Rolled oats,Beers,cafe_da_manha,cereal acompanhado de bebida,192.3
+Cereals and their products,Coffees,cafe_da_manha,cereal acompanhado de bebida,244.3
+Cereals and their products,Teas,cafe_da_manha,cereal acompanhado de bebida,172.4
+Cereals and their products,Herbal teas,cafe_da_manha,cereal acompanhado de bebida,169.6
+Cereals and their products,Sweetened beverages,cafe_da_manha,cereal acompanhado de bebida,206.6
+Cereals and their products,Sodas,cafe_da_manha,cereal acompanhado de bebida,195.7
+Cereals and their products,Juices and nectars,cafe_da_manha,cereal acompanhado de bebida,201.9
+Cereals and their products,Fruit juices,cafe_da_manha,cereal acompanhado de bebida,193.0
+Cereals and their products,Orange juices,cafe_da_manha,cereal acompanhado de bebida,197.3
+Cereals and their products,Grape nectars,cafe_da_manha,cereal acompanhado de bebida,196.4
+Cereals and their products,Fruit nectars,cafe_da_manha,cereal acompanhado de bebida,191.7
+Cereals and their products,Coconut waters,cafe_da_manha,cereal acompanhado de bebida,179.9
+Cereals and their products,Energy drinks,cafe_da_manha,cereal acompanhado de bebida,203.0
+Cereals and their products,Beverages,cafe_da_manha,cereal acompanhado de bebida,230.4
+Cereals and their products,Beers,cafe_da_manha,cereal acompanhado de bebida,198.6
+Oat brans,Coffees,cafe_da_manha,cereal acompanhado de bebida,221.8
+Oat brans,Teas,cafe_da_manha,cereal acompanhado de bebida,149.9
+Oat brans,Herbal teas,cafe_da_manha,cereal acompanhado de bebida,147.1
+Oat brans,Sweetened beverages,cafe_da_manha,cereal acompanhado de bebida,184.1
+Oat brans,Sodas,cafe_da_manha,cereal acompanhado de bebida,173.2
+Oat brans,Juices and nectars,cafe_da_manha,cereal acompanhado de bebida,179.4
+Oat brans,Fruit juices,cafe_da_manha,cereal acompanhado de bebida,170.5
+Oat brans,Orange juices,cafe_da_manha,cereal acompanhado de bebida,174.8
+Oat brans,Grape nectars,cafe_da_manha,cereal acompanhado de bebida,173.9
+Oat brans,Fruit nectars,cafe_da_manha,cereal acompanhado de bebida,169.2
+Oat brans,Coconut waters,cafe_da_manha,cereal acompanhado de bebida,157.4
+Oat brans,Energy drinks,cafe_da_manha,cereal acompanhado de bebida,180.5
+Oat brans,Beverages,cafe_da_manha,cereal acompanhado de bebida,207.9
+Oat brans,Beers,cafe_da_manha,cereal acompanhado de bebida,176.1
+Rices,Coffees,cafe_da_manha,cereal acompanhado de bebida,209.3
+Rices,Teas,cafe_da_manha,cereal acompanhado de bebida,137.4
+Rices,Herbal teas,cafe_da_manha,cereal acompanhado de bebida,134.6
+Rices,Sweetened beverages,cafe_da_manha,cereal acompanhado de bebida,171.6
+Rices,Sodas,cafe_da_manha,cereal acompanhado de bebida,160.7
+Rices,Juices and nectars,cafe_da_manha,cereal acompanhado de bebida,166.9
+Rices,Fruit juices,cafe_da_manha,cereal acompanhado de bebida,158.0
+Rices,Orange juices,cafe_da_manha,cereal acompanhado de bebida,162.3
+Rices,Grape nectars,cafe_da_manha,cereal acompanhado de bebida,161.4
+Rices,Fruit nectars,cafe_da_manha,cereal acompanhado de bebida,156.8
+Rices,Coconut waters,cafe_da_manha,cereal acompanhado de bebida,144.9
+Rices,Energy drinks,cafe_da_manha,cereal acompanhado de bebida,168.0
+Rices,Beverages,cafe_da_manha,cereal acompanhado de bebida,195.4
+Rices,Beers,cafe_da_manha,cereal acompanhado de bebida,163.7
+Pastas,Coffees,cafe_da_manha,cereal acompanhado de bebida,214.3
+Pastas,Teas,cafe_da_manha,cereal acompanhado de bebida,142.4
+Pastas,Herbal teas,cafe_da_manha,cereal acompanhado de bebida,139.6
+Pastas,Sweetened beverages,cafe_da_manha,cereal acompanhado de bebida,176.6
+Pastas,Sodas,cafe_da_manha,cereal acompanhado de bebida,165.7
+Pastas,Juices and nectars,cafe_da_manha,cereal acompanhado de bebida,171.9
+Pastas,Fruit juices,cafe_da_manha,cereal acompanhado de bebida,163.0
+Pastas,Orange juices,cafe_da_manha,cereal acompanhado de bebida,167.3
+Pastas,Grape nectars,cafe_da_manha,cereal acompanhado de bebida,166.4
+Pastas,Fruit nectars,cafe_da_manha,cereal acompanhado de bebida,161.7
+Pastas,Coconut waters,cafe_da_manha,cereal acompanhado de bebida,149.9
+Pastas,Energy drinks,cafe_da_manha,cereal acompanhado de bebida,173.0
+Pastas,Beverages,cafe_da_manha,cereal acompanhado de bebida,200.4
+Pastas,Beers,cafe_da_manha,cereal acompanhado de bebida,168.6
+Instant noodles,Coffees,cafe_da_manha,cereal acompanhado de bebida,255.4
+Instant noodles,Teas,cafe_da_manha,cereal acompanhado de bebida,183.5
+Instant noodles,Herbal teas,cafe_da_manha,cereal acompanhado de bebida,180.7
+Instant noodles,Sweetened beverages,cafe_da_manha,cereal acompanhado de bebida,217.7
+Instant noodles,Sodas,cafe_da_manha,cereal acompanhado de bebida,206.8
+Instant noodles,Juices and nectars,cafe_da_manha,cereal acompanhado de bebida,213.0
+Instant noodles,Fruit juices,cafe_da_manha,cereal acompanhado de bebida,204.1
+Instant noodles,Orange juices,cafe_da_manha,cereal acompanhado de bebida,208.4
+Instant noodles,Grape nectars,cafe_da_manha,cereal acompanhado de bebida,207.5
+Instant noodles,Fruit nectars,cafe_da_manha,cereal acompanhado de bebida,202.8
+Instant noodles,Coconut waters,cafe_da_manha,cereal acompanhado de bebida,191.0
+Instant noodles,Energy drinks,cafe_da_manha,cereal acompanhado de bebida,214.1
+Instant noodles,Beverages,cafe_da_manha,cereal acompanhado de bebida,241.5
+Instant noodles,Beers,cafe_da_manha,cereal acompanhado de bebida,209.8
+Wheat flours,Coffees,cafe_da_manha,cereal acompanhado de bebida,244.5
+Wheat flours,Teas,cafe_da_manha,cereal acompanhado de bebida,172.6
+Wheat flours,Herbal teas,cafe_da_manha,cereal acompanhado de bebida,169.8
+Wheat flours,Sweetened beverages,cafe_da_manha,cereal acompanhado de bebida,206.8
+Wheat flours,Sodas,cafe_da_manha,cereal acompanhado de bebida,195.8
+Wheat flours,Juices and nectars,cafe_da_manha,cereal acompanhado de bebida,202.1
+Wheat flours,Fruit juices,cafe_da_manha,cereal acompanhado de bebida,193.2
+Wheat flours,Orange juices,cafe_da_manha,cereal acompanhado de bebida,197.5
+Wheat flours,Grape nectars,cafe_da_manha,cereal acompanhado de bebida,196.6
+Wheat flours,Fruit nectars,cafe_da_manha,cereal acompanhado de bebida,191.9
+Wheat flours,Coconut waters,cafe_da_manha,cereal acompanhado de bebida,180.1
+Wheat flours,Energy drinks,cafe_da_manha,cereal acompanhado de bebida,203.2
+Wheat flours,Beverages,cafe_da_manha,cereal acompanhado de bebida,230.6
+Wheat flours,Beers,cafe_da_manha,cereal acompanhado de bebida,198.8
+Cereals and potatoes,Coffees,cafe_da_manha,cereal acompanhado de bebida,278.6
+Cereals and potatoes,Teas,cafe_da_manha,cereal acompanhado de bebida,206.7
+Cereals and potatoes,Herbal teas,cafe_da_manha,cereal acompanhado de bebida,203.9
+Cereals and potatoes,Sweetened beverages,cafe_da_manha,cereal acompanhado de bebida,240.9
+Cereals and potatoes,Sodas,cafe_da_manha,cereal acompanhado de bebida,230.0
+Cereals and potatoes,Juices and nectars,cafe_da_manha,cereal acompanhado de bebida,236.2
+Cereals and potatoes,Fruit juices,cafe_da_manha,cereal acompanhado de bebida,227.3
+Cereals and potatoes,Orange juices,cafe_da_manha,cereal acompanhado de bebida,231.7
+Cereals and potatoes,Grape nectars,cafe_da_manha,cereal acompanhado de bebida,230.8
+Cereals and potatoes,Fruit nectars,cafe_da_manha,cereal acompanhado de bebida,226.1
+Cereals and potatoes,Coconut waters,cafe_da_manha,cereal acompanhado de bebida,214.2
+Cereals and potatoes,Energy drinks,cafe_da_manha,cereal acompanhado de bebida,237.3
+Cereals and potatoes,Beverages,cafe_da_manha,cereal acompanhado de bebida,264.7
+Cereals and potatoes,Beers,cafe_da_manha,cereal acompanhado de bebida,233.0
+Coffees,Chocolates,lanche,bebida com doce,290.9
+Coffees,Dark chocolates,lanche,bebida com doce,312.6
+Coffees,Milk chocolates,lanche,bebida com doce,293.8
+Coffees,Candy chocolate bars,lanche,bebida com doce,325.1
+Coffees,Biscuits,lanche,bebida com doce,267.6
+Coffees,Filled biscuits,lanche,bebida com doce,288.0
+Coffees,Chocolate biscuits,lanche,bebida com doce,286.4
+Coffees,Ice creams,lanche,bebida com doce,199.3
+Coffees,Ice creams and sorbets,lanche,bebida com doce,184.2
+Coffees,Alfajores,lanche,bebida com doce,257.2
+Coffees,Candies,lanche,bebida com doce,266.2
+Coffees,Confectioneries,lanche,bebida com doce,265.1
+Coffees,Wafers,lanche,bebida com doce,302.2
+Coffees,Stuffed wafers,lanche,bebida com doce,291.2
+Coffees,Dulces,lanche,bebida com doce,291.1
+Coffees,Postres,lanche,bebida com doce,146.8
+Coffees,Peanut bars,lanche,bebida com doce,275.1
+Teas,Chocolates,lanche,bebida com doce,218.9
+Teas,Dark chocolates,lanche,bebida com doce,240.7
+Teas,Milk chocolates,lanche,bebida com doce,221.9
+Teas,Candy chocolate bars,lanche,bebida com doce,253.1
+Teas,Biscuits,lanche,bebida com doce,195.7
+Teas,Filled biscuits,lanche,bebida com doce,216.1
+Teas,Chocolate biscuits,lanche,bebida com doce,214.5
+Teas,Ice creams,lanche,bebida com doce,127.3
+Teas,Ice creams and sorbets,lanche,bebida com doce,112.2
+Teas,Alfajores,lanche,bebida com doce,185.3
+Teas,Candies,lanche,bebida com doce,194.3
+Teas,Confectioneries,lanche,bebida com doce,193.2
+Teas,Wafers,lanche,bebida com doce,230.2
+Teas,Stuffed wafers,lanche,bebida com doce,219.2
+Teas,Dulces,lanche,bebida com doce,219.1
+Teas,Postres,lanche,bebida com doce,74.8
+Teas,Peanut bars,lanche,bebida com doce,203.1
+Herbal teas,Chocolates,lanche,bebida com doce,216.1
+Herbal teas,Dark chocolates,lanche,bebida com doce,237.8
+Herbal teas,Milk chocolates,lanche,bebida com doce,219.1
+Herbal teas,Candy chocolate bars,lanche,bebida com doce,250.3
+Herbal teas,Biscuits,lanche,bebida com doce,192.8
+Herbal teas,Filled biscuits,lanche,bebida com doce,213.2
+Herbal teas,Chocolate biscuits,lanche,bebida com doce,211.7
+Herbal teas,Ice creams,lanche,bebida com doce,124.5
+Herbal teas,Ice creams and sorbets,lanche,bebida com doce,109.4
+Herbal teas,Alfajores,lanche,bebida com doce,182.5
+Herbal teas,Candies,lanche,bebida com doce,191.5
+Herbal teas,Confectioneries,lanche,bebida com doce,190.3
+Herbal teas,Wafers,lanche,bebida com doce,227.4
+Herbal teas,Stuffed wafers,lanche,bebida com doce,216.4
+Herbal teas,Dulces,lanche,bebida com doce,216.3
+Herbal teas,Postres,lanche,bebida com doce,72.0
+Herbal teas,Peanut bars,lanche,bebida com doce,200.3
+Sweetened beverages,Chocolates,lanche,bebida com doce,253.1
+Sweetened beverages,Dark chocolates,lanche,bebida com doce,274.9
+Sweetened beverages,Milk chocolates,lanche,bebida com doce,256.1
+Sweetened beverages,Candy chocolate bars,lanche,bebida com doce,287.3
+Sweetened beverages,Biscuits,lanche,bebida com doce,229.8
+Sweetened beverages,Filled biscuits,lanche,bebida com doce,250.2
+Sweetened beverages,Chocolate biscuits,lanche,bebida com doce,248.7
+Sweetened beverages,Ice creams,lanche,bebida com doce,161.6
+Sweetened beverages,Ice creams and sorbets,lanche,bebida com doce,146.4
+Sweetened beverages,Alfajores,lanche,bebida com doce,219.5
+Sweetened beverages,Candies,lanche,bebida com doce,228.5
+Sweetened beverages,Confectioneries,lanche,bebida com doce,227.3
+Sweetened beverages,Wafers,lanche,bebida com doce,264.4
+Sweetened beverages,Stuffed wafers,lanche,bebida com doce,253.4
+Sweetened beverages,Dulces,lanche,bebida com doce,253.3
+Sweetened beverages,Postres,lanche,bebida com doce,109.0
+Sweetened beverages,Peanut bars,lanche,bebida com doce,237.3
+Sodas,Chocolates,lanche,bebida com doce,242.2
+Sodas,Dark chocolates,lanche,bebida com doce,263.9
+Sodas,Milk chocolates,lanche,bebida com doce,245.2
+Sodas,Candy chocolate bars,lanche,bebida com doce,276.4
+Sodas,Biscuits,lanche,bebida com doce,218.9
+Sodas,Filled biscuits,lanche,bebida com doce,239.3
+Sodas,Chocolate biscuits,lanche,bebida com doce,237.8
+Sodas,Ice creams,lanche,bebida com doce,150.7
+Sodas,Ice creams and sorbets,lanche,bebida com doce,135.5
+Sodas,Alfajores,lanche,bebida com doce,208.6
+Sodas,Candies,lanche,bebida com doce,217.6
+Sodas,Confectioneries,lanche,bebida com doce,216.4
+Sodas,Wafers,lanche,bebida com doce,253.5
+Sodas,Stuffed wafers,lanche,bebida com doce,242.5
+Sodas,Dulces,lanche,bebida com doce,242.4
+Sodas,Postres,lanche,bebida com doce,98.2
+Sodas,Peanut bars,lanche,bebida com doce,226.4
+Juices and nectars,Chocolates,lanche,bebida com doce,248.4
+Juices and nectars,Dark chocolates,lanche,bebida com doce,270.1
+Juices and nectars,Milk chocolates,lanche,bebida com doce,251.4
+Juices and nectars,Candy chocolate bars,lanche,bebida com doce,282.6
+Juices and nectars,Biscuits,lanche,bebida com doce,225.1
+Juices and nectars,Filled biscuits,lanche,bebida com doce,245.6
+Juices and nectars,Chocolate biscuits,lanche,bebida com doce,244.0
+Juices and nectars,Ice creams,lanche,bebida com doce,156.8
+Juices and nectars,Ice creams and sorbets,lanche,bebida com doce,141.7
+Juices and nectars,Alfajores,lanche,bebida com doce,214.8
+Juices and nectars,Candies,lanche,bebida com doce,223.8
+Juices and nectars,Confectioneries,lanche,bebida com doce,222.6
+Juices and nectars,Wafers,lanche,bebida com doce,259.8
+Juices and nectars,Stuffed wafers,lanche,bebida com doce,248.8
+Juices and nectars,Dulces,lanche,bebida com doce,248.6
+Juices and nectars,Postres,lanche,bebida com doce,104.3
+Juices and nectars,Peanut bars,lanche,bebida com doce,232.6
+Fruit juices,Chocolates,lanche,bebida com doce,239.5
+Fruit juices,Dark chocolates,lanche,bebida com doce,261.3
+Fruit juices,Milk chocolates,lanche,bebida com doce,242.5
+Fruit juices,Candy chocolate bars,lanche,bebida com doce,273.8
+Fruit juices,Biscuits,lanche,bebida com doce,216.3
+Fruit juices,Filled biscuits,lanche,bebida com doce,236.7
+Fruit juices,Chocolate biscuits,lanche,bebida com doce,235.1
+Fruit juices,Ice creams,lanche,bebida com doce,148.0
+Fruit juices,Ice creams and sorbets,lanche,bebida com doce,132.8
+Fruit juices,Alfajores,lanche,bebida com doce,205.9
+Fruit juices,Candies,lanche,bebida com doce,214.9
+Fruit juices,Confectioneries,lanche,bebida com doce,213.8
+Fruit juices,Wafers,lanche,bebida com doce,250.9
+Fruit juices,Stuffed wafers,lanche,bebida com doce,239.9
+Fruit juices,Dulces,lanche,bebida com doce,239.8
+Fruit juices,Postres,lanche,bebida com doce,95.5
+Fruit juices,Peanut bars,lanche,bebida com doce,223.8
+Orange juices,Chocolates,lanche,bebida com doce,243.8
+Orange juices,Dark chocolates,lanche,bebida com doce,265.6
+Orange juices,Milk chocolates,lanche,bebida com doce,246.8
+Orange juices,Candy chocolate bars,lanche,bebida com doce,278.1
+Orange juices,Biscuits,lanche,bebida com doce,220.6
+Orange juices,Filled biscuits,lanche,bebida com doce,241.0
+Orange juices,Chocolate biscuits,lanche,bebida com doce,239.4
+Orange juices,Ice creams,lanche,bebida com doce,152.3
+Orange juices,Ice creams and sorbets,lanche,bebida com doce,137.2
+Orange juices,Alfajores,lanche,bebida com doce,210.2
+Orange juices,Candies,lanche,bebida com doce,219.2
+Orange juices,Confectioneries,lanche,bebida com doce,218.1
+Orange juices,Wafers,lanche,bebida com doce,255.2
+Orange juices,Stuffed wafers,lanche,bebida com doce,244.2
+Orange juices,Dulces,lanche,bebida com doce,244.1
+Orange juices,Postres,lanche,bebida com doce,99.8
+Orange juices,Peanut bars,lanche,bebida com doce,228.1
+Grape nectars,Chocolates,lanche,bebida com doce,242.9
+Grape nectars,Dark chocolates,lanche,bebida com doce,264.7
+Grape nectars,Milk chocolates,lanche,bebida com doce,245.9
+Grape nectars,Candy chocolate bars,lanche,bebida com doce,277.2
+Grape nectars,Biscuits,lanche,bebida com doce,219.7
+Grape nectars,Filled biscuits,lanche,bebida com doce,240.1
+Grape nectars,Chocolate biscuits,lanche,bebida com doce,238.5
+Grape nectars,Ice creams,lanche,bebida com doce,151.4
+Grape nectars,Ice creams and sorbets,lanche,bebida com doce,136.2
+Grape nectars,Alfajores,lanche,bebida com doce,209.3
+Grape nectars,Candies,lanche,bebida com doce,218.3
+Grape nectars,Confectioneries,lanche,bebida com doce,217.2
+Grape nectars,Wafers,lanche,bebida com doce,254.3
+Grape nectars,Stuffed wafers,lanche,bebida com doce,243.3
+Grape nectars,Dulces,lanche,bebida com doce,243.2
+Grape nectars,Postres,lanche,bebida com doce,98.9
+Grape nectars,Peanut bars,lanche,bebida com doce,227.2
+Fruit nectars,Chocolates,lanche,bebida com doce,238.2
+Fruit nectars,Dark chocolates,lanche,bebida com doce,260.0
+Fruit nectars,Milk chocolates,lanche,bebida com doce,241.2
+Fruit nectars,Candy chocolate bars,lanche,bebida com doce,272.4
+Fruit nectars,Biscuits,lanche,bebida com doce,215.0
+Fruit nectars,Filled biscuits,lanche,bebida com doce,235.4
+Fruit nectars,Chocolate biscuits,lanche,bebida com doce,233.8
+Fruit nectars,Ice creams,lanche,bebida com doce,146.7
+Fruit nectars,Ice creams and sorbets,lanche,bebida com doce,131.6
+Fruit nectars,Alfajores,lanche,bebida com doce,204.7
+Fruit nectars,Candies,lanche,bebida com doce,213.7
+Fruit nectars,Confectioneries,lanche,bebida com doce,212.5
+Fruit nectars,Wafers,lanche,bebida com doce,249.6
+Fruit nectars,Stuffed wafers,lanche,bebida com doce,238.6
+Fruit nectars,Dulces,lanche,bebida com doce,238.5
+Fruit nectars,Postres,lanche,bebida com doce,94.2
+Fruit nectars,Peanut bars,lanche,bebida com doce,222.5
+Coconut waters,Chocolates,lanche,bebida com doce,226.4
+Coconut waters,Dark chocolates,lanche,bebida com doce,248.2
+Coconut waters,Milk chocolates,lanche,bebida com doce,229.4
+Coconut waters,Candy chocolate bars,lanche,bebida com doce,260.6
+Coconut waters,Biscuits,lanche,bebida com doce,203.2
+Coconut waters,Filled biscuits,lanche,bebida com doce,223.6
+Coconut waters,Chocolate biscuits,lanche,bebida com doce,222.0
+Coconut waters,Ice creams,lanche,bebida com doce,134.8
+Coconut waters,Ice creams and sorbets,lanche,bebida com doce,119.7
+Coconut waters,Alfajores,lanche,bebida com doce,192.8
+Coconut waters,Candies,lanche,bebida com doce,201.8
+Coconut waters,Confectioneries,lanche,bebida com doce,200.7
+Coconut waters,Wafers,lanche,bebida com doce,237.8
+Coconut waters,Stuffed wafers,lanche,bebida com doce,226.8
+Coconut waters,Dulces,lanche,bebida com doce,226.6
+Coconut waters,Postres,lanche,bebida com doce,82.3
+Coconut waters,Peanut bars,lanche,bebida com doce,210.6
+Energy drinks,Chocolates,lanche,bebida com doce,249.5
+Energy drinks,Dark chocolates,lanche,bebida com doce,271.2
+Energy drinks,Milk chocolates,lanche,bebida com doce,252.5
+Energy drinks,Candy chocolate bars,lanche,bebida com doce,283.7
+Energy drinks,Biscuits,lanche,bebida com doce,226.2
+Energy drinks,Filled biscuits,lanche,bebida com doce,246.7
+Energy drinks,Chocolate biscuits,lanche,bebida com doce,245.1
+Energy drinks,Ice creams,lanche,bebida com doce,157.9
+Energy drinks,Ice creams and sorbets,lanche,bebida com doce,142.8
+Energy drinks,Alfajores,lanche,bebida com doce,215.9
+Energy drinks,Candies,lanche,bebida com doce,224.9
+Energy drinks,Confectioneries,lanche,bebida com doce,223.8
+Energy drinks,Wafers,lanche,bebida com doce,260.8
+Energy drinks,Stuffed wafers,lanche,bebida com doce,249.8
+Energy drinks,Dulces,lanche,bebida com doce,249.7
+Energy drinks,Postres,lanche,bebida com doce,105.4
+Energy drinks,Peanut bars,lanche,bebida com doce,233.7
+Beverages,Chocolates,lanche,bebida com doce,276.9
+Beverages,Dark chocolates,lanche,bebida com doce,298.6
+Beverages,Milk chocolates,lanche,bebida com doce,279.9
+Beverages,Candy chocolate bars,lanche,bebida com doce,311.1
+Beverages,Biscuits,lanche,bebida com doce,253.6
+Beverages,Filled biscuits,lanche,bebida com doce,274.1
+Beverages,Chocolate biscuits,lanche,bebida com doce,272.5
+Beverages,Ice creams,lanche,bebida com doce,185.3
+Beverages,Ice creams and sorbets,lanche,bebida com doce,170.2
+Beverages,Alfajores,lanche,bebida com doce,243.3
+Beverages,Candies,lanche,bebida com doce,252.3
+Beverages,Confectioneries,lanche,bebida com doce,251.1
+Beverages,Wafers,lanche,bebida com doce,288.2
+Beverages,Stuffed wafers,lanche,bebida com doce,277.2
+Beverages,Dulces,lanche,bebida com doce,277.1
+Beverages,Postres,lanche,bebida com doce,132.8
+Beverages,Peanut bars,lanche,bebida com doce,261.1
+Beers,Chocolates,lanche,bebida com doce,245.2
+Beers,Dark chocolates,lanche,bebida com doce,266.9
+Beers,Milk chocolates,lanche,bebida com doce,248.1
+Beers,Candy chocolate bars,lanche,bebida com doce,279.4
+Beers,Biscuits,lanche,bebida com doce,221.9
+Beers,Filled biscuits,lanche,bebida com doce,242.3
+Beers,Chocolate biscuits,lanche,bebida com doce,240.8
+Beers,Ice creams,lanche,bebida com doce,153.6
+Beers,Ice creams and sorbets,lanche,bebida com doce,138.5
+Beers,Alfajores,lanche,bebida com doce,211.6
+Beers,Candies,lanche,bebida com doce,220.6
+Beers,Confectioneries,lanche,bebida com doce,219.4
+Beers,Wafers,lanche,bebida com doce,256.5
+Beers,Stuffed wafers,lanche,bebida com doce,245.5
+Beers,Dulces,lanche,bebida com doce,245.4
+Beers,Postres,lanche,bebida com doce,101.1
+Beers,Peanut bars,lanche,bebida com doce,229.4
+Coffees,Snacks,lanche,bebida com salgadinho,251.6
+Coffees,Crisps,lanche,bebida com salgadinho,287.5
+Coffees,Potato crisps,lanche,bebida com salgadinho,310.8
+Coffees,Corn chips,lanche,bebida com salgadinho,301.8
+Coffees,Popcorn,lanche,bebida com salgadinho,251.8
+Coffees,Peanuts,lanche,bebida com salgadinho,342.5
+Teas,Snacks,lanche,bebida com salgadinho,179.6
+Teas,Crisps,lanche,bebida com salgadinho,215.6
+Teas,Potato crisps,lanche,bebida com salgadinho,238.9
+Teas,Corn chips,lanche,bebida com salgadinho,229.8
+Teas,Popcorn,lanche,bebida com salgadinho,179.8
+Teas,Peanuts,lanche,bebida com salgadinho,270.6
+Herbal teas,Snacks,lanche,bebida com salgadinho,176.8
+Herbal teas,Crisps,lanche,bebida com salgadinho,212.8
+Herbal teas,Potato crisps,lanche,bebida com salgadinho,236.1
+Herbal teas,Corn chips,lanche,bebida com salgadinho,227.0
+Herbal teas,Popcorn,lanche,bebida com salgadinho,177.0
+Herbal teas,Peanuts,lanche,bebida com salgadinho,267.8
+Sweetened beverages,Snacks,lanche,bebida com salgadinho,213.8
+Sweetened beverages,Crisps,lanche,bebida com salgadinho,249.8
+Sweetened beverages,Potato crisps,lanche,bebida com salgadinho,273.1
+Sweetened beverages,Corn chips,lanche,bebida com salgadinho,264.0
+Sweetened beverages,Popcorn,lanche,bebida com salgadinho,214.0
+Sweetened beverages,Peanuts,lanche,bebida com salgadinho,304.8
+Sodas,Snacks,lanche,bebida com salgadinho,202.9
+Sodas,Crisps,lanche,bebida com salgadinho,238.8
+Sodas,Potato crisps,lanche,bebida com salgadinho,262.2
+Sodas,Corn chips,lanche,bebida com salgadinho,253.1
+Sodas,Popcorn,lanche,bebida com salgadinho,203.1
+Sodas,Peanuts,lanche,bebida com salgadinho,293.9
+Juices and nectars,Snacks,lanche,bebida com salgadinho,209.1
+Juices and nectars,Crisps,lanche,bebida com salgadinho,245.1
+Juices and nectars,Potato crisps,lanche,bebida com salgadinho,268.4
+Juices and nectars,Corn chips,lanche,bebida com salgadinho,259.3
+Juices and nectars,Popcorn,lanche,bebida com salgadinho,209.3
+Juices and nectars,Peanuts,lanche,bebida com salgadinho,300.1
+Fruit juices,Snacks,lanche,bebida com salgadinho,200.2
+Fruit juices,Crisps,lanche,bebida com salgadinho,236.2
+Fruit juices,Potato crisps,lanche,bebida com salgadinho,259.5
+Fruit juices,Corn chips,lanche,bebida com salgadinho,250.4
+Fruit juices,Popcorn,lanche,bebida com salgadinho,200.4
+Fruit juices,Peanuts,lanche,bebida com salgadinho,291.2
+Orange juices,Snacks,lanche,bebida com salgadinho,204.6
+Orange juices,Crisps,lanche,bebida com salgadinho,240.5
+Orange juices,Potato crisps,lanche,bebida com salgadinho,263.8
+Orange juices,Corn chips,lanche,bebida com salgadinho,254.8
+Orange juices,Popcorn,lanche,bebida com salgadinho,204.8
+Orange juices,Peanuts,lanche,bebida com salgadinho,295.5
+Grape nectars,Snacks,lanche,bebida com salgadinho,203.7
+Grape nectars,Crisps,lanche,bebida com salgadinho,239.6
+Grape nectars,Potato crisps,lanche,bebida com salgadinho,262.9
+Grape nectars,Corn chips,lanche,bebida com salgadinho,253.8
+Grape nectars,Popcorn,lanche,bebida com salgadinho,203.8
+Grape nectars,Peanuts,lanche,bebida com salgadinho,294.6
+Fruit nectars,Snacks,lanche,bebida com salgadinho,199.0
+Fruit nectars,Crisps,lanche,bebida com salgadinho,234.9
+Fruit nectars,Potato crisps,lanche,bebida com salgadinho,258.2
+Fruit nectars,Corn chips,lanche,bebida com salgadinho,249.2
+Fruit nectars,Popcorn,lanche,bebida com salgadinho,199.2
+Fruit nectars,Peanuts,lanche,bebida com salgadinho,289.9
+Coconut waters,Snacks,lanche,bebida com salgadinho,187.1
+Coconut waters,Crisps,lanche,bebida com salgadinho,223.1
+Coconut waters,Potato crisps,lanche,bebida com salgadinho,246.4
+Coconut waters,Corn chips,lanche,bebida com salgadinho,237.3
+Coconut waters,Popcorn,lanche,bebida com salgadinho,187.3
+Coconut waters,Peanuts,lanche,bebida com salgadinho,278.1
+Energy drinks,Snacks,lanche,bebida com salgadinho,210.2
+Energy drinks,Crisps,lanche,bebida com salgadinho,246.2
+Energy drinks,Potato crisps,lanche,bebida com salgadinho,269.4
+Energy drinks,Corn chips,lanche,bebida com salgadinho,260.4
+Energy drinks,Popcorn,lanche,bebida com salgadinho,210.4
+Energy drinks,Peanuts,lanche,bebida com salgadinho,301.1
+Beverages,Snacks,lanche,bebida com salgadinho,237.6
+Beverages,Crisps,lanche,bebida com salgadinho,273.6
+Beverages,Potato crisps,lanche,bebida com salgadinho,296.9
+Beverages,Corn chips,lanche,bebida com salgadinho,287.8
+Beverages,Popcorn,lanche,bebida com salgadinho,237.8
+Beverages,Peanuts,lanche,bebida com salgadinho,328.6
+Beers,Snacks,lanche,bebida com salgadinho,205.9
+Beers,Crisps,lanche,bebida com salgadinho,241.8
+Beers,Potato crisps,lanche,bebida com salgadinho,265.1
+Beers,Corn chips,lanche,bebida com salgadinho,256.1
+Beers,Popcorn,lanche,bebida com salgadinho,206.1
+Beers,Peanuts,lanche,bebida com salgadinho,296.8
+Chocolates,Cheeses,lanche,doce com laticínio,347.2
+Chocolates,Yogurts,lanche,doce com laticínio,254.0
+Chocolates,Greek-style yogurts,lanche,doce com laticínio,270.8
+Chocolates,Plain yogurts,lanche,doce com laticínio,247.8
+Chocolates,Low-fat yogurts,lanche,doce com laticínio,237.3
+Chocolates,Milks,lanche,doce com laticínio,272.9
+Chocolates,UHT Milks,lanche,doce com laticínio,245.7
+Chocolates,Grated cheese,lanche,doce com laticínio,417.8
+Chocolates,Cow cheeses,lanche,doce com laticínio,356.1
+Chocolates,Ricotta,lanche,doce com laticínio,286.1
+Chocolates,Condensed milks,lanche,doce com laticínio,360.1
+Chocolates,Milk jams,lanche,doce com laticínio,360.6
+Chocolates,Dairies,lanche,doce com laticínio,310.0
+Chocolates,Dairy drinks,lanche,doce com laticínio,244.8
+Dark chocolates,Cheeses,lanche,doce com laticínio,369.0
+Dark chocolates,Yogurts,lanche,doce com laticínio,275.8
+Dark chocolates,Greek-style yogurts,lanche,doce com laticínio,292.5
+Dark chocolates,Plain yogurts,lanche,doce com laticínio,269.6
+Dark chocolates,Low-fat yogurts,lanche,doce com laticínio,259.1
+Dark chocolates,Milks,lanche,doce com laticínio,294.6
+Dark chocolates,UHT Milks,lanche,doce com laticínio,267.4
+Dark chocolates,Grated cheese,lanche,doce com laticínio,439.5
+Dark chocolates,Cow cheeses,lanche,doce com laticínio,377.9
+Dark chocolates,Ricotta,lanche,doce com laticínio,307.9
+Dark chocolates,Condensed milks,lanche,doce com laticínio,381.9
+Dark chocolates,Milk jams,lanche,doce com laticínio,382.4
+Dark chocolates,Dairies,lanche,doce com laticínio,331.8
+Dark chocolates,Dairy drinks,lanche,doce com laticínio,266.6
+Milk chocolates,Cheeses,lanche,doce com laticínio,350.2
+Milk chocolates,Yogurts,lanche,doce com laticínio,256.9
+Milk chocolates,Greek-style yogurts,lanche,doce com laticínio,273.7
+Milk chocolates,Plain yogurts,lanche,doce com laticínio,250.8
+Milk chocolates,Low-fat yogurts,lanche,doce com laticínio,240.2
+Milk chocolates,Milks,lanche,doce com laticínio,275.8
+Milk chocolates,UHT Milks,lanche,doce com laticínio,248.7
+Milk chocolates,Grated cheese,lanche,doce com laticínio,420.8
+Milk chocolates,Cow cheeses,lanche,doce com laticínio,359.1
+Milk chocolates,Ricotta,lanche,doce com laticínio,289.1
+Milk chocolates,Condensed milks,lanche,doce com laticínio,363.1
+Milk chocolates,Milk jams,lanche,doce com laticínio,363.6
+Milk chocolates,Dairies,lanche,doce com laticínio,313.0
+Milk chocolates,Dairy drinks,lanche,doce com laticínio,247.8
+Candy chocolate bars,Cheeses,lanche,doce com laticínio,381.5
+Candy chocolate bars,Yogurts,lanche,doce com laticínio,288.2
+Candy chocolate bars,Greek-style yogurts,lanche,doce com laticínio,304.9
+Candy chocolate bars,Plain yogurts,lanche,doce com laticínio,282.1
+Candy chocolate bars,Low-fat yogurts,lanche,doce com laticínio,271.5
+Candy chocolate bars,Milks,lanche,doce com laticínio,307.1
+Candy chocolate bars,UHT Milks,lanche,doce com laticínio,279.9
+Candy chocolate bars,Grated cheese,lanche,doce com laticínio,452.0
+Candy chocolate bars,Cow cheeses,lanche,doce com laticínio,390.4
+Candy chocolate bars,Ricotta,lanche,doce com laticínio,320.4
+Candy chocolate bars,Condensed milks,lanche,doce com laticínio,394.4
+Candy chocolate bars,Milk jams,lanche,doce com laticínio,394.8
+Candy chocolate bars,Dairies,lanche,doce com laticínio,344.2
+Candy chocolate bars,Dairy drinks,lanche,doce com laticínio,279.1
+Biscuits,Cheeses,lanche,doce com laticínio,324.0
+Biscuits,Yogurts,lanche,doce com laticínio,230.8
+Biscuits,Greek-style yogurts,lanche,doce com laticínio,247.5
+Biscuits,Plain yogurts,lanche,doce com laticínio,224.6
+Biscuits,Low-fat yogurts,lanche,doce com laticínio,214.0
+Biscuits,Milks,lanche,doce com laticínio,249.6
+Biscuits,UHT Milks,lanche,doce com laticínio,222.4
+Biscuits,Grated cheese,lanche,doce com laticínio,394.5
+Biscuits,Cow cheeses,lanche,doce com laticínio,332.9
+Biscuits,Ricotta,lanche,doce com laticínio,262.9
+Biscuits,Condensed milks,lanche,doce com laticínio,336.9
+Biscuits,Milk jams,lanche,doce com laticínio,337.4
+Biscuits,Dairies,lanche,doce com laticínio,286.8
+Biscuits,Dairy drinks,lanche,doce com laticínio,221.6
+Filled biscuits,Cheeses,lanche,doce com laticínio,344.4
+Filled biscuits,Yogurts,lanche,doce com laticínio,251.2
+Filled biscuits,Greek-style yogurts,lanche,doce com laticínio,267.9
+Filled biscuits,Plain yogurts,lanche,doce com laticínio,245.0
+Filled biscuits,Low-fat yogurts,lanche,doce com laticínio,234.4
+Filled biscuits,Milks,lanche,doce com laticínio,270.0
+Filled biscuits,UHT Milks,lanche,doce com laticínio,242.8
+Filled biscuits,Grated cheese,lanche,doce com laticínio,414.9
+Filled biscuits,Cow cheeses,lanche,doce com laticínio,353.3
+Filled biscuits,Ricotta,lanche,doce com laticínio,283.3
+Filled biscuits,Condensed milks,lanche,doce com laticínio,357.3
+Filled biscuits,Milk jams,lanche,doce com laticínio,357.8
+Filled biscuits,Dairies,lanche,doce com laticínio,307.1
+Filled biscuits,Dairy drinks,lanche,doce com laticínio,242.0
+Chocolate biscuits,Cheeses,lanche,doce com laticínio,342.9
+Chocolate biscuits,Yogurts,lanche,doce com laticínio,249.6
+Chocolate biscuits,Greek-style yogurts,lanche,doce com laticínio,266.3
+Chocolate biscuits,Plain yogurts,lanche,doce com laticínio,243.4
+Chocolate biscuits,Low-fat yogurts,lanche,doce com laticínio,232.9
+Chocolate biscuits,Milks,lanche,doce com laticínio,268.4
+Chocolate biscuits,UHT Milks,lanche,doce com laticínio,241.3
+Chocolate biscuits,Grated cheese,lanche,doce com laticínio,413.4
+Chocolate biscuits,Cow cheeses,lanche,doce com laticínio,351.8
+Chocolate biscuits,Ricotta,lanche,doce com laticínio,281.8
+Chocolate biscuits,Condensed milks,lanche,doce com laticínio,355.8
+Chocolate biscuits,Milk jams,lanche,doce com laticínio,356.2
+Chocolate biscuits,Dairies,lanche,doce com laticínio,305.6
+Chocolate biscuits,Dairy drinks,lanche,doce com laticínio,240.4
+Ice creams,Cheeses,lanche,doce com laticínio,255.7
+Ice creams,Yogurts,lanche,doce com laticínio,162.4
+Ice creams,Greek-style yogurts,lanche,doce com laticínio,179.2
+Ice creams,Plain yogurts,lanche,doce com laticínio,156.3
+Ice creams,Low-fat yogurts,lanche,doce com laticínio,145.8
+Ice creams,Milks,lanche,doce com laticínio,181.3
+Ice creams,UHT Milks,lanche,doce com laticínio,154.2
+Ice creams,Grated cheese,lanche,doce com laticínio,326.2
+Ice creams,Cow cheeses,lanche,doce com laticínio,264.6
+Ice creams,Ricotta,lanche,doce com laticínio,194.6
+Ice creams,Condensed milks,lanche,doce com laticínio,268.6
+Ice creams,Milk jams,lanche,doce com laticínio,269.1
+Ice creams,Dairies,lanche,doce com laticínio,218.4
+Ice creams,Dairy drinks,lanche,doce com laticínio,153.3
+Ice creams and sorbets,Cheeses,lanche,doce com laticínio,240.6
+Ice creams and sorbets,Yogurts,lanche,doce com laticínio,147.3
+Ice creams and sorbets,Greek-style yogurts,lanche,doce com laticínio,164.1
+Ice creams and sorbets,Plain yogurts,lanche,doce com laticínio,141.2
+Ice creams and sorbets,Low-fat yogurts,lanche,doce com laticínio,130.6
+Ice creams and sorbets,Milks,lanche,doce com laticínio,166.2
+Ice creams and sorbets,UHT Milks,lanche,doce com laticínio,139.0
+Ice creams and sorbets,Grated cheese,lanche,doce com laticínio,311.1
+Ice creams and sorbets,Cow cheeses,lanche,doce com laticínio,249.5
+Ice creams and sorbets,Ricotta,lanche,doce com laticínio,179.4
+Ice creams and sorbets,Condensed milks,lanche,doce com laticínio,253.5
+Ice creams and sorbets,Milk jams,lanche,doce com laticínio,253.9
+Ice creams and sorbets,Dairies,lanche,doce com laticínio,203.3
+Ice creams and sorbets,Dairy drinks,lanche,doce com laticínio,138.2
+Alfajores,Cheeses,lanche,doce com laticínio,313.6
+Alfajores,Yogurts,lanche,doce com laticínio,220.4
+Alfajores,Greek-style yogurts,lanche,doce com laticínio,237.2
+Alfajores,Plain yogurts,lanche,doce com laticínio,214.2
+Alfajores,Low-fat yogurts,lanche,doce com laticínio,203.7
+Alfajores,Milks,lanche,doce com laticínio,239.2
+Alfajores,UHT Milks,lanche,doce com laticínio,212.1
+Alfajores,Grated cheese,lanche,doce com laticínio,384.2
+Alfajores,Cow cheeses,lanche,doce com laticínio,322.6
+Alfajores,Ricotta,lanche,doce com laticínio,252.6
+Alfajores,Condensed milks,lanche,doce com laticínio,326.6
+Alfajores,Milk jams,lanche,doce com laticínio,327.0
+Alfajores,Dairies,lanche,doce com laticínio,276.4
+Alfajores,Dairy drinks,lanche,doce com laticínio,211.2
+Candies,Cheeses,lanche,doce com laticínio,322.6
+Candies,Yogurts,lanche,doce com laticínio,229.4
+Candies,Greek-style yogurts,lanche,doce com laticínio,246.2
+Candies,Plain yogurts,lanche,doce com laticínio,223.2
+Candies,Low-fat yogurts,lanche,doce com laticínio,212.7
+Candies,Milks,lanche,doce com laticínio,248.2
+Candies,UHT Milks,lanche,doce com laticínio,221.1
+Candies,Grated cheese,lanche,doce com laticínio,393.2
+Candies,Cow cheeses,lanche,doce com laticínio,331.6
+Candies,Ricotta,lanche,doce com laticínio,261.6
+Candies,Condensed milks,lanche,doce com laticínio,335.6
+Candies,Milk jams,lanche,doce com laticínio,336.0
+Candies,Dairies,lanche,doce com laticínio,285.4
+Candies,Dairy drinks,lanche,doce com laticínio,220.2
+Confectioneries,Cheeses,lanche,doce com laticínio,321.5
+Confectioneries,Yogurts,lanche,doce com laticínio,228.2
+Confectioneries,Greek-style yogurts,lanche,doce com laticínio,245.0
+Confectioneries,Plain yogurts,lanche,doce com laticínio,222.1
+Confectioneries,Low-fat yogurts,lanche,doce com laticínio,211.5
+Confectioneries,Milks,lanche,doce com laticínio,247.1
+Confectioneries,UHT Milks,lanche,doce com laticínio,219.9
+Confectioneries,Grated cheese,lanche,doce com laticínio,392.0
+Confectioneries,Cow cheeses,lanche,doce com laticínio,330.4
+Confectioneries,Ricotta,lanche,doce com laticínio,260.4
+Confectioneries,Condensed milks,lanche,doce com laticínio,334.4
+Confectioneries,Milk jams,lanche,doce com laticínio,334.9
+Confectioneries,Dairies,lanche,doce com laticínio,284.2
+Confectioneries,Dairy drinks,lanche,doce com laticínio,219.1
+Wafers,Cheeses,lanche,doce com laticínio,358.6
+Wafers,Yogurts,lanche,doce com laticínio,265.3
+Wafers,Greek-style yogurts,lanche,doce com laticínio,282.1
+Wafers,Plain yogurts,lanche,doce com laticínio,259.2
+Wafers,Low-fat yogurts,lanche,doce com laticínio,248.6
+Wafers,Milks,lanche,doce com laticínio,284.2
+Wafers,UHT Milks,lanche,doce com laticínio,257.1
+Wafers,Grated cheese,lanche,doce com laticínio,429.1
+Wafers,Cow cheeses,lanche,doce com laticínio,367.5
+Wafers,Ricotta,lanche,doce com laticínio,297.5
+Wafers,Condensed milks,lanche,doce com laticínio,371.5
+Wafers,Milk jams,lanche,doce com laticínio,371.9
+Wafers,Dairies,lanche,doce com laticínio,321.4
+Wafers,Dairy drinks,lanche,doce com laticínio,256.2
+Stuffed wafers,Cheeses,lanche,doce com laticínio,347.6
+Stuffed wafers,Yogurts,lanche,doce com laticínio,254.3
+Stuffed wafers,Greek-style yogurts,lanche,doce com laticínio,271.1
+Stuffed wafers,Plain yogurts,lanche,doce com laticínio,248.2
+Stuffed wafers,Low-fat yogurts,lanche,doce com laticínio,237.6
+Stuffed wafers,Milks,lanche,doce com laticínio,273.2
+Stuffed wafers,UHT Milks,lanche,doce com laticínio,246.0
+Stuffed wafers,Grated cheese,lanche,doce com laticínio,418.1
+Stuffed wafers,Cow cheeses,lanche,doce com laticínio,356.5
+Stuffed wafers,Ricotta,lanche,doce com laticínio,286.5
+Stuffed wafers,Condensed milks,lanche,doce com laticínio,360.5
+Stuffed wafers,Milk jams,lanche,doce com laticínio,360.9
+Stuffed wafers,Dairies,lanche,doce com laticínio,310.4
+Stuffed wafers,Dairy drinks,lanche,doce com laticínio,245.2
+Dulces,Cheeses,lanche,doce com laticínio,347.5
+Dulces,Yogurts,lanche,doce com laticínio,254.2
+Dulces,Greek-style yogurts,lanche,doce com laticínio,270.9
+Dulces,Plain yogurts,lanche,doce com laticínio,248.1
+Dulces,Low-fat yogurts,lanche,doce com laticínio,237.5
+Dulces,Milks,lanche,doce com laticínio,273.1
+Dulces,UHT Milks,lanche,doce com laticínio,245.9
+Dulces,Grated cheese,lanche,doce com laticínio,418.0
+Dulces,Cow cheeses,lanche,doce com laticínio,356.4
+Dulces,Ricotta,lanche,doce com laticínio,286.4
+Dulces,Condensed milks,lanche,doce com laticínio,360.4
+Dulces,Milk jams,lanche,doce com laticínio,360.8
+Dulces,Dairies,lanche,doce com laticínio,310.2
+Dulces,Dairy drinks,lanche,doce com laticínio,245.1
+Postres,Cheeses,lanche,doce com laticínio,203.2
+Postres,Yogurts,lanche,doce com laticínio,109.9
+Postres,Greek-style yogurts,lanche,doce com laticínio,126.7
+Postres,Plain yogurts,lanche,doce com laticínio,103.8
+Postres,Low-fat yogurts,lanche,doce com laticínio,93.2
+Postres,Milks,lanche,doce com laticínio,128.8
+Postres,UHT Milks,lanche,doce com laticínio,101.7
+Postres,Grated cheese,lanche,doce com laticínio,273.8
+Postres,Cow cheeses,lanche,doce com laticínio,212.1
+Postres,Ricotta,lanche,doce com laticínio,142.1
+Postres,Condensed milks,lanche,doce com laticínio,216.1
+Postres,Milk jams,lanche,doce com laticínio,216.6
+Postres,Dairies,lanche,doce com laticínio,165.9
+Postres,Dairy drinks,lanche,doce com laticínio,100.8
+Peanut bars,Cheeses,lanche,doce com laticínio,331.5
+Peanut bars,Yogurts,lanche,doce com laticínio,238.2
+Peanut bars,Greek-style yogurts,lanche,doce com laticínio,255.0
+Peanut bars,Plain yogurts,lanche,doce com laticínio,232.1
+Peanut bars,Low-fat yogurts,lanche,doce com laticínio,221.5
+Peanut bars,Milks,lanche,doce com laticínio,257.1
+Peanut bars,UHT Milks,lanche,doce com laticínio,229.9
+Peanut bars,Grated cheese,lanche,doce com laticínio,402.0
+Peanut bars,Cow cheeses,lanche,doce com laticínio,340.4
+Peanut bars,Ricotta,lanche,doce com laticínio,270.4
+Peanut bars,Condensed milks,lanche,doce com laticínio,344.4
+Peanut bars,Milk jams,lanche,doce com laticínio,344.8
+Peanut bars,Dairies,lanche,doce com laticínio,294.2
+Peanut bars,Dairy drinks,lanche,doce com laticínio,229.1
+Snacks,Cheeses,lanche,salgadinho com laticínio,308.0
+Snacks,Yogurts,lanche,salgadinho com laticínio,214.7
+Snacks,Greek-style yogurts,lanche,salgadinho com laticínio,231.5
+Snacks,Plain yogurts,lanche,salgadinho com laticínio,208.6
+Snacks,Low-fat yogurts,lanche,salgadinho com laticínio,198.0
+Snacks,Milks,lanche,salgadinho com laticínio,233.6
+Snacks,UHT Milks,lanche,salgadinho com laticínio,206.4
+Snacks,Grated cheese,lanche,salgadinho com laticínio,378.5
+Snacks,Cow cheeses,lanche,salgadinho com laticínio,316.9
+Snacks,Ricotta,lanche,salgadinho com laticínio,246.9
+Snacks,Condensed milks,lanche,salgadinho com laticínio,320.9
+Snacks,Milk jams,lanche,salgadinho com laticínio,321.3
+Snacks,Dairies,lanche,salgadinho com laticínio,270.7
+Snacks,Dairy drinks,lanche,salgadinho com laticínio,205.6
+Crisps,Cheeses,lanche,salgadinho com laticínio,343.9
+Crisps,Yogurts,lanche,salgadinho com laticínio,250.7
+Crisps,Greek-style yogurts,lanche,salgadinho com laticínio,267.4
+Crisps,Plain yogurts,lanche,salgadinho com laticínio,244.5
+Crisps,Low-fat yogurts,lanche,salgadinho com laticínio,233.9
+Crisps,Milks,lanche,salgadinho com laticínio,269.5
+Crisps,UHT Milks,lanche,salgadinho com laticínio,242.3
+Crisps,Grated cheese,lanche,salgadinho com laticínio,414.4
+Crisps,Cow cheeses,lanche,salgadinho com laticínio,352.8
+Crisps,Ricotta,lanche,salgadinho com laticínio,282.8
+Crisps,Condensed milks,lanche,salgadinho com laticínio,356.8
+Crisps,Milk jams,lanche,salgadinho com laticínio,357.2
+Crisps,Dairies,lanche,salgadinho com laticínio,306.6
+Crisps,Dairy drinks,lanche,salgadinho com laticínio,241.5
+Potato crisps,Cheeses,lanche,salgadinho com laticínio,367.2
+Potato crisps,Yogurts,lanche,salgadinho com laticínio,273.9
+Potato crisps,Greek-style yogurts,lanche,salgadinho com laticínio,290.7
+Potato crisps,Plain yogurts,lanche,salgadinho com laticínio,267.8
+Potato crisps,Low-fat yogurts,lanche,salgadinho com laticínio,257.2
+Potato crisps,Milks,lanche,salgadinho com laticínio,292.8
+Potato crisps,UHT Milks,lanche,salgadinho com laticínio,265.7
+Potato crisps,Grated cheese,lanche,salgadinho com laticínio,437.8
+Potato crisps,Cow cheeses,lanche,salgadinho com laticínio,376.1
+Potato crisps,Ricotta,lanche,salgadinho com laticínio,306.1
+Potato crisps,Condensed milks,lanche,salgadinho com laticínio,380.1
+Potato crisps,Milk jams,lanche,salgadinho com laticínio,380.6
+Potato crisps,Dairies,lanche,salgadinho com laticínio,330.0
+Potato crisps,Dairy drinks,lanche,salgadinho com laticínio,264.8
+Corn chips,Cheeses,lanche,salgadinho com laticínio,358.1
+Corn chips,Yogurts,lanche,salgadinho com laticínio,264.9
+Corn chips,Greek-style yogurts,lanche,salgadinho com laticínio,281.6
+Corn chips,Plain yogurts,lanche,salgadinho com laticínio,258.8
+Corn chips,Low-fat yogurts,lanche,salgadinho com laticínio,248.2
+Corn chips,Milks,lanche,salgadinho com laticínio,283.8
+Corn chips,UHT Milks,lanche,salgadinho com laticínio,256.6
+Corn chips,Grated cheese,lanche,salgadinho com laticínio,428.7
+Corn chips,Cow cheeses,lanche,salgadinho com laticínio,367.1
+Corn chips,Ricotta,lanche,salgadinho com laticínio,297.1
+Corn chips,Condensed milks,lanche,salgadinho com laticínio,371.1
+Corn chips,Milk jams,lanche,salgadinho com laticínio,371.5
+Corn chips,Dairies,lanche,salgadinho com laticínio,320.9
+Corn chips,Dairy drinks,lanche,salgadinho com laticínio,255.8
+Popcorn,Cheeses,lanche,salgadinho com laticínio,308.1
+Popcorn,Yogurts,lanche,salgadinho com laticínio,214.9
+Popcorn,Greek-style yogurts,lanche,salgadinho com laticínio,231.7
+Popcorn,Plain yogurts,lanche,salgadinho com laticínio,208.8
+Popcorn,Low-fat yogurts,lanche,salgadinho com laticínio,198.2
+Popcorn,Milks,lanche,salgadinho com laticínio,233.8
+Popcorn,UHT Milks,lanche,salgadinho com laticínio,206.6
+Popcorn,Grated cheese,lanche,salgadinho com laticínio,378.7
+Popcorn,Cow cheeses,lanche,salgadinho com laticínio,317.1
+Popcorn,Ricotta,lanche,salgadinho com laticínio,247.1
+Popcorn,Condensed milks,lanche,salgadinho com laticínio,321.1
+Popcorn,Milk jams,lanche,salgadinho com laticínio,321.5
+Popcorn,Dairies,lanche,salgadinho com laticínio,270.9
+Popcorn,Dairy drinks,lanche,salgadinho com laticínio,205.8
+Peanuts,Cheeses,lanche,salgadinho com laticínio,398.9
+Peanuts,Yogurts,lanche,salgadinho com laticínio,305.6
+Peanuts,Greek-style yogurts,lanche,salgadinho com laticínio,322.4
+Peanuts,Plain yogurts,lanche,salgadinho com laticínio,299.5
+Peanuts,Low-fat yogurts,lanche,salgadinho com laticínio,288.9
+Peanuts,Milks,lanche,salgadinho com laticínio,324.5
+Peanuts,UHT Milks,lanche,salgadinho com laticínio,297.4
+Peanuts,Grated cheese,lanche,salgadinho com laticínio,469.4
+Peanuts,Cow cheeses,lanche,salgadinho com laticínio,407.8
+Peanuts,Ricotta,lanche,salgadinho com laticínio,337.8
+Peanuts,Condensed milks,lanche,salgadinho com laticínio,411.8
+Peanuts,Milk jams,lanche,salgadinho com laticínio,412.2
+Peanuts,Dairies,lanche,salgadinho com laticínio,361.6
+Peanuts,Dairy drinks,lanche,salgadinho com laticínio,296.5
+Chocolates,Breads,lanche,doce com pão,339.1
+Chocolates,Sliced breads,lanche,doce com pão,332.1
+Chocolates,Wholemeal breads,lanche,doce com pão,313.6
+Chocolates,Panettone,lanche,doce com pão,396.8
+Chocolates,Sandwiches,lanche,doce com pão,332.4
+Chocolates,Tapioca,lanche,doce com pão,334.4
+Chocolates,Crackers (Appetizers),lanche,doce com pão,421.2
+Chocolates,Galletas,lanche,doce com pão,420.1
+Chocolates,Cakes,lanche,doce com pão,381.8
+Chocolates,Mueslis,lanche,doce com pão,394.5
+Dark chocolates,Breads,lanche,doce com pão,360.9
+Dark chocolates,Sliced breads,lanche,doce com pão,353.8
+Dark chocolates,Wholemeal breads,lanche,doce com pão,335.4
+Dark chocolates,Panettone,lanche,doce com pão,418.5
+Dark chocolates,Sandwiches,lanche,doce com pão,354.1
+Dark chocolates,Tapioca,lanche,doce com pão,356.1
+Dark chocolates,Crackers (Appetizers),lanche,doce com pão,442.9
+Dark chocolates,Galletas,lanche,doce com pão,441.9
+Dark chocolates,Cakes,lanche,doce com pão,403.5
+Dark chocolates,Mueslis,lanche,doce com pão,416.2
+Milk chocolates,Breads,lanche,doce com pão,342.1
+Milk chocolates,Sliced breads,lanche,doce com pão,335.0
+Milk chocolates,Wholemeal breads,lanche,doce com pão,316.6
+Milk chocolates,Panettone,lanche,doce com pão,399.7
+Milk chocolates,Sandwiches,lanche,doce com pão,335.4
+Milk chocolates,Tapioca,lanche,doce com pão,337.4
+Milk chocolates,Crackers (Appetizers),lanche,doce com pão,424.1
+Milk chocolates,Galletas,lanche,doce com pão,423.1
+Milk chocolates,Cakes,lanche,doce com pão,384.7
+Milk chocolates,Mueslis,lanche,doce com pão,397.5
+Candy chocolate bars,Breads,lanche,doce com pão,373.3
+Candy chocolate bars,Sliced breads,lanche,doce com pão,366.2
+Candy chocolate bars,Wholemeal breads,lanche,doce com pão,347.8
+Candy chocolate bars,Panettone,lanche,doce com pão,431.0
+Candy chocolate bars,Sandwiches,lanche,doce com pão,366.6
+Candy chocolate bars,Tapioca,lanche,doce com pão,368.6
+Candy chocolate bars,Crackers (Appetizers),lanche,doce com pão,455.4
+Candy chocolate bars,Galletas,lanche,doce com pão,454.4
+Candy chocolate bars,Cakes,lanche,doce com pão,416.0
+Candy chocolate bars,Mueslis,lanche,doce com pão,428.7
+Biscuits,Breads,lanche,doce com pão,315.9
+Biscuits,Sliced breads,lanche,doce com pão,308.8
+Biscuits,Wholemeal breads,lanche,doce com pão,290.4
+Biscuits,Panettone,lanche,doce com pão,373.5
+Biscuits,Sandwiches,lanche,doce com pão,309.1
+Biscuits,Tapioca,lanche,doce com pão,311.1
+Biscuits,Crackers (Appetizers),lanche,doce com pão,397.9
+Biscuits,Galletas,lanche,doce com pão,396.9
+Biscuits,Cakes,lanche,doce com pão,358.5
+Biscuits,Mueslis,lanche,doce com pão,371.2
+Filled biscuits,Breads,lanche,doce com pão,336.2
+Filled biscuits,Sliced breads,lanche,doce com pão,329.2
+Filled biscuits,Wholemeal breads,lanche,doce com pão,310.8
+Filled biscuits,Panettone,lanche,doce com pão,393.9
+Filled biscuits,Sandwiches,lanche,doce com pão,329.6
+Filled biscuits,Tapioca,lanche,doce com pão,331.6
+Filled biscuits,Crackers (Appetizers),lanche,doce com pão,418.4
+Filled biscuits,Galletas,lanche,doce com pão,417.3
+Filled biscuits,Cakes,lanche,doce com pão,378.9
+Filled biscuits,Mueslis,lanche,doce com pão,391.6
+Chocolate biscuits,Breads,lanche,doce com pão,334.7
+Chocolate biscuits,Sliced breads,lanche,doce com pão,327.6
+Chocolate biscuits,Wholemeal breads,lanche,doce com pão,309.2
+Chocolate biscuits,Panettone,lanche,doce com pão,392.4
+Chocolate biscuits,Sandwiches,lanche,doce com pão,328.0
+Chocolate biscuits,Tapioca,lanche,doce com pão,330.0
+Chocolate biscuits,Crackers (Appetizers),lanche,doce com pão,416.8
+Chocolate biscuits,Galletas,lanche,doce com pão,415.8
+Chocolate biscuits,Cakes,lanche,doce com pão,377.4
+Chocolate biscuits,Mueslis,lanche,doce com pão,390.1
+Ice creams,Breads,lanche,doce com pão,247.6
+Ice creams,Sliced breads,lanche,doce com pão,240.5
+Ice creams,Wholemeal breads,lanche,doce com pão,222.1
+Ice creams,Panettone,lanche,doce com pão,305.2
+Ice creams,Sandwiches,lanche,doce com pão,240.8
+Ice creams,Tapioca,lanche,doce com pão,242.8
+Ice creams,Crackers (Appetizers),lanche,doce com pão,329.6
+Ice creams,Galletas,lanche,doce com pão,328.6
+Ice creams,Cakes,lanche,doce com pão,290.2
+Ice creams,Mueslis,lanche,doce com pão,302.9
+Ice creams and sorbets,Breads,lanche,doce com pão,232.4
+Ice creams and sorbets,Sliced breads,lanche,doce com pão,225.4
+Ice creams and sorbets,Wholemeal breads,lanche,doce com pão,206.9
+Ice creams and sorbets,Panettone,lanche,doce com pão,290.1
+Ice creams and sorbets,Sandwiches,lanche,doce com pão,225.7
+Ice creams and sorbets,Tapioca,lanche,doce com pão,227.7
+Ice creams and sorbets,Crackers (Appetizers),lanche,doce com pão,314.5
+Ice creams and sorbets,Galletas,lanche,doce com pão,313.5
+Ice creams and sorbets,Cakes,lanche,doce com pão,275.1
+Ice creams and sorbets,Mueslis,lanche,doce com pão,287.8
+Alfajores,Breads,lanche,doce com pão,305.5
+Alfajores,Sliced breads,lanche,doce com pão,298.4
+Alfajores,Wholemeal breads,lanche,doce com pão,280.0
+Alfajores,Panettone,lanche,doce com pão,363.1
+Alfajores,Sandwiches,lanche,doce com pão,298.8
+Alfajores,Tapioca,lanche,doce com pão,300.8
+Alfajores,Crackers (Appetizers),lanche,doce com pão,387.6
+Alfajores,Galletas,lanche,doce com pão,386.6
+Alfajores,Cakes,lanche,doce com pão,348.1
+Alfajores,Mueslis,lanche,doce com pão,360.9
+Candies,Breads,lanche,doce com pão,314.5
+Candies,Sliced breads,lanche,doce com pão,307.4
+Candies,Wholemeal breads,lanche,doce com pão,289.0
+Candies,Panettone,lanche,doce com pão,372.1
+Candies,Sandwiches,lanche,doce com pão,307.8
+Candies,Tapioca,lanche,doce com pão,309.8
+Candies,Crackers (Appetizers),lanche,doce com pão,396.6
+Candies,Galletas,lanche,doce com pão,395.6
+Candies,Cakes,lanche,doce com pão,357.1
+Candies,Mueslis,lanche,doce com pão,369.9
+Confectioneries,Breads,lanche,doce com pão,313.4
+Confectioneries,Sliced breads,lanche,doce com pão,306.3
+Confectioneries,Wholemeal breads,lanche,doce com pão,287.9
+Confectioneries,Panettone,lanche,doce com pão,371.0
+Confectioneries,Sandwiches,lanche,doce com pão,306.6
+Confectioneries,Tapioca,lanche,doce com pão,308.6
+Confectioneries,Crackers (Appetizers),lanche,doce com pão,395.4
+Confectioneries,Galletas,lanche,doce com pão,394.4
+Confectioneries,Cakes,lanche,doce com pão,356.0
+Confectioneries,Mueslis,lanche,doce com pão,368.8
+Wafers,Breads,lanche,doce com pão,350.4
+Wafers,Sliced breads,lanche,doce com pão,343.4
+Wafers,Wholemeal breads,lanche,doce com pão,324.9
+Wafers,Panettone,lanche,doce com pão,408.1
+Wafers,Sandwiches,lanche,doce com pão,343.8
+Wafers,Tapioca,lanche,doce com pão,345.8
+Wafers,Crackers (Appetizers),lanche,doce com pão,432.5
+Wafers,Galletas,lanche,doce com pão,431.5
+Wafers,Cakes,lanche,doce com pão,393.1
+Wafers,Mueslis,lanche,doce com pão,405.9
+Stuffed wafers,Breads,lanche,doce com pão,339.4
+Stuffed wafers,Sliced breads,lanche,doce com pão,332.4
+Stuffed wafers,Wholemeal breads,lanche,doce com pão,313.9
+Stuffed wafers,Panettone,lanche,doce com pão,397.1
+Stuffed wafers,Sandwiches,lanche,doce com pão,332.8
+Stuffed wafers,Tapioca,lanche,doce com pão,334.8
+Stuffed wafers,Crackers (Appetizers),lanche,doce com pão,421.5
+Stuffed wafers,Galletas,lanche,doce com pão,420.5
+Stuffed wafers,Cakes,lanche,doce com pão,382.1
+Stuffed wafers,Mueslis,lanche,doce com pão,394.9
+Dulces,Breads,lanche,doce com pão,339.3
+Dulces,Sliced breads,lanche,doce com pão,332.2
+Dulces,Wholemeal breads,lanche,doce com pão,313.8
+Dulces,Panettone,lanche,doce com pão,397.0
+Dulces,Sandwiches,lanche,doce com pão,332.6
+Dulces,Tapioca,lanche,doce com pão,334.6
+Dulces,Crackers (Appetizers),lanche,doce com pão,421.4
+Dulces,Galletas,lanche,doce com pão,420.4
+Dulces,Cakes,lanche,doce com pão,382.0
+Dulces,Mueslis,lanche,doce com pão,394.7
+Postres,Breads,lanche,doce com pão,195.1
+Postres,Sliced breads,lanche,doce com pão,188.0
+Postres,Wholemeal breads,lanche,doce com pão,169.6
+Postres,Panettone,lanche,doce com pão,252.7
+Postres,Sandwiches,lanche,doce com pão,188.3
+Postres,Tapioca,lanche,doce com pão,190.3
+Postres,Crackers (Appetizers),lanche,doce com pão,277.1
+Postres,Galletas,lanche,doce com pão,276.1
+Postres,Cakes,lanche,doce com pão,237.7
+Postres,Mueslis,lanche,doce com pão,250.4
+Peanut bars,Breads,lanche,doce com pão,323.3
+Peanut bars,Sliced breads,lanche,doce com pão,316.2
+Peanut bars,Wholemeal breads,lanche,doce com pão,297.8
+Peanut bars,Panettone,lanche,doce com pão,381.0
+Peanut bars,Sandwiches,lanche,doce com pão,316.6
+Peanut bars,Tapioca,lanche,doce com pão,318.6
+Peanut bars,Crackers (Appetizers),lanche,doce com pão,405.4
+Peanut bars,Galletas,lanche,doce com pão,404.4
+Peanut bars,Cakes,lanche,doce com pão,366.0
+Peanut bars,Mueslis,lanche,doce com pão,378.7
+Breakfast cereals,Frozen meats,almoco_jantar,cereal com proteína animal,243.4
+Breakfast cereals,Hams,almoco_jantar,cereal com proteína animal,236.4
+Breakfast cereals,Sausages,almoco_jantar,cereal com proteína animal,292.1
+Breakfast cereals,Chicken eggs,almoco_jantar,cereal com proteína animal,241.5
+Breakfast cereals,Pescados,almoco_jantar,cereal com proteína animal,243.1
+Breakfast cereals,Canned sardines,almoco_jantar,cereal com proteína animal,256.6
+Breakfast cereals,Meals with chicken,almoco_jantar,cereal com proteína animal,246.4
+Breakfast cereals,Frozen foods,almoco_jantar,cereal com proteína animal,252.8
+Rolled oats,Frozen meats,almoco_jantar,cereal com proteína animal,234.6
+Rolled oats,Hams,almoco_jantar,cereal com proteína animal,227.6
+Rolled oats,Sausages,almoco_jantar,cereal com proteína animal,283.2
+Rolled oats,Chicken eggs,almoco_jantar,cereal com proteína animal,232.7
+Rolled oats,Pescados,almoco_jantar,cereal com proteína animal,234.2
+Rolled oats,Canned sardines,almoco_jantar,cereal com proteína animal,247.8
+Rolled oats,Meals with chicken,almoco_jantar,cereal com proteína animal,237.6
+Rolled oats,Frozen foods,almoco_jantar,cereal com proteína animal,244.0
+Cereals and their products,Frozen meats,almoco_jantar,cereal com proteína animal,240.9
+Cereals and their products,Hams,almoco_jantar,cereal com proteína animal,233.9
+Cereals and their products,Sausages,almoco_jantar,cereal com proteína animal,289.6
+Cereals and their products,Chicken eggs,almoco_jantar,cereal com proteína animal,239.0
+Cereals and their products,Pescados,almoco_jantar,cereal com proteína animal,240.6
+Cereals and their products,Canned sardines,almoco_jantar,cereal com proteína animal,254.1
+Cereals and their products,Meals with chicken,almoco_jantar,cereal com proteína animal,243.9
+Cereals and their products,Frozen foods,almoco_jantar,cereal com proteína animal,250.3
+Oat brans,Frozen meats,almoco_jantar,cereal com proteína animal,218.4
+Oat brans,Hams,almoco_jantar,cereal com proteína animal,211.4
+Oat brans,Sausages,almoco_jantar,cereal com proteína animal,267.1
+Oat brans,Chicken eggs,almoco_jantar,cereal com proteína animal,216.5
+Oat brans,Pescados,almoco_jantar,cereal com proteína animal,218.1
+Oat brans,Canned sardines,almoco_jantar,cereal com proteína animal,231.6
+Oat brans,Meals with chicken,almoco_jantar,cereal com proteína animal,221.4
+Oat brans,Frozen foods,almoco_jantar,cereal com proteína animal,227.8
+Rices,Frozen meats,almoco_jantar,cereal com proteína animal,205.9
+Rices,Hams,almoco_jantar,cereal com proteína animal,198.9
+Rices,Sausages,almoco_jantar,cereal com proteína animal,254.6
+Rices,Chicken eggs,almoco_jantar,cereal com proteína animal,204.1
+Rices,Pescados,almoco_jantar,cereal com proteína animal,205.6
+Rices,Canned sardines,almoco_jantar,cereal com proteína animal,219.1
+Rices,Meals with chicken,almoco_jantar,cereal com proteína animal,208.9
+Rices,Frozen foods,almoco_jantar,cereal com proteína animal,215.3
+Pastas,Frozen meats,almoco_jantar,cereal com proteína animal,210.9
+Pastas,Hams,almoco_jantar,cereal com proteína animal,203.9
+Pastas,Sausages,almoco_jantar,cereal com proteína animal,259.6
+Pastas,Chicken eggs,almoco_jantar,cereal com proteína animal,209.0
+Pastas,Pescados,almoco_jantar,cereal com proteína animal,210.6
+Pastas,Canned sardines,almoco_jantar,cereal com proteína animal,224.1
+Pastas,Meals with chicken,almoco_jantar,cereal com proteína animal,213.9
+Pastas,Frozen foods,almoco_jantar,cereal com proteína animal,220.3
+Instant noodles,Frozen meats,almoco_jantar,cereal com proteína animal,252.0
+Instant noodles,Hams,almoco_jantar,cereal com proteína animal,245.0
+Instant noodles,Sausages,almoco_jantar,cereal com proteína animal,300.7
+Instant noodles,Chicken eggs,almoco_jantar,cereal com proteína animal,250.1
+Instant noodles,Pescados,almoco_jantar,cereal com proteína animal,251.7
+Instant noodles,Canned sardines,almoco_jantar,cereal com proteína animal,265.2
+Instant noodles,Meals with chicken,almoco_jantar,cereal com proteína animal,255.0
+Instant noodles,Frozen foods,almoco_jantar,cereal com proteína animal,261.4
+Wheat flours,Frozen meats,almoco_jantar,cereal com proteína animal,241.1
+Wheat flours,Hams,almoco_jantar,cereal com proteína animal,234.1
+Wheat flours,Sausages,almoco_jantar,cereal com proteína animal,289.8
+Wheat flours,Chicken eggs,almoco_jantar,cereal com proteína animal,239.2
+Wheat flours,Pescados,almoco_jantar,cereal com proteína animal,240.8
+Wheat flours,Canned sardines,almoco_jantar,cereal com proteína animal,254.3
+Wheat flours,Meals with chicken,almoco_jantar,cereal com proteína animal,244.1
+Wheat flours,Frozen foods,almoco_jantar,cereal com proteína animal,250.5
+Cereals and potatoes,Frozen meats,almoco_jantar,cereal com proteína animal,275.2
+Cereals and potatoes,Hams,almoco_jantar,cereal com proteína animal,268.2
+Cereals and potatoes,Sausages,almoco_jantar,cereal com proteína animal,323.9
+Cereals and potatoes,Chicken eggs,almoco_jantar,cereal com proteína animal,273.4
+Cereals and potatoes,Pescados,almoco_jantar,cereal com proteína animal,274.9
+Cereals and potatoes,Canned sardines,almoco_jantar,cereal com proteína animal,288.4
+Cereals and potatoes,Meals with chicken,almoco_jantar,cereal com proteína animal,278.2
+Cereals and potatoes,Frozen foods,almoco_jantar,cereal com proteína animal,284.6
+Frozen meats,Sauces,almoco_jantar,proteína animal com molho ou azeite,114.2
+Frozen meats,Tomato sauces,almoco_jantar,proteína animal com molho ou azeite,89.5
+Frozen meats,Ketchup,almoco_jantar,proteína animal com molho ou azeite,115.8
+Frozen meats,Mayonnaises,almoco_jantar,proteína animal com molho ou azeite,232.7
+Frozen meats,Mustards,almoco_jantar,proteína animal com molho ou azeite,108.5
+Frozen meats,Virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,453.4
+Frozen meats,Extra-virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,445.9
+Hams,Sauces,almoco_jantar,proteína animal com molho ou azeite,107.3
+Hams,Tomato sauces,almoco_jantar,proteína animal com molho ou azeite,82.6
+Hams,Ketchup,almoco_jantar,proteína animal com molho ou azeite,108.9
+Hams,Mayonnaises,almoco_jantar,proteína animal com molho ou azeite,225.8
+Hams,Mustards,almoco_jantar,proteína animal com molho ou azeite,101.5
+Hams,Virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,446.5
+Hams,Extra-virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,438.9
+Sausages,Sauces,almoco_jantar,proteína animal com molho ou azeite,162.9
+Sausages,Tomato sauces,almoco_jantar,proteína animal com molho ou azeite,138.2
+Sausages,Ketchup,almoco_jantar,proteína animal com molho ou azeite,164.6
+Sausages,Mayonnaises,almoco_jantar,proteína animal com molho ou azeite,281.4
+Sausages,Mustards,almoco_jantar,proteína animal com molho ou azeite,157.2
+Sausages,Virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,502.1
+Sausages,Extra-virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,494.6
+Chicken eggs,Sauces,almoco_jantar,proteína animal com molho ou azeite,112.4
+Chicken eggs,Tomato sauces,almoco_jantar,proteína animal com molho ou azeite,87.7
+Chicken eggs,Ketchup,almoco_jantar,proteína animal com molho ou azeite,114.0
+Chicken eggs,Mayonnaises,almoco_jantar,proteína animal com molho ou azeite,230.9
+Chicken eggs,Mustards,almoco_jantar,proteína animal com molho ou azeite,106.7
+Chicken eggs,Virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,451.6
+Chicken eggs,Extra-virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,444.0
+Pescados,Sauces,almoco_jantar,proteína animal com molho ou azeite,114.0
+Pescados,Tomato sauces,almoco_jantar,proteína animal com molho ou azeite,89.2
+Pescados,Ketchup,almoco_jantar,proteína animal com molho ou azeite,115.5
+Pescados,Mayonnaises,almoco_jantar,proteína animal com molho ou azeite,232.4
+Pescados,Mustards,almoco_jantar,proteína animal com molho ou azeite,108.2
+Pescados,Virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,453.1
+Pescados,Extra-virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,445.6
+Canned sardines,Sauces,almoco_jantar,proteína animal com molho ou azeite,127.5
+Canned sardines,Tomato sauces,almoco_jantar,proteína animal com molho ou azeite,102.8
+Canned sardines,Ketchup,almoco_jantar,proteína animal com molho ou azeite,129.1
+Canned sardines,Mayonnaises,almoco_jantar,proteína animal com molho ou azeite,245.9
+Canned sardines,Mustards,almoco_jantar,proteína animal com molho ou azeite,121.8
+Canned sardines,Virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,466.7
+Canned sardines,Extra-virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,459.1
+Meals with chicken,Sauces,almoco_jantar,proteína animal com molho ou azeite,117.3
+Meals with chicken,Tomato sauces,almoco_jantar,proteína animal com molho ou azeite,92.6
+Meals with chicken,Ketchup,almoco_jantar,proteína animal com molho ou azeite,118.9
+Meals with chicken,Mayonnaises,almoco_jantar,proteína animal com molho ou azeite,235.8
+Meals with chicken,Mustards,almoco_jantar,proteína animal com molho ou azeite,111.5
+Meals with chicken,Virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,456.5
+Meals with chicken,Extra-virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,448.9
+Frozen foods,Sauces,almoco_jantar,proteína animal com molho ou azeite,123.7
+Frozen foods,Tomato sauces,almoco_jantar,proteína animal com molho ou azeite,99.0
+Frozen foods,Ketchup,almoco_jantar,proteína animal com molho ou azeite,125.3
+Frozen foods,Mayonnaises,almoco_jantar,proteína animal com molho ou azeite,242.2
+Frozen foods,Mustards,almoco_jantar,proteína animal com molho ou azeite,118.0
+Frozen foods,Virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,462.9
+Frozen foods,Extra-virgin olive oils,almoco_jantar,proteína animal com molho ou azeite,455.3
+Breakfast cereals,Sauces,almoco_jantar,cereal com molho ou azeite,211.5
+Breakfast cereals,Tomato sauces,almoco_jantar,cereal com molho ou azeite,186.8
+Breakfast cereals,Ketchup,almoco_jantar,cereal com molho ou azeite,213.1
+Breakfast cereals,Mayonnaises,almoco_jantar,cereal com molho ou azeite,330.0
+Breakfast cereals,Mustards,almoco_jantar,cereal com molho ou azeite,205.8
+Breakfast cereals,Virgin olive oils,almoco_jantar,cereal com molho ou azeite,550.7
+Breakfast cereals,Extra-virgin olive oils,almoco_jantar,cereal com molho ou azeite,543.1
+Rolled oats,Sauces,almoco_jantar,cereal com molho ou azeite,202.7
+Rolled oats,Tomato sauces,almoco_jantar,cereal com molho ou azeite,178.0
+Rolled oats,Ketchup,almoco_jantar,cereal com molho ou azeite,204.3
+Rolled oats,Mayonnaises,almoco_jantar,cereal com molho ou azeite,321.1
+Rolled oats,Mustards,almoco_jantar,cereal com molho ou azeite,196.9
+Rolled oats,Virgin olive oils,almoco_jantar,cereal com molho ou azeite,541.9
+Rolled oats,Extra-virgin olive oils,almoco_jantar,cereal com molho ou azeite,534.3
+Cereals and their products,Sauces,almoco_jantar,cereal com molho ou azeite,209.0
+Cereals and their products,Tomato sauces,almoco_jantar,cereal com molho ou azeite,184.3
+Cereals and their products,Ketchup,almoco_jantar,cereal com molho ou azeite,210.6
+Cereals and their products,Mayonnaises,almoco_jantar,cereal com molho ou azeite,327.5
+Cereals and their products,Mustards,almoco_jantar,cereal com molho ou azeite,203.2
+Cereals and their products,Virgin olive oils,almoco_jantar,cereal com molho ou azeite,548.2
+Cereals and their products,Extra-virgin olive oils,almoco_jantar,cereal com molho ou azeite,540.6
+Oat brans,Sauces,almoco_jantar,cereal com molho ou azeite,186.5
+Oat brans,Tomato sauces,almoco_jantar,cereal com molho ou azeite,161.8
+Oat brans,Ketchup,almoco_jantar,cereal com molho ou azeite,188.1
+Oat brans,Mayonnaises,almoco_jantar,cereal com molho ou azeite,305.0
+Oat brans,Mustards,almoco_jantar,cereal com molho ou azeite,180.8
+Oat brans,Virgin olive oils,almoco_jantar,cereal com molho ou azeite,525.7
+Oat brans,Extra-virgin olive oils,almoco_jantar,cereal com molho ou azeite,518.1
+Rices,Sauces,almoco_jantar,cereal com molho ou azeite,174.1
+Rices,Tomato sauces,almoco_jantar,cereal com molho ou azeite,149.3
+Rices,Ketchup,almoco_jantar,cereal com molho ou azeite,175.6
+Rices,Mayonnaises,almoco_jantar,cereal com molho ou azeite,292.5
+Rices,Mustards,almoco_jantar,cereal com molho ou azeite,168.3
+Rices,Virgin olive oils,almoco_jantar,cereal com molho ou azeite,513.2
+Rices,Extra-virgin olive oils,almoco_jantar,cereal com molho ou azeite,505.6
+Pastas,Sauces,almoco_jantar,cereal com molho ou azeite,179.0
+Pastas,Tomato sauces,almoco_jantar,cereal com molho ou azeite,154.3
+Pastas,Ketchup,almoco_jantar,cereal com molho ou azeite,180.6
+Pastas,Mayonnaises,almoco_jantar,cereal com molho ou azeite,297.5
+Pastas,Mustards,almoco_jantar,cereal com molho ou azeite,173.2
+Pastas,Virgin olive oils,almoco_jantar,cereal com molho ou azeite,518.2
+Pastas,Extra-virgin olive oils,almoco_jantar,cereal com molho ou azeite,510.6
+Instant noodles,Sauces,almoco_jantar,cereal com molho ou azeite,220.1
+Instant noodles,Tomato sauces,almoco_jantar,cereal com molho ou azeite,195.4
+Instant noodles,Ketchup,almoco_jantar,cereal com molho ou azeite,221.8
+Instant noodles,Mayonnaises,almoco_jantar,cereal com molho ou azeite,338.6
+Instant noodles,Mustards,almoco_jantar,cereal com molho ou azeite,214.4
+Instant noodles,Virgin olive oils,almoco_jantar,cereal com molho ou azeite,559.3
+Instant noodles,Extra-virgin olive oils,almoco_jantar,cereal com molho ou azeite,551.8
+Wheat flours,Sauces,almoco_jantar,cereal com molho ou azeite,209.2
+Wheat flours,Tomato sauces,almoco_jantar,cereal com molho ou azeite,184.5
+Wheat flours,Ketchup,almoco_jantar,cereal com molho ou azeite,210.8
+Wheat flours,Mayonnaises,almoco_jantar,cereal com molho ou azeite,327.6
+Wheat flours,Mustards,almoco_jantar,cereal com molho ou azeite,203.4
+Wheat flours,Virgin olive oils,almoco_jantar,cereal com molho ou azeite,548.4
+Wheat flours,Extra-virgin olive oils,almoco_jantar,cereal com molho ou azeite,540.8
+Cereals and potatoes,Sauces,almoco_jantar,cereal com molho ou azeite,243.4
+Cereals and potatoes,Tomato sauces,almoco_jantar,cereal com molho ou azeite,218.7
+Cereals and potatoes,Ketchup,almoco_jantar,cereal com molho ou azeite,244.9
+Cereals and potatoes,Mayonnaises,almoco_jantar,cereal com molho ou azeite,361.8
+Cereals and potatoes,Mustards,almoco_jantar,cereal com molho ou azeite,237.6
+Cereals and potatoes,Virgin olive oils,almoco_jantar,cereal com molho ou azeite,582.5
+Cereals and potatoes,Extra-virgin olive oils,almoco_jantar,cereal com molho ou azeite,575.0
+Frozen meats,Cheeses,almoco_jantar,proteína animal com laticínio,205.9
+Frozen meats,Yogurts,almoco_jantar,proteína animal com laticínio,112.7
+Frozen meats,Greek-style yogurts,almoco_jantar,proteína animal com laticínio,129.4
+Frozen meats,Plain yogurts,almoco_jantar,proteína animal com laticínio,106.5
+Frozen meats,Low-fat yogurts,almoco_jantar,proteína animal com laticínio,96.0
+Frozen meats,Milks,almoco_jantar,proteína animal com laticínio,131.6
+Frozen meats,UHT Milks,almoco_jantar,proteína animal com laticínio,104.4
+Frozen meats,Grated cheese,almoco_jantar,proteína animal com laticínio,276.5
+Frozen meats,Cow cheeses,almoco_jantar,proteína animal com laticínio,214.9
+Frozen meats,Ricotta,almoco_jantar,proteína animal com laticínio,144.8
+Frozen meats,Condensed milks,almoco_jantar,proteína animal com laticínio,218.9
+Frozen meats,Milk jams,almoco_jantar,proteína animal com laticínio,219.3
+Frozen meats,Dairies,almoco_jantar,proteína animal com laticínio,168.7
+Frozen meats,Dairy drinks,almoco_jantar,proteína animal com laticínio,103.5
+Hams,Cheeses,almoco_jantar,proteína animal com laticínio,199.0
+Hams,Yogurts,almoco_jantar,proteína animal com laticínio,105.8
+Hams,Greek-style yogurts,almoco_jantar,proteína animal com laticínio,122.5
+Hams,Plain yogurts,almoco_jantar,proteína animal com laticínio,99.6
+Hams,Low-fat yogurts,almoco_jantar,proteína animal com laticínio,89.0
+Hams,Milks,almoco_jantar,proteína animal com laticínio,124.6
+Hams,UHT Milks,almoco_jantar,proteína animal com laticínio,97.4
+Hams,Grated cheese,almoco_jantar,proteína animal com laticínio,269.5
+Hams,Cow cheeses,almoco_jantar,proteína animal com laticínio,207.9
+Hams,Ricotta,almoco_jantar,proteína animal com laticínio,137.9
+Hams,Condensed milks,almoco_jantar,proteína animal com laticínio,211.9
+Hams,Milk jams,almoco_jantar,proteína animal com laticínio,212.3
+Hams,Dairies,almoco_jantar,proteína animal com laticínio,161.8
+Hams,Dairy drinks,almoco_jantar,proteína animal com laticínio,96.6
+Sausages,Cheeses,almoco_jantar,proteína animal com laticínio,254.7
+Sausages,Yogurts,almoco_jantar,proteína animal com laticínio,161.4
+Sausages,Greek-style yogurts,almoco_jantar,proteína animal com laticínio,178.2
+Sausages,Plain yogurts,almoco_jantar,proteína animal com laticínio,155.2
+Sausages,Low-fat yogurts,almoco_jantar,proteína animal com laticínio,144.7
+Sausages,Milks,almoco_jantar,proteína animal com laticínio,180.2
+Sausages,UHT Milks,almoco_jantar,proteína animal com laticínio,153.1
+Sausages,Grated cheese,almoco_jantar,proteína animal com laticínio,325.2
+Sausages,Cow cheeses,almoco_jantar,proteína animal com laticínio,263.6
+Sausages,Ricotta,almoco_jantar,proteína animal com laticínio,193.6
+Sausages,Condensed milks,almoco_jantar,proteína animal com laticínio,267.6
+Sausages,Milk jams,almoco_jantar,proteína animal com laticínio,268.0
+Sausages,Dairies,almoco_jantar,proteína animal com laticínio,217.4
+Sausages,Dairy drinks,almoco_jantar,proteína animal com laticínio,152.2
+Chicken eggs,Cheeses,almoco_jantar,proteína animal com laticínio,204.1
+Chicken eggs,Yogurts,almoco_jantar,proteína animal com laticínio,110.8
+Chicken eggs,Greek-style yogurts,almoco_jantar,proteína animal com laticínio,127.6
+Chicken eggs,Plain yogurts,almoco_jantar,proteína animal com laticínio,104.7
+Chicken eggs,Low-fat yogurts,almoco_jantar,proteína animal com laticínio,94.2
+Chicken eggs,Milks,almoco_jantar,proteína animal com laticínio,129.7
+Chicken eggs,UHT Milks,almoco_jantar,proteína animal com laticínio,102.6
+Chicken eggs,Grated cheese,almoco_jantar,proteína animal com laticínio,274.6
+Chicken eggs,Cow cheeses,almoco_jantar,proteína animal com laticínio,213.0
+Chicken eggs,Ricotta,almoco_jantar,proteína animal com laticínio,143.0
+Chicken eggs,Condensed milks,almoco_jantar,proteína animal com laticínio,217.0
+Chicken eggs,Milk jams,almoco_jantar,proteína animal com laticínio,217.4
+Chicken eggs,Dairies,almoco_jantar,proteína animal com laticínio,166.9
+Chicken eggs,Dairy drinks,almoco_jantar,proteína animal com laticínio,101.7
+Pescados,Cheeses,almoco_jantar,proteína animal com laticínio,205.7
+Pescados,Yogurts,almoco_jantar,proteína animal com laticínio,112.4
+Pescados,Greek-style yogurts,almoco_jantar,proteína animal com laticínio,129.2
+Pescados,Plain yogurts,almoco_jantar,proteína animal com laticínio,106.2
+Pescados,Low-fat yogurts,almoco_jantar,proteína animal com laticínio,95.7
+Pescados,Milks,almoco_jantar,proteína animal com laticínio,131.2
+Pescados,UHT Milks,almoco_jantar,proteína animal com laticínio,104.1
+Pescados,Grated cheese,almoco_jantar,proteína animal com laticínio,276.2
+Pescados,Cow cheeses,almoco_jantar,proteína animal com laticínio,214.6
+Pescados,Ricotta,almoco_jantar,proteína animal com laticínio,144.6
+Pescados,Condensed milks,almoco_jantar,proteína animal com laticínio,218.6
+Pescados,Milk jams,almoco_jantar,proteína animal com laticínio,219.0
+Pescados,Dairies,almoco_jantar,proteína animal com laticínio,168.4
+Pescados,Dairy drinks,almoco_jantar,proteína animal com laticínio,103.2
+Canned sardines,Cheeses,almoco_jantar,proteína animal com laticínio,219.2
+Canned sardines,Yogurts,almoco_jantar,proteína animal com laticínio,125.9
+Canned sardines,Greek-style yogurts,almoco_jantar,proteína animal com laticínio,142.7
+Canned sardines,Plain yogurts,almoco_jantar,proteína animal com laticínio,119.8
+Canned sardines,Low-fat yogurts,almoco_jantar,proteína animal com laticínio,109.2
+Canned sardines,Milks,almoco_jantar,proteína animal com laticínio,144.8
+Canned sardines,UHT Milks,almoco_jantar,proteína animal com laticínio,117.7
+Canned sardines,Grated cheese,almoco_jantar,proteína animal com laticínio,289.8
+Canned sardines,Cow cheeses,almoco_jantar,proteína animal com laticínio,228.1
+Canned sardines,Ricotta,almoco_jantar,proteína animal com laticínio,158.1
+Canned sardines,Condensed milks,almoco_jantar,proteína animal com laticínio,232.1
+Canned sardines,Milk jams,almoco_jantar,proteína animal com laticínio,232.6
+Canned sardines,Dairies,almoco_jantar,proteína animal com laticínio,181.9
+Canned sardines,Dairy drinks,almoco_jantar,proteína animal com laticínio,116.8
+Meals with chicken,Cheeses,almoco_jantar,proteína animal com laticínio,209.0
+Meals with chicken,Yogurts,almoco_jantar,proteína animal com laticínio,115.8
+Meals with chicken,Greek-style yogurts,almoco_jantar,proteína animal com laticínio,132.5
+Meals with chicken,Plain yogurts,almoco_jantar,proteína animal com laticínio,109.6
+Meals with chicken,Low-fat yogurts,almoco_jantar,proteína animal com laticínio,99.0
+Meals with chicken,Milks,almoco_jantar,proteína animal com laticínio,134.6
+Meals with chicken,UHT Milks,almoco_jantar,proteína animal com laticínio,107.4
+Meals with chicken,Grated cheese,almoco_jantar,proteína animal com laticínio,279.5
+Meals with chicken,Cow cheeses,almoco_jantar,proteína animal com laticínio,217.9
+Meals with chicken,Ricotta,almoco_jantar,proteína animal com laticínio,147.9
+Meals with chicken,Condensed milks,almoco_jantar,proteína animal com laticínio,221.9
+Meals with chicken,Milk jams,almoco_jantar,proteína animal com laticínio,222.3
+Meals with chicken,Dairies,almoco_jantar,proteína animal com laticínio,171.8
+Meals with chicken,Dairy drinks,almoco_jantar,proteína animal com laticínio,106.6
+Frozen foods,Cheeses,almoco_jantar,proteína animal com laticínio,215.4
+Frozen foods,Yogurts,almoco_jantar,proteína animal com laticínio,122.2
+Frozen foods,Greek-style yogurts,almoco_jantar,proteína animal com laticínio,138.9
+Frozen foods,Plain yogurts,almoco_jantar,proteína animal com laticínio,116.0
+Frozen foods,Low-fat yogurts,almoco_jantar,proteína animal com laticínio,105.5
+Frozen foods,Milks,almoco_jantar,proteína animal com laticínio,141.0
+Frozen foods,UHT Milks,almoco_jantar,proteína animal com laticínio,113.8
+Frozen foods,Grated cheese,almoco_jantar,proteína animal com laticínio,285.9
+Frozen foods,Cow cheeses,almoco_jantar,proteína animal com laticínio,224.3
+Frozen foods,Ricotta,almoco_jantar,proteína animal com laticínio,154.3
+Frozen foods,Condensed milks,almoco_jantar,proteína animal com laticínio,228.3
+Frozen foods,Milk jams,almoco_jantar,proteína animal com laticínio,228.8
+Frozen foods,Dairies,almoco_jantar,proteína animal com laticínio,178.2
+Frozen foods,Dairy drinks,almoco_jantar,proteína animal com laticínio,113.0
+Breads,Frozen meats,almoco_jantar,pão com proteína animal,197.8
+Breads,Hams,almoco_jantar,pão com proteína animal,190.8
+Breads,Sausages,almoco_jantar,pão com proteína animal,246.5
+Breads,Chicken eggs,almoco_jantar,pão com proteína animal,195.9
+Breads,Pescados,almoco_jantar,pão com proteína animal,197.5
+Breads,Canned sardines,almoco_jantar,pão com proteína animal,211.1
+Breads,Meals with chicken,almoco_jantar,pão com proteína animal,200.8
+Breads,Frozen foods,almoco_jantar,pão com proteína animal,207.2
+Sliced breads,Frozen meats,almoco_jantar,pão com proteína animal,190.8
+Sliced breads,Hams,almoco_jantar,pão com proteína animal,183.8
+Sliced breads,Sausages,almoco_jantar,pão com proteína animal,239.4
+Sliced breads,Chicken eggs,almoco_jantar,pão com proteína animal,188.9
+Sliced breads,Pescados,almoco_jantar,pão com proteína animal,190.4
+Sliced breads,Canned sardines,almoco_jantar,pão com proteína animal,204.0
+Sliced breads,Meals with chicken,almoco_jantar,pão com proteína animal,193.8
+Sliced breads,Frozen foods,almoco_jantar,pão com proteína animal,200.2
+Wholemeal breads,Frozen meats,almoco_jantar,pão com proteína animal,172.3
+Wholemeal breads,Hams,almoco_jantar,pão com proteína animal,165.3
+Wholemeal breads,Sausages,almoco_jantar,pão com proteína animal,221.0
+Wholemeal breads,Chicken eggs,almoco_jantar,pão com proteína animal,170.4
+Wholemeal breads,Pescados,almoco_jantar,pão com proteína animal,172.0
+Wholemeal breads,Canned sardines,almoco_jantar,pão com proteína animal,185.6
+Wholemeal breads,Meals with chicken,almoco_jantar,pão com proteína animal,175.3
+Wholemeal breads,Frozen foods,almoco_jantar,pão com proteína animal,181.8
+Panettone,Frozen meats,almoco_jantar,pão com proteína animal,255.4
+Panettone,Hams,almoco_jantar,pão com proteína animal,248.5
+Panettone,Sausages,almoco_jantar,pão com proteína animal,304.1
+Panettone,Chicken eggs,almoco_jantar,pão com proteína animal,253.6
+Panettone,Pescados,almoco_jantar,pão com proteína animal,255.2
+Panettone,Canned sardines,almoco_jantar,pão com proteína animal,268.7
+Panettone,Meals with chicken,almoco_jantar,pão com proteína animal,258.5
+Panettone,Frozen foods,almoco_jantar,pão com proteína animal,264.9
+Sandwiches,Frozen meats,almoco_jantar,pão com proteína animal,191.1
+Sandwiches,Hams,almoco_jantar,pão com proteína animal,184.1
+Sandwiches,Sausages,almoco_jantar,pão com proteína animal,239.8
+Sandwiches,Chicken eggs,almoco_jantar,pão com proteína animal,189.2
+Sandwiches,Pescados,almoco_jantar,pão com proteína animal,190.8
+Sandwiches,Canned sardines,almoco_jantar,pão com proteína animal,204.3
+Sandwiches,Meals with chicken,almoco_jantar,pão com proteína animal,194.1
+Sandwiches,Frozen foods,almoco_jantar,pão com proteína animal,200.6
+Tapioca,Frozen meats,almoco_jantar,pão com proteína animal,193.1
+Tapioca,Hams,almoco_jantar,pão com proteína animal,186.1
+Tapioca,Sausages,almoco_jantar,pão com proteína animal,241.8
+Tapioca,Chicken eggs,almoco_jantar,pão com proteína animal,191.2
+Tapioca,Pescados,almoco_jantar,pão com proteína animal,192.8
+Tapioca,Canned sardines,almoco_jantar,pão com proteína animal,206.3
+Tapioca,Meals with chicken,almoco_jantar,pão com proteína animal,196.1
+Tapioca,Frozen foods,almoco_jantar,pão com proteína animal,202.6
+Crackers (Appetizers),Frozen meats,almoco_jantar,pão com proteína animal,279.9
+Crackers (Appetizers),Hams,almoco_jantar,pão com proteína animal,272.9
+Crackers (Appetizers),Sausages,almoco_jantar,pão com proteína animal,328.6
+Crackers (Appetizers),Chicken eggs,almoco_jantar,pão com proteína animal,278.1
+Crackers (Appetizers),Pescados,almoco_jantar,pão com proteína animal,279.6
+Crackers (Appetizers),Canned sardines,almoco_jantar,pão com proteína animal,293.1
+Crackers (Appetizers),Meals with chicken,almoco_jantar,pão com proteína animal,282.9
+Crackers (Appetizers),Frozen foods,almoco_jantar,pão com proteína animal,289.4
+Galletas,Frozen meats,almoco_jantar,pão com proteína animal,278.9
+Galletas,Hams,almoco_jantar,pão com proteína animal,271.9
+Galletas,Sausages,almoco_jantar,pão com proteína animal,327.6
+Galletas,Chicken eggs,almoco_jantar,pão com proteína animal,277.0
+Galletas,Pescados,almoco_jantar,pão com proteína animal,278.6
+Galletas,Canned sardines,almoco_jantar,pão com proteína animal,292.1
+Galletas,Meals with chicken,almoco_jantar,pão com proteína animal,281.9
+Galletas,Frozen foods,almoco_jantar,pão com proteína animal,288.3
+Cakes,Frozen meats,almoco_jantar,pão com proteína animal,240.4
+Cakes,Hams,almoco_jantar,pão com proteína animal,233.5
+Cakes,Sausages,almoco_jantar,pão com proteína animal,289.1
+Cakes,Chicken eggs,almoco_jantar,pão com proteína animal,238.6
+Cakes,Pescados,almoco_jantar,pão com proteína animal,240.2
+Cakes,Canned sardines,almoco_jantar,pão com proteína animal,253.7
+Cakes,Meals with chicken,almoco_jantar,pão com proteína animal,243.5
+Cakes,Frozen foods,almoco_jantar,pão com proteína animal,249.9
+Mueslis,Frozen meats,almoco_jantar,pão com proteína animal,253.2
+Mueslis,Hams,almoco_jantar,pão com proteína animal,246.2
+Mueslis,Sausages,almoco_jantar,pão com proteína animal,301.9
+Mueslis,Chicken eggs,almoco_jantar,pão com proteína animal,251.4
+Mueslis,Pescados,almoco_jantar,pão com proteína animal,252.9
+Mueslis,Canned sardines,almoco_jantar,pão com proteína animal,266.4
+Mueslis,Meals with chicken,almoco_jantar,pão com proteína animal,256.2
+Mueslis,Frozen foods,almoco_jantar,pão com proteína animal,262.6
+Protein powders,Cheeses,pre_pos_treino,suplemento com laticínio,280.3
+Protein powders,Yogurts,pre_pos_treino,suplemento com laticínio,187.1
+Protein powders,Greek-style yogurts,pre_pos_treino,suplemento com laticínio,203.8
+Protein powders,Plain yogurts,pre_pos_treino,suplemento com laticínio,180.9
+Protein powders,Low-fat yogurts,pre_pos_treino,suplemento com laticínio,170.3
+Protein powders,Milks,pre_pos_treino,suplemento com laticínio,205.9
+Protein powders,UHT Milks,pre_pos_treino,suplemento com laticínio,178.8
+Protein powders,Grated cheese,pre_pos_treino,suplemento com laticínio,350.9
+Protein powders,Cow cheeses,pre_pos_treino,suplemento com laticínio,289.2
+Protein powders,Ricotta,pre_pos_treino,suplemento com laticínio,219.2
+Protein powders,Condensed milks,pre_pos_treino,suplemento com laticínio,293.2
+Protein powders,Milk jams,pre_pos_treino,suplemento com laticínio,293.6
+Protein powders,Dairies,pre_pos_treino,suplemento com laticínio,243.1
+Protein powders,Dairy drinks,pre_pos_treino,suplemento com laticínio,177.9
+Protein bars,Cheeses,pre_pos_treino,suplemento com laticínio,306.4
+Protein bars,Yogurts,pre_pos_treino,suplemento com laticínio,213.1
+Protein bars,Greek-style yogurts,pre_pos_treino,suplemento com laticínio,229.8
+Protein bars,Plain yogurts,pre_pos_treino,suplemento com laticínio,206.9
+Protein bars,Low-fat yogurts,pre_pos_treino,suplemento com laticínio,196.4
+Protein bars,Milks,pre_pos_treino,suplemento com laticínio,231.9
+Protein bars,UHT Milks,pre_pos_treino,suplemento com laticínio,204.8
+Protein bars,Grated cheese,pre_pos_treino,suplemento com laticínio,376.9
+Protein bars,Cow cheeses,pre_pos_treino,suplemento com laticínio,315.2
+Protein bars,Ricotta,pre_pos_treino,suplemento com laticínio,245.2
+Protein bars,Condensed milks,pre_pos_treino,suplemento com laticínio,319.2
+Protein bars,Milk jams,pre_pos_treino,suplemento com laticínio,319.7
+Protein bars,Dairies,pre_pos_treino,suplemento com laticínio,269.1
+Protein bars,Dairy drinks,pre_pos_treino,suplemento com laticínio,203.9
+Barras-de-proteina,Cheeses,pre_pos_treino,suplemento com laticínio,305.3
+Barras-de-proteina,Yogurts,pre_pos_treino,suplemento com laticínio,212.1
+Barras-de-proteina,Greek-style yogurts,pre_pos_treino,suplemento com laticínio,228.8
+Barras-de-proteina,Plain yogurts,pre_pos_treino,suplemento com laticínio,205.9
+Barras-de-proteina,Low-fat yogurts,pre_pos_treino,suplemento com laticínio,195.3
+Barras-de-proteina,Milks,pre_pos_treino,suplemento com laticínio,230.9
+Barras-de-proteina,UHT Milks,pre_pos_treino,suplemento com laticínio,203.8
+Barras-de-proteina,Grated cheese,pre_pos_treino,suplemento com laticínio,375.9
+Barras-de-proteina,Cow cheeses,pre_pos_treino,suplemento com laticínio,314.2
+Barras-de-proteina,Ricotta,pre_pos_treino,suplemento com laticínio,244.2
+Barras-de-proteina,Condensed milks,pre_pos_treino,suplemento com laticínio,318.2
+Barras-de-proteina,Milk jams,pre_pos_treino,suplemento com laticínio,318.6
+Barras-de-proteina,Dairies,pre_pos_treino,suplemento com laticínio,268.1
+Barras-de-proteina,Dairy drinks,pre_pos_treino,suplemento com laticínio,202.9
+Barras-de-proteinas,Cheeses,pre_pos_treino,suplemento com laticínio,310.5
+Barras-de-proteinas,Yogurts,pre_pos_treino,suplemento com laticínio,217.2
+Barras-de-proteinas,Greek-style yogurts,pre_pos_treino,suplemento com laticínio,234.0
+Barras-de-proteinas,Plain yogurts,pre_pos_treino,suplemento com laticínio,211.1
+Barras-de-proteinas,Low-fat yogurts,pre_pos_treino,suplemento com laticínio,200.5
+Barras-de-proteinas,Milks,pre_pos_treino,suplemento com laticínio,236.1
+Barras-de-proteinas,UHT Milks,pre_pos_treino,suplemento com laticínio,208.9
+Barras-de-proteinas,Grated cheese,pre_pos_treino,suplemento com laticínio,381.0
+Barras-de-proteinas,Cow cheeses,pre_pos_treino,suplemento com laticínio,319.4
+Barras-de-proteinas,Ricotta,pre_pos_treino,suplemento com laticínio,249.4
+Barras-de-proteinas,Condensed milks,pre_pos_treino,suplemento com laticínio,323.4
+Barras-de-proteinas,Milk jams,pre_pos_treino,suplemento com laticínio,323.9
+Barras-de-proteinas,Dairies,pre_pos_treino,suplemento com laticínio,273.2
+Barras-de-proteinas,Dairy drinks,pre_pos_treino,suplemento com laticínio,208.1
+Dietary supplements,Cheeses,pre_pos_treino,suplemento com laticínio,273.5
+Dietary supplements,Yogurts,pre_pos_treino,suplemento com laticínio,180.2
+Dietary supplements,Greek-style yogurts,pre_pos_treino,suplemento com laticínio,197.0
+Dietary supplements,Plain yogurts,pre_pos_treino,suplemento com laticínio,174.1
+Dietary supplements,Low-fat yogurts,pre_pos_treino,suplemento com laticínio,163.5
+Dietary supplements,Milks,pre_pos_treino,suplemento com laticínio,199.1
+Dietary supplements,UHT Milks,pre_pos_treino,suplemento com laticínio,171.9
+Dietary supplements,Grated cheese,pre_pos_treino,suplemento com laticínio,344.0
+Dietary supplements,Cow cheeses,pre_pos_treino,suplemento com laticínio,282.4
+Dietary supplements,Ricotta,pre_pos_treino,suplemento com laticínio,212.4
+Dietary supplements,Condensed milks,pre_pos_treino,suplemento com laticínio,286.4
+Dietary supplements,Milk jams,pre_pos_treino,suplemento com laticínio,286.8
+Dietary supplements,Dairies,pre_pos_treino,suplemento com laticínio,236.2
+Dietary supplements,Dairy drinks,pre_pos_treino,suplemento com laticínio,171.1
+Supplement,Cheeses,pre_pos_treino,suplemento com laticínio,310.1
+Supplement,Yogurts,pre_pos_treino,suplemento com laticínio,216.8
+Supplement,Greek-style yogurts,pre_pos_treino,suplemento com laticínio,233.6
+Supplement,Plain yogurts,pre_pos_treino,suplemento com laticínio,210.7
+Supplement,Low-fat yogurts,pre_pos_treino,suplemento com laticínio,200.1
+Supplement,Milks,pre_pos_treino,suplemento com laticínio,235.7
+Supplement,UHT Milks,pre_pos_treino,suplemento com laticínio,208.5
+Supplement,Grated cheese,pre_pos_treino,suplemento com laticínio,380.6
+Supplement,Cow cheeses,pre_pos_treino,suplemento com laticínio,319.0
+Supplement,Ricotta,pre_pos_treino,suplemento com laticínio,249.0
+Supplement,Condensed milks,pre_pos_treino,suplemento com laticínio,323.0
+Supplement,Milk jams,pre_pos_treino,suplemento com laticínio,323.4
+Supplement,Dairies,pre_pos_treino,suplemento com laticínio,272.9
+Supplement,Dairy drinks,pre_pos_treino,suplemento com laticínio,207.7
+Suplementos-alimenticios,Cheeses,pre_pos_treino,suplemento com laticínio,262.0
+Suplementos-alimenticios,Yogurts,pre_pos_treino,suplemento com laticínio,168.8
+Suplementos-alimenticios,Greek-style yogurts,pre_pos_treino,suplemento com laticínio,185.5
+Suplementos-alimenticios,Plain yogurts,pre_pos_treino,suplemento com laticínio,162.6
+Suplementos-alimenticios,Low-fat yogurts,pre_pos_treino,suplemento com laticínio,152.0
+Suplementos-alimenticios,Milks,pre_pos_treino,suplemento com laticínio,187.6
+Suplementos-alimenticios,UHT Milks,pre_pos_treino,suplemento com laticínio,160.4
+Suplementos-alimenticios,Grated cheese,pre_pos_treino,suplemento com laticínio,332.5
+Suplementos-alimenticios,Cow cheeses,pre_pos_treino,suplemento com laticínio,270.9
+Suplementos-alimenticios,Ricotta,pre_pos_treino,suplemento com laticínio,200.9
+Suplementos-alimenticios,Condensed milks,pre_pos_treino,suplemento com laticínio,274.9
+Suplementos-alimenticios,Milk jams,pre_pos_treino,suplemento com laticínio,275.4
+Suplementos-alimenticios,Dairies,pre_pos_treino,suplemento com laticínio,224.8
+Suplementos-alimenticios,Dairy drinks,pre_pos_treino,suplemento com laticínio,159.6
+Suplementos,Cheeses,pre_pos_treino,suplemento com laticínio,324.7
+Suplementos,Yogurts,pre_pos_treino,suplemento com laticínio,231.5
+Suplementos,Greek-style yogurts,pre_pos_treino,suplemento com laticínio,248.2
+Suplementos,Plain yogurts,pre_pos_treino,suplemento com laticínio,225.3
+Suplementos,Low-fat yogurts,pre_pos_treino,suplemento com laticínio,214.8
+Suplementos,Milks,pre_pos_treino,suplemento com laticínio,250.3
+Suplementos,UHT Milks,pre_pos_treino,suplemento com laticínio,223.2
+Suplementos,Grated cheese,pre_pos_treino,suplemento com laticínio,395.2
+Suplementos,Cow cheeses,pre_pos_treino,suplemento com laticínio,333.6
+Suplementos,Ricotta,pre_pos_treino,suplemento com laticínio,263.6
+Suplementos,Condensed milks,pre_pos_treino,suplemento com laticínio,337.6
+Suplementos,Milk jams,pre_pos_treino,suplemento com laticínio,338.1
+Suplementos,Dairies,pre_pos_treino,suplemento com laticínio,287.5
+Suplementos,Dairy drinks,pre_pos_treino,suplemento com laticínio,222.3
+Bars,Cheeses,pre_pos_treino,suplemento com laticínio,269.6
+Bars,Yogurts,pre_pos_treino,suplemento com laticínio,176.3
+Bars,Greek-style yogurts,pre_pos_treino,suplemento com laticínio,193.1
+Bars,Plain yogurts,pre_pos_treino,suplemento com laticínio,170.2
+Bars,Low-fat yogurts,pre_pos_treino,suplemento com laticínio,159.6
+Bars,Milks,pre_pos_treino,suplemento com laticínio,195.2
+Bars,UHT Milks,pre_pos_treino,suplemento com laticínio,168.0
+Bars,Grated cheese,pre_pos_treino,suplemento com laticínio,340.1
+Bars,Cow cheeses,pre_pos_treino,suplemento com laticínio,278.5
+Bars,Ricotta,pre_pos_treino,suplemento com laticínio,208.4
+Bars,Condensed milks,pre_pos_treino,suplemento com laticínio,282.5
+Bars,Milk jams,pre_pos_treino,suplemento com laticínio,282.9
+Bars,Dairies,pre_pos_treino,suplemento com laticínio,232.3
+Bars,Dairy drinks,pre_pos_treino,suplemento com laticínio,167.2
+Protein powders,Breakfast cereals,pre_pos_treino,suplemento com cereal,317.7
+Protein powders,Rolled oats,pre_pos_treino,suplemento com cereal,308.9
+Protein powders,Cereals and their products,pre_pos_treino,suplemento com cereal,315.2
+Protein powders,Oat brans,pre_pos_treino,suplemento com cereal,292.7
+Protein powders,Rices,pre_pos_treino,suplemento com cereal,280.2
+Protein powders,Pastas,pre_pos_treino,suplemento com cereal,285.2
+Protein powders,Instant noodles,pre_pos_treino,suplemento com cereal,326.4
+Protein powders,Wheat flours,pre_pos_treino,suplemento com cereal,315.4
+Protein powders,Cereals and potatoes,pre_pos_treino,suplemento com cereal,349.6
+Protein bars,Breakfast cereals,pre_pos_treino,suplemento com cereal,343.8
+Protein bars,Rolled oats,pre_pos_treino,suplemento com cereal,334.9
+Protein bars,Cereals and their products,pre_pos_treino,suplemento com cereal,341.2
+Protein bars,Oat brans,pre_pos_treino,suplemento com cereal,318.8
+Protein bars,Rices,pre_pos_treino,suplemento com cereal,306.3
+Protein bars,Pastas,pre_pos_treino,suplemento com cereal,311.2
+Protein bars,Instant noodles,pre_pos_treino,suplemento com cereal,352.4
+Protein bars,Wheat flours,pre_pos_treino,suplemento com cereal,341.4
+Protein bars,Cereals and potatoes,pre_pos_treino,suplemento com cereal,375.6
+Barras-de-proteina,Breakfast cereals,pre_pos_treino,suplemento com cereal,342.7
+Barras-de-proteina,Rolled oats,pre_pos_treino,suplemento com cereal,333.9
+Barras-de-proteina,Cereals and their products,pre_pos_treino,suplemento com cereal,340.2
+Barras-de-proteina,Oat brans,pre_pos_treino,suplemento com cereal,317.7
+Barras-de-proteina,Rices,pre_pos_treino,suplemento com cereal,305.2
+Barras-de-proteina,Pastas,pre_pos_treino,suplemento com cereal,310.2
+Barras-de-proteina,Instant noodles,pre_pos_treino,suplemento com cereal,351.4
+Barras-de-proteina,Wheat flours,pre_pos_treino,suplemento com cereal,340.4
+Barras-de-proteina,Cereals and potatoes,pre_pos_treino,suplemento com cereal,374.6
+Barras-de-proteinas,Breakfast cereals,pre_pos_treino,suplemento com cereal,347.9
+Barras-de-proteinas,Rolled oats,pre_pos_treino,suplemento com cereal,339.1
+Barras-de-proteinas,Cereals and their products,pre_pos_treino,suplemento com cereal,345.4
+Barras-de-proteinas,Oat brans,pre_pos_treino,suplemento com cereal,322.9
+Barras-de-proteinas,Rices,pre_pos_treino,suplemento com cereal,310.4
+Barras-de-proteinas,Pastas,pre_pos_treino,suplemento com cereal,315.4
+Barras-de-proteinas,Instant noodles,pre_pos_treino,suplemento com cereal,356.5
+Barras-de-proteinas,Wheat flours,pre_pos_treino,suplemento com cereal,345.6
+Barras-de-proteinas,Cereals and potatoes,pre_pos_treino,suplemento com cereal,379.8
+Dietary supplements,Breakfast cereals,pre_pos_treino,suplemento com cereal,310.9
+Dietary supplements,Rolled oats,pre_pos_treino,suplemento com cereal,302.1
+Dietary supplements,Cereals and their products,pre_pos_treino,suplemento com cereal,308.4
+Dietary supplements,Oat brans,pre_pos_treino,suplemento com cereal,285.9
+Dietary supplements,Rices,pre_pos_treino,suplemento com cereal,273.4
+Dietary supplements,Pastas,pre_pos_treino,suplemento com cereal,278.4
+Dietary supplements,Instant noodles,pre_pos_treino,suplemento com cereal,319.5
+Dietary supplements,Wheat flours,pre_pos_treino,suplemento com cereal,308.6
+Dietary supplements,Cereals and potatoes,pre_pos_treino,suplemento com cereal,342.7
+Supplement,Breakfast cereals,pre_pos_treino,suplemento com cereal,347.5
+Supplement,Rolled oats,pre_pos_treino,suplemento com cereal,338.7
+Supplement,Cereals and their products,pre_pos_treino,suplemento com cereal,345.0
+Supplement,Oat brans,pre_pos_treino,suplemento com cereal,322.5
+Supplement,Rices,pre_pos_treino,suplemento com cereal,310.0
+Supplement,Pastas,pre_pos_treino,suplemento com cereal,315.0
+Supplement,Instant noodles,pre_pos_treino,suplemento com cereal,356.1
+Supplement,Wheat flours,pre_pos_treino,suplemento com cereal,345.2
+Supplement,Cereals and potatoes,pre_pos_treino,suplemento com cereal,379.4
+Suplementos-alimenticios,Breakfast cereals,pre_pos_treino,suplemento com cereal,299.4
+Suplementos-alimenticios,Rolled oats,pre_pos_treino,suplemento com cereal,290.6
+Suplementos-alimenticios,Cereals and their products,pre_pos_treino,suplemento com cereal,296.9
+Suplementos-alimenticios,Oat brans,pre_pos_treino,suplemento com cereal,274.4
+Suplementos-alimenticios,Rices,pre_pos_treino,suplemento com cereal,261.9
+Suplementos-alimenticios,Pastas,pre_pos_treino,suplemento com cereal,266.9
+Suplementos-alimenticios,Instant noodles,pre_pos_treino,suplemento com cereal,308.0
+Suplementos-alimenticios,Wheat flours,pre_pos_treino,suplemento com cereal,297.1
+Suplementos-alimenticios,Cereals and potatoes,pre_pos_treino,suplemento com cereal,331.2
+Suplementos,Breakfast cereals,pre_pos_treino,suplemento com cereal,362.1
+Suplementos,Rolled oats,pre_pos_treino,suplemento com cereal,353.3
+Suplementos,Cereals and their products,pre_pos_treino,suplemento com cereal,359.6
+Suplementos,Oat brans,pre_pos_treino,suplemento com cereal,337.1
+Suplementos,Rices,pre_pos_treino,suplemento com cereal,324.6
+Suplementos,Pastas,pre_pos_treino,suplemento com cereal,329.6
+Suplementos,Instant noodles,pre_pos_treino,suplemento com cereal,370.8
+Suplementos,Wheat flours,pre_pos_treino,suplemento com cereal,359.8
+Suplementos,Cereals and potatoes,pre_pos_treino,suplemento com cereal,394.0
+Bars,Breakfast cereals,pre_pos_treino,suplemento com cereal,307.0
+Bars,Rolled oats,pre_pos_treino,suplemento com cereal,298.1
+Bars,Cereals and their products,pre_pos_treino,suplemento com cereal,304.5
+Bars,Oat brans,pre_pos_treino,suplemento com cereal,282.0
+Bars,Rices,pre_pos_treino,suplemento com cereal,269.5
+Bars,Pastas,pre_pos_treino,suplemento com cereal,274.5
+Bars,Instant noodles,pre_pos_treino,suplemento com cereal,315.6
+Bars,Wheat flours,pre_pos_treino,suplemento com cereal,304.6
+Bars,Cereals and potatoes,pre_pos_treino,suplemento com cereal,338.8
+Protein powders,Coffees,pre_pos_treino,suplemento com bebida,223.9
+Protein powders,Teas,pre_pos_treino,suplemento com bebida,152.0
+Protein powders,Herbal teas,pre_pos_treino,suplemento com bebida,149.2
+Protein powders,Sweetened beverages,pre_pos_treino,suplemento com bebida,186.2
+Protein powders,Sodas,pre_pos_treino,suplemento com bebida,175.2
+Protein powders,Juices and nectars,pre_pos_treino,suplemento com bebida,181.4
+Protein powders,Fruit juices,pre_pos_treino,suplemento com bebida,172.6
+Protein powders,Orange juices,pre_pos_treino,suplemento com bebida,176.9
+Protein powders,Grape nectars,pre_pos_treino,suplemento com bebida,176.0
+Protein powders,Fruit nectars,pre_pos_treino,suplemento com bebida,171.3
+Protein powders,Coconut waters,pre_pos_treino,suplemento com bebida,159.5
+Protein powders,Energy drinks,pre_pos_treino,suplemento com bebida,182.6
+Protein powders,Beverages,pre_pos_treino,suplemento com bebida,209.9
+Protein powders,Beers,pre_pos_treino,suplemento com bebida,178.2
+Protein bars,Coffees,pre_pos_treino,suplemento com bebida,249.9
+Protein bars,Teas,pre_pos_treino,suplemento com bebida,178.0
+Protein bars,Herbal teas,pre_pos_treino,suplemento com bebida,175.2
+Protein bars,Sweetened beverages,pre_pos_treino,suplemento com bebida,212.2
+Protein bars,Sodas,pre_pos_treino,suplemento com bebida,201.3
+Protein bars,Juices and nectars,pre_pos_treino,suplemento com bebida,207.5
+Protein bars,Fruit juices,pre_pos_treino,suplemento com bebida,198.6
+Protein bars,Orange juices,pre_pos_treino,suplemento com bebida,202.9
+Protein bars,Grape nectars,pre_pos_treino,suplemento com bebida,202.0
+Protein bars,Fruit nectars,pre_pos_treino,suplemento com bebida,197.3
+Protein bars,Coconut waters,pre_pos_treino,suplemento com bebida,185.5
+Protein bars,Energy drinks,pre_pos_treino,suplemento com bebida,208.6
+Protein bars,Beverages,pre_pos_treino,suplemento com bebida,236.0
+Protein bars,Beers,pre_pos_treino,suplemento com bebida,204.2
+Barras-de-proteina,Coffees,pre_pos_treino,suplemento com bebida,248.9
+Barras-de-proteina,Teas,pre_pos_treino,suplemento com bebida,177.0
+Barras-de-proteina,Herbal teas,pre_pos_treino,suplemento com bebida,174.2
+Barras-de-proteina,Sweetened beverages,pre_pos_treino,suplemento com bebida,211.2
+Barras-de-proteina,Sodas,pre_pos_treino,suplemento com bebida,200.2
+Barras-de-proteina,Juices and nectars,pre_pos_treino,suplemento com bebida,206.4
+Barras-de-proteina,Fruit juices,pre_pos_treino,suplemento com bebida,197.6
+Barras-de-proteina,Orange juices,pre_pos_treino,suplemento com bebida,201.9
+Barras-de-proteina,Grape nectars,pre_pos_treino,suplemento com bebida,201.0
+Barras-de-proteina,Fruit nectars,pre_pos_treino,suplemento com bebida,196.3
+Barras-de-proteina,Coconut waters,pre_pos_treino,suplemento com bebida,184.5
+Barras-de-proteina,Energy drinks,pre_pos_treino,suplemento com bebida,207.6
+Barras-de-proteina,Beverages,pre_pos_treino,suplemento com bebida,234.9
+Barras-de-proteina,Beers,pre_pos_treino,suplemento com bebida,203.2
+Barras-de-proteinas,Coffees,pre_pos_treino,suplemento com bebida,254.1
+Barras-de-proteinas,Teas,pre_pos_treino,suplemento com bebida,182.2
+Barras-de-proteinas,Herbal teas,pre_pos_treino,suplemento com bebida,179.3
+Barras-de-proteinas,Sweetened beverages,pre_pos_treino,suplemento com bebida,216.3
+Barras-de-proteinas,Sodas,pre_pos_treino,suplemento com bebida,205.4
+Barras-de-proteinas,Juices and nectars,pre_pos_treino,suplemento com bebida,211.6
+Barras-de-proteinas,Fruit juices,pre_pos_treino,suplemento com bebida,202.8
+Barras-de-proteinas,Orange juices,pre_pos_treino,suplemento com bebida,207.1
+Barras-de-proteinas,Grape nectars,pre_pos_treino,suplemento com bebida,206.2
+Barras-de-proteinas,Fruit nectars,pre_pos_treino,suplemento com bebida,201.5
+Barras-de-proteinas,Coconut waters,pre_pos_treino,suplemento com bebida,189.7
+Barras-de-proteinas,Energy drinks,pre_pos_treino,suplemento com bebida,212.8
+Barras-de-proteinas,Beverages,pre_pos_treino,suplemento com bebida,240.1
+Barras-de-proteinas,Beers,pre_pos_treino,suplemento com bebida,208.4
+Dietary supplements,Coffees,pre_pos_treino,suplemento com bebida,217.1
+Dietary supplements,Teas,pre_pos_treino,suplemento com bebida,145.1
+Dietary supplements,Herbal teas,pre_pos_treino,suplemento com bebida,142.3
+Dietary supplements,Sweetened beverages,pre_pos_treino,suplemento com bebida,179.3
+Dietary supplements,Sodas,pre_pos_treino,suplemento com bebida,168.4
+Dietary supplements,Juices and nectars,pre_pos_treino,suplemento com bebida,174.6
+Dietary supplements,Fruit juices,pre_pos_treino,suplemento com bebida,165.8
+Dietary supplements,Orange juices,pre_pos_treino,suplemento com bebida,170.1
+Dietary supplements,Grape nectars,pre_pos_treino,suplemento com bebida,169.2
+Dietary supplements,Fruit nectars,pre_pos_treino,suplemento com bebida,164.5
+Dietary supplements,Coconut waters,pre_pos_treino,suplemento com bebida,152.6
+Dietary supplements,Energy drinks,pre_pos_treino,suplemento com bebida,175.7
+Dietary supplements,Beverages,pre_pos_treino,suplemento com bebida,203.1
+Dietary supplements,Beers,pre_pos_treino,suplemento com bebida,171.4
+Supplement,Coffees,pre_pos_treino,suplemento com bebida,253.7
+Supplement,Teas,pre_pos_treino,suplemento com bebida,181.8
+Supplement,Herbal teas,pre_pos_treino,suplemento com bebida,178.9
+Supplement,Sweetened beverages,pre_pos_treino,suplemento com bebida,215.9
+Supplement,Sodas,pre_pos_treino,suplemento com bebida,205.0
+Supplement,Juices and nectars,pre_pos_treino,suplemento com bebida,211.2
+Supplement,Fruit juices,pre_pos_treino,suplemento com bebida,202.4
+Supplement,Orange juices,pre_pos_treino,suplemento com bebida,206.7
+Supplement,Grape nectars,pre_pos_treino,suplemento com bebida,205.8
+Supplement,Fruit nectars,pre_pos_treino,suplemento com bebida,201.1
+Supplement,Coconut waters,pre_pos_treino,suplemento com bebida,189.2
+Supplement,Energy drinks,pre_pos_treino,suplemento com bebida,212.3
+Supplement,Beverages,pre_pos_treino,suplemento com bebida,239.8
+Supplement,Beers,pre_pos_treino,suplemento com bebida,208.0
+Suplementos-alimenticios,Coffees,pre_pos_treino,suplemento com bebida,205.6
+Suplementos-alimenticios,Teas,pre_pos_treino,suplemento com bebida,133.7
+Suplementos-alimenticios,Herbal teas,pre_pos_treino,suplemento com bebida,130.8
+Suplementos-alimenticios,Sweetened beverages,pre_pos_treino,suplemento com bebida,167.8
+Suplementos-alimenticios,Sodas,pre_pos_treino,suplemento com bebida,156.9
+Suplementos-alimenticios,Juices and nectars,pre_pos_treino,suplemento com bebida,163.1
+Suplementos-alimenticios,Fruit juices,pre_pos_treino,suplemento com bebida,154.3
+Suplementos-alimenticios,Orange juices,pre_pos_treino,suplemento com bebida,158.6
+Suplementos-alimenticios,Grape nectars,pre_pos_treino,suplemento com bebida,157.7
+Suplementos-alimenticios,Fruit nectars,pre_pos_treino,suplemento com bebida,153.0
+Suplementos-alimenticios,Coconut waters,pre_pos_treino,suplemento com bebida,141.2
+Suplementos-alimenticios,Energy drinks,pre_pos_treino,suplemento com bebida,164.2
+Suplementos-alimenticios,Beverages,pre_pos_treino,suplemento com bebida,191.6
+Suplementos-alimenticios,Beers,pre_pos_treino,suplemento com bebida,159.9
+Suplementos,Coffees,pre_pos_treino,suplemento com bebida,268.3
+Suplementos,Teas,pre_pos_treino,suplemento com bebida,196.4
+Suplementos,Herbal teas,pre_pos_treino,suplemento com bebida,193.6
+Suplementos,Sweetened beverages,pre_pos_treino,suplemento com bebida,230.6
+Suplementos,Sodas,pre_pos_treino,suplemento com bebida,219.7
+Suplementos,Juices and nectars,pre_pos_treino,suplemento com bebida,225.9
+Suplementos,Fruit juices,pre_pos_treino,suplemento com bebida,217.0
+Suplementos,Orange juices,pre_pos_treino,suplemento com bebida,221.3
+Suplementos,Grape nectars,pre_pos_treino,suplemento com bebida,220.4
+Suplementos,Fruit nectars,pre_pos_treino,suplemento com bebida,215.7
+Suplementos,Coconut waters,pre_pos_treino,suplemento com bebida,203.9
+Suplementos,Energy drinks,pre_pos_treino,suplemento com bebida,227.0
+Suplementos,Beverages,pre_pos_treino,suplemento com bebida,254.4
+Suplementos,Beers,pre_pos_treino,suplemento com bebida,222.6
+Bars,Coffees,pre_pos_treino,suplemento com bebida,213.2
+Bars,Teas,pre_pos_treino,suplemento com bebida,141.2
+Bars,Herbal teas,pre_pos_treino,suplemento com bebida,138.4
+Bars,Sweetened beverages,pre_pos_treino,suplemento com bebida,175.4
+Bars,Sodas,pre_pos_treino,suplemento com bebida,164.5
+Bars,Juices and nectars,pre_pos_treino,suplemento com bebida,170.7
+Bars,Fruit juices,pre_pos_treino,suplemento com bebida,161.8
+Bars,Orange juices,pre_pos_treino,suplemento com bebida,166.2
+Bars,Grape nectars,pre_pos_treino,suplemento com bebida,165.2
+Bars,Fruit nectars,pre_pos_treino,suplemento com bebida,160.6
+Bars,Coconut waters,pre_pos_treino,suplemento com bebida,148.7
+Bars,Energy drinks,pre_pos_treino,suplemento com bebida,171.8
+Bars,Beverages,pre_pos_treino,suplemento com bebida,199.2
+Bars,Beers,pre_pos_treino,suplemento com bebida,167.5
+Protein powders,Jams,pre_pos_treino,suplemento com pasta ou mel,249.0
+Protein powders,Butters,pre_pos_treino,suplemento com pasta ou mel,492.6
+Protein powders,Peanut butters,pre_pos_treino,suplemento com pasta ou mel,389.6
+Protein powders,Honeys,pre_pos_treino,suplemento com pasta ou mel,292.4
+Protein powders,Margarines,pre_pos_treino,suplemento com pasta ou mel,413.2
+Protein powders,Sweet spreads,pre_pos_treino,suplemento com pasta ou mel,254.2
+Protein powders,Unsalted butters,pre_pos_treino,suplemento com pasta ou mel,412.0
+Protein powders,Milk powders,pre_pos_treino,suplemento com pasta ou mel,362.0
+Protein powders,Cocoa and chocolate powders,pre_pos_treino,suplemento com pasta ou mel,311.1
+Protein powders,Chocolate-powders,pre_pos_treino,suplemento com pasta ou mel,266.4
+Protein bars,Jams,pre_pos_treino,suplemento com pasta ou mel,275.0
+Protein bars,Butters,pre_pos_treino,suplemento com pasta ou mel,518.6
+Protein bars,Peanut butters,pre_pos_treino,suplemento com pasta ou mel,415.6
+Protein bars,Honeys,pre_pos_treino,suplemento com pasta ou mel,318.4
+Protein bars,Margarines,pre_pos_treino,suplemento com pasta ou mel,439.3
+Protein bars,Sweet spreads,pre_pos_treino,suplemento com pasta ou mel,280.3
+Protein bars,Unsalted butters,pre_pos_treino,suplemento com pasta ou mel,438.1
+Protein bars,Milk powders,pre_pos_treino,suplemento com pasta ou mel,388.0
+Protein bars,Cocoa and chocolate powders,pre_pos_treino,suplemento com pasta ou mel,337.1
+Protein bars,Chocolate-powders,pre_pos_treino,suplemento com pasta ou mel,292.4
+Barras-de-proteina,Jams,pre_pos_treino,suplemento com pasta ou mel,274.0
+Barras-de-proteina,Butters,pre_pos_treino,suplemento com pasta ou mel,517.6
+Barras-de-proteina,Peanut butters,pre_pos_treino,suplemento com pasta ou mel,414.6
+Barras-de-proteina,Honeys,pre_pos_treino,suplemento com pasta ou mel,317.4
+Barras-de-proteina,Margarines,pre_pos_treino,suplemento com pasta ou mel,438.2
+Barras-de-proteina,Sweet spreads,pre_pos_treino,suplemento com pasta ou mel,279.2
+Barras-de-proteina,Unsalted butters,pre_pos_treino,suplemento com pasta ou mel,437.0
+Barras-de-proteina,Milk powders,pre_pos_treino,suplemento com pasta ou mel,387.0
+Barras-de-proteina,Cocoa and chocolate powders,pre_pos_treino,suplemento com pasta ou mel,336.1
+Barras-de-proteina,Chocolate-powders,pre_pos_treino,suplemento com pasta ou mel,291.4
+Barras-de-proteinas,Jams,pre_pos_treino,suplemento com pasta ou mel,279.2
+Barras-de-proteinas,Butters,pre_pos_treino,suplemento com pasta ou mel,522.8
+Barras-de-proteinas,Peanut butters,pre_pos_treino,suplemento com pasta ou mel,419.8
+Barras-de-proteinas,Honeys,pre_pos_treino,suplemento com pasta ou mel,322.6
+Barras-de-proteinas,Margarines,pre_pos_treino,suplemento com pasta ou mel,443.5
+Barras-de-proteinas,Sweet spreads,pre_pos_treino,suplemento com pasta ou mel,284.4
+Barras-de-proteinas,Unsalted butters,pre_pos_treino,suplemento com pasta ou mel,442.2
+Barras-de-proteinas,Milk powders,pre_pos_treino,suplemento com pasta ou mel,392.2
+Barras-de-proteinas,Cocoa and chocolate powders,pre_pos_treino,suplemento com pasta ou mel,341.2
+Barras-de-proteinas,Chocolate-powders,pre_pos_treino,suplemento com pasta ou mel,296.6
+Dietary supplements,Jams,pre_pos_treino,suplemento com pasta ou mel,242.2
+Dietary supplements,Butters,pre_pos_treino,suplemento com pasta ou mel,485.8
+Dietary supplements,Peanut butters,pre_pos_treino,suplemento com pasta ou mel,382.8
+Dietary supplements,Honeys,pre_pos_treino,suplemento com pasta ou mel,285.6
+Dietary supplements,Margarines,pre_pos_treino,suplemento com pasta ou mel,406.4
+Dietary supplements,Sweet spreads,pre_pos_treino,suplemento com pasta ou mel,247.4
+Dietary supplements,Unsalted butters,pre_pos_treino,suplemento com pasta ou mel,405.2
+Dietary supplements,Milk powders,pre_pos_treino,suplemento com pasta ou mel,355.1
+Dietary supplements,Cocoa and chocolate powders,pre_pos_treino,suplemento com pasta ou mel,304.2
+Dietary supplements,Chocolate-powders,pre_pos_treino,suplemento com pasta ou mel,259.5
+Supplement,Jams,pre_pos_treino,suplemento com pasta ou mel,278.8
+Supplement,Butters,pre_pos_treino,suplemento com pasta ou mel,522.4
+Supplement,Peanut butters,pre_pos_treino,suplemento com pasta ou mel,419.4
+Supplement,Honeys,pre_pos_treino,suplemento com pasta ou mel,322.2
+Supplement,Margarines,pre_pos_treino,suplemento com pasta ou mel,443.1
+Supplement,Sweet spreads,pre_pos_treino,suplemento com pasta ou mel,284.0
+Supplement,Unsalted butters,pre_pos_treino,suplemento com pasta ou mel,441.8
+Supplement,Milk powders,pre_pos_treino,suplemento com pasta ou mel,391.8
+Supplement,Cocoa and chocolate powders,pre_pos_treino,suplemento com pasta ou mel,340.9
+Supplement,Chocolate-powders,pre_pos_treino,suplemento com pasta ou mel,296.1
+Suplementos-alimenticios,Jams,pre_pos_treino,suplemento com pasta ou mel,230.7
+Suplementos-alimenticios,Butters,pre_pos_treino,suplemento com pasta ou mel,474.3
+Suplementos-alimenticios,Peanut butters,pre_pos_treino,suplemento com pasta ou mel,371.3
+Suplementos-alimenticios,Honeys,pre_pos_treino,suplemento com pasta ou mel,274.1
+Suplementos-alimenticios,Margarines,pre_pos_treino,suplemento com pasta ou mel,395.0
+Suplementos-alimenticios,Sweet spreads,pre_pos_treino,suplemento com pasta ou mel,235.9
+Suplementos-alimenticios,Unsalted butters,pre_pos_treino,suplemento com pasta ou mel,393.8
+Suplementos-alimenticios,Milk powders,pre_pos_treino,suplemento com pasta ou mel,343.7
+Suplementos-alimenticios,Cocoa and chocolate powders,pre_pos_treino,suplemento com pasta ou mel,292.8
+Suplementos-alimenticios,Chocolate-powders,pre_pos_treino,suplemento com pasta ou mel,248.1
+Suplementos,Jams,pre_pos_treino,suplemento com pasta ou mel,293.4
+Suplementos,Butters,pre_pos_treino,suplemento com pasta ou mel,537.0
+Suplementos,Peanut butters,pre_pos_treino,suplemento com pasta ou mel,434.0
+Suplementos,Honeys,pre_pos_treino,suplemento com pasta ou mel,336.8
+Suplementos,Margarines,pre_pos_treino,suplemento com pasta ou mel,457.7
+Suplementos,Sweet spreads,pre_pos_treino,suplemento com pasta ou mel,298.6
+Suplementos,Unsalted butters,pre_pos_treino,suplemento com pasta ou mel,456.4
+Suplementos,Milk powders,pre_pos_treino,suplemento com pasta ou mel,406.4
+Suplementos,Cocoa and chocolate powders,pre_pos_treino,suplemento com pasta ou mel,355.5
+Suplementos,Chocolate-powders,pre_pos_treino,suplemento com pasta ou mel,310.8
+Bars,Jams,pre_pos_treino,suplemento com pasta ou mel,238.2
+Bars,Butters,pre_pos_treino,suplemento com pasta ou mel,481.9
+Bars,Peanut butters,pre_pos_treino,suplemento com pasta ou mel,378.9
+Bars,Honeys,pre_pos_treino,suplemento com pasta ou mel,281.6
+Bars,Margarines,pre_pos_treino,suplemento com pasta ou mel,402.5
+Bars,Sweet spreads,pre_pos_treino,suplemento com pasta ou mel,243.5
+Bars,Unsalted butters,pre_pos_treino,suplemento com pasta ou mel,401.3
+Bars,Milk powders,pre_pos_treino,suplemento com pasta ou mel,351.2
+Bars,Cocoa and chocolate powders,pre_pos_treino,suplemento com pasta ou mel,300.3
+Bars,Chocolate-powders,pre_pos_treino,suplemento com pasta ou mel,255.6
+Frozen meats,Protein powders,pre_pos_treino,proteína animal com suplemento,220.4
+Frozen meats,Protein bars,pre_pos_treino,proteína animal com suplemento,246.5
+Frozen meats,Barras-de-proteina,pre_pos_treino,proteína animal com suplemento,245.4
+Frozen meats,Barras-de-proteinas,pre_pos_treino,proteína animal com suplemento,250.6
+Frozen meats,Dietary supplements,pre_pos_treino,proteína animal com suplemento,213.6
+Frozen meats,Supplement,pre_pos_treino,proteína animal com suplemento,250.2
+Frozen meats,Suplementos-alimenticios,pre_pos_treino,proteína animal com suplemento,202.1
+Frozen meats,Suplementos,pre_pos_treino,proteína animal com suplemento,264.9
+Frozen meats,Bars,pre_pos_treino,proteína animal com suplemento,209.7
+Hams,Protein powders,pre_pos_treino,proteína animal com suplemento,213.5
+Hams,Protein bars,pre_pos_treino,proteína animal com suplemento,239.5
+Hams,Barras-de-proteina,pre_pos_treino,proteína animal com suplemento,238.5
+Hams,Barras-de-proteinas,pre_pos_treino,proteína animal com suplemento,243.7
+Hams,Dietary supplements,pre_pos_treino,proteína animal com suplemento,206.7
+Hams,Supplement,pre_pos_treino,proteína animal com suplemento,243.3
+Hams,Suplementos-alimenticios,pre_pos_treino,proteína animal com suplemento,195.2
+Hams,Suplementos,pre_pos_treino,proteína animal com suplemento,257.9
+Hams,Bars,pre_pos_treino,proteína animal com suplemento,202.8
+Sausages,Protein powders,pre_pos_treino,proteína animal com suplemento,269.1
+Sausages,Protein bars,pre_pos_treino,proteína animal com suplemento,295.2
+Sausages,Barras-de-proteina,pre_pos_treino,proteína animal com suplemento,294.1
+Sausages,Barras-de-proteinas,pre_pos_treino,proteína animal com suplemento,299.4
+Sausages,Dietary supplements,pre_pos_treino,proteína animal com suplemento,262.3
+Sausages,Supplement,pre_pos_treino,proteína animal com suplemento,298.9
+Sausages,Suplementos-alimenticios,pre_pos_treino,proteína animal com suplemento,250.8
+Sausages,Suplementos,pre_pos_treino,proteína animal com suplemento,313.6
+Sausages,Bars,pre_pos_treino,proteína animal com suplemento,258.4
+Chicken eggs,Protein powders,pre_pos_treino,proteína animal com suplemento,218.6
+Chicken eggs,Protein bars,pre_pos_treino,proteína animal com suplemento,244.6
+Chicken eggs,Barras-de-proteina,pre_pos_treino,proteína animal com suplemento,243.6
+Chicken eggs,Barras-de-proteinas,pre_pos_treino,proteína animal com suplemento,248.8
+Chicken eggs,Dietary supplements,pre_pos_treino,proteína animal com suplemento,211.8
+Chicken eggs,Supplement,pre_pos_treino,proteína animal com suplemento,248.4
+Chicken eggs,Suplementos-alimenticios,pre_pos_treino,proteína animal com suplemento,200.3
+Chicken eggs,Suplementos,pre_pos_treino,proteína animal com suplemento,263.0
+Chicken eggs,Bars,pre_pos_treino,proteína animal com suplemento,207.9
+Pescados,Protein powders,pre_pos_treino,proteína animal com suplemento,220.2
+Pescados,Protein bars,pre_pos_treino,proteína animal com suplemento,246.2
+Pescados,Barras-de-proteina,pre_pos_treino,proteína animal com suplemento,245.2
+Pescados,Barras-de-proteinas,pre_pos_treino,proteína animal com suplemento,250.3
+Pescados,Dietary supplements,pre_pos_treino,proteína animal com suplemento,213.3
+Pescados,Supplement,pre_pos_treino,proteína animal com suplemento,249.9
+Pescados,Suplementos-alimenticios,pre_pos_treino,proteína animal com suplemento,201.8
+Pescados,Suplementos,pre_pos_treino,proteína animal com suplemento,264.6
+Pescados,Bars,pre_pos_treino,proteína animal com suplemento,209.4
+Canned sardines,Protein powders,pre_pos_treino,proteína animal com suplemento,233.7
+Canned sardines,Protein bars,pre_pos_treino,proteína animal com suplemento,259.8
+Canned sardines,Barras-de-proteina,pre_pos_treino,proteína animal com suplemento,258.7
+Canned sardines,Barras-de-proteinas,pre_pos_treino,proteína animal com suplemento,263.9
+Canned sardines,Dietary supplements,pre_pos_treino,proteína animal com suplemento,226.9
+Canned sardines,Supplement,pre_pos_treino,proteína animal com suplemento,263.5
+Canned sardines,Suplementos-alimenticios,pre_pos_treino,proteína animal com suplemento,215.4
+Canned sardines,Suplementos,pre_pos_treino,proteína animal com suplemento,278.1
+Canned sardines,Bars,pre_pos_treino,proteína animal com suplemento,222.9
+Meals with chicken,Protein powders,pre_pos_treino,proteína animal com suplemento,223.5
+Meals with chicken,Protein bars,pre_pos_treino,proteína animal com suplemento,249.5
+Meals with chicken,Barras-de-proteina,pre_pos_treino,proteína animal com suplemento,248.5
+Meals with chicken,Barras-de-proteinas,pre_pos_treino,proteína animal com suplemento,253.7
+Meals with chicken,Dietary supplements,pre_pos_treino,proteína animal com suplemento,216.7
+Meals with chicken,Supplement,pre_pos_treino,proteína animal com suplemento,253.3
+Meals with chicken,Suplementos-alimenticios,pre_pos_treino,proteína animal com suplemento,205.2
+Meals with chicken,Suplementos,pre_pos_treino,proteína animal com suplemento,267.9
+Meals with chicken,Bars,pre_pos_treino,proteína animal com suplemento,212.8
+Frozen foods,Protein powders,pre_pos_treino,proteína animal com suplemento,229.9
+Frozen foods,Protein bars,pre_pos_treino,proteína animal com suplemento,255.9
+Frozen foods,Barras-de-proteina,pre_pos_treino,proteína animal com suplemento,254.9
+Frozen foods,Barras-de-proteinas,pre_pos_treino,proteína animal com suplemento,260.1
+Frozen foods,Dietary supplements,pre_pos_treino,proteína animal com suplemento,223.1
+Frozen foods,Supplement,pre_pos_treino,proteína animal com suplemento,259.7
+Frozen foods,Suplementos-alimenticios,pre_pos_treino,proteína animal com suplemento,211.6
+Frozen foods,Suplementos,pre_pos_treino,proteína animal com suplemento,274.3
+Frozen foods,Bars,pre_pos_treino,proteína animal com suplemento,219.2
