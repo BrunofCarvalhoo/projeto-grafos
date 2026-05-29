@@ -49,3 +49,55 @@ def dijkstra(grafo, nome_origem, nome_destino=None):
                 "caminho": " -> ".join(reconstruir_caminho(i))
             }
         return resultado
+    
+def bellman_ford(grafo, nome_origem, nome_destino=None):
+    indice_origem = grafo.mapa_indice[nome_origem]
+    distancias = [float('inf')] * grafo.numero_vertices
+    distancias[indice_origem] = 0
+    veio_de = [None] * grafo.numero_vertices
+
+    #lista das arestas do grafo
+    arestas = []
+    for vertice in range(grafo.numero_vertices):
+        for vizinho, peso in grafo.lista_adjacencia[vertice]:
+            arestas.append((vertice, vizinho, peso))
+
+    #relaxamento
+    for _ in range(grafo.numero_vertices - 1):
+        for origem_aresta, destino_aresta, peso in arestas:
+            nova_distancia = distancias[origem_aresta] + peso
+            if nova_distancia < distancias[destino_aresta]:
+                distancias[destino_aresta] = nova_distancia
+                veio_de[destino_aresta] = origem_aresta
+
+    for origem_aresta, destino_aresta, peso in arestas:
+        if distancias[origem_aresta] + peso < distancias[destino_aresta]:
+            return None  #ciclo negativo detectado
+    #depois tem que simular essa parte de ciclo negativo aq
+    
+
+    def reconstruir_caminho(destino):
+        caminho = []
+        atual = destino
+        while atual is not None:
+            caminho.append(grafo.nome_vertice[atual])
+            atual = veio_de[atual]
+        caminho.reverse()
+        return caminho
+
+    if nome_destino:
+        indice_destino = grafo.mapa_indice[nome_destino]
+        custo = distancias[indice_destino]
+        caminho_str = " -> ".join(reconstruir_caminho(indice_destino))
+        return custo, caminho_str
+
+    else:
+        resultado = {}
+        for i in range(grafo.numero_vertices):
+            vertice = grafo.nome_vertice[i]
+            resultado[vertice] = {
+                "custo": distancias[i],
+                "caminho": " -> ".join(reconstruir_caminho(i))
+            }
+        return resultado
+
