@@ -101,3 +101,30 @@ def bellman_ford(grafo, nome_origem, nome_destino=None):
             }
         return resultado
 
+
+from collections import deque
+
+def bfs(grafo, nome_origem):
+    indice_origem = grafo.mapa_indice[nome_origem]
+
+    distancias = [float('inf')] * grafo.numero_vertices
+    visitados = [False] * grafo.numero_vertices
+    veio_de = [None] * grafo.numero_vertices
+    ordem_visita = []
+
+    fila = deque([indice_origem])
+    visitados[indice_origem] = True
+    distancias[indice_origem] = 0
+
+    while fila:
+        vertice_atual = fila.popleft()
+        ordem_visita.append(grafo.nome_vertice[vertice_atual])
+
+        for vizinho, _ in grafo.lista_adjacencia[vertice_atual]:
+            if not visitados[vizinho]:
+                visitados[vizinho] = True
+                distancias[vizinho] = distancias[vertice_atual] + 1
+                veio_de[vizinho] = vertice_atual
+                fila.append(vizinho)
+
+    return ordem_visita, distancias, veio_de
