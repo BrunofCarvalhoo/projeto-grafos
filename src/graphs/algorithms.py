@@ -128,3 +128,26 @@ def bfs(grafo, nome_origem):
                 fila.append(vizinho)
 
     return ordem_visita, distancias, veio_de
+
+def dfs(grafo, nome_origem):
+    indice_origem = grafo.mapa_indice[nome_origem]
+    visitados = [False] * grafo.numero_vertices
+    veio_de = [None] * grafo.numero_vertices
+    ordem_visita = []
+    
+    pilha = [indice_origem]
+
+    while pilha:
+        vertice_atual = pilha.pop()
+        
+        if not visitados[vertice_atual]:
+            visitados[vertice_atual] = True
+            ordem_visita.append(grafo.nome_vertice[vertice_atual])
+            
+            for vizinho, _ in reversed(grafo.lista_adjacencia[vertice_atual]):
+                if not visitados[vizinho]:
+                    if veio_de[vizinho] is None and vizinho != indice_origem:
+                        veio_de[vizinho] = vertice_atual
+                    pilha.append(vizinho)
+                    
+    return ordem_visita, veio_de
