@@ -1,0 +1,202 @@
+{
+  "id": "dfs_2",
+  "algoritmo": "DFS",
+  "origem": "Geology of Azerbaijan",
+  "ordem_visita": [
+    "Geology of Azerbaijan",
+    "1139 Ganja earthquake",
+    "1026 Manju tsunami",
+    "1033 Jordan Valley earthquake",
+    "1038 Dingxiang earthquake",
+    "1068 Near East earthquake",
+    "1088 Tmogvi earthquake",
+    "1096 Eichō earthquake",
+    "1114 Marash earthquake",
+    "1117 Verona earthquake",
+    "1138 Aleppo earthquake",
+    "1157 Hama earthquake",
+    "1169 Sicily earthquake",
+    "1170 Syria earthquake",
+    "1185 East Midlands earthquake",
+    "1202 Syria earthquake",
+    "1222 Brescia earthquake",
+    "1222 Cyprus earthquake",
+    "1269 Cilicia earthquake",
+    "1275 British earthquake",
+    "1290 Zhili earthquake",
+    "1293 Kamakura earthquake",
+    "Absheron Peninsula",
+    "Absheron (Rayon)",
+    "Absheron District",
+    "Absheron National Park",
+    "Absheron Rayon",
+    "Absheron's stone roads",
+    "Azerbaijan",
+    ".az"
+  ],
+  "total_visitados": 444,
+  "arvore": [
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Azerbaijani art"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Azerbaijani Armed Forces"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Azerbaijan national awakening"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Azerbaijan Soviet Socialist Republic"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Azerbaijan Democratic Republic"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Azerbaijan"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Arran (Caucasus)"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Armenian–Tatar massacres of 1905–1906"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Armenian–Azerbaijani war (1918–1920)"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Architecture of Azerbaijan"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Aq Qoyunlu"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Anhydrite"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Alum"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Alpine Orogeny"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Agriculture in Azerbaijan"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Afsharid Iran"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Administrative divisions of Azerbaijan"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Achaemenid Empire"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "Absheron Peninsula"
+    },
+    {
+      "de": "Geology of Azerbaijan",
+      "para": "1139 Ganja earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1293 Kamakura earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1290 Zhili earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1275 British earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1269 Cilicia earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1222 Cyprus earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1222 Brescia earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1202 Syria earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1185 East Midlands earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1170 Syria earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1169 Sicily earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1157 Hama earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1138 Aleppo earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1117 Verona earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1114 Marash earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1096 Eichō earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1088 Tmogvi earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1068 Near East earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1038 Dingxiang earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1033 Jordan Valley earthquake"
+    },
+    {
+      "de": "1139 Ganja earthquake",
+      "para": "1026 Manju tsunami"
+    }
+  ],
+  "total_arestas_arvore": 443,
+  "tempo_ms": 4.06
+}

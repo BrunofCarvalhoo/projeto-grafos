@@ -1,0 +1,202 @@
+{
+  "id": "dfs_3",
+  "algoritmo": "DFS",
+  "origem": "Astara, Azerbaijan",
+  "ordem_visita": [
+    "Astara, Azerbaijan",
+    "Absheron District",
+    "Administrative divisions of Azerbaijan",
+    "2020 Nagorno-Karabakh war",
+    "2023 Nagorno-Karabakh clashes",
+    "Absheron-Khizi Economic Region",
+    "Achaemenid Empire",
+    "1908 bombardment of the Majlis",
+    "1921 Persian coup d'état",
+    "1949 Iranian Constituent Assembly election",
+    "1953 Iranian coup d'état",
+    "1979 Khuzestan insurgency",
+    "1981–1982 Iran Massacres",
+    "1987 Mecca incident",
+    "2,500-year celebration of the Persian Empire",
+    "2009 Iranian presidential election",
+    "2009 Iranian presidential election protests",
+    "2017–2018 Iranian protests",
+    "2018–2019 Iranian general strikes and protests",
+    "2019 Sistan and Baluchestan protests",
+    "2019–2020 Iranian protests",
+    "2021 Sistan and Baluchestan protests",
+    "2021–2022 Iranian protests",
+    "2024 Iran–Israel conflict",
+    "A'annepada",
+    "A-Imdugud",
+    "Abbasid Caliphate",
+    "Administrative division",
+    "Administrative divisions of Armenia",
+    "Administrative divisions of Georgia (country)"
+  ],
+  "total_visitados": 63,
+  "arvore": [
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Astara District"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Astana"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Asia"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Artupa"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Anbabu"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Alaşa"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Agsu District"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Agsu (city)"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Agstafa District"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Agstafa"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Aghjabadi District"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Aghjabadi"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Aghdara District"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Aghdara"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Aghdam"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Agdash, Azerbaijan"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Agdash District"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Agdam District"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Administrative divisions of Azerbaijan"
+    },
+    {
+      "de": "Astara, Azerbaijan",
+      "para": "Absheron District"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Afsharid Iran"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Administrative units of Pakistan"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Administrative geography of the United Kingdom"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Administrative divisions of the Maldives"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Administrative divisions of Ukraine"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Administrative divisions of Transnistria"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Administrative divisions of South Ossetia"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Administrative divisions of Singapore"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Administrative divisions of Portugal"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Administrative divisions of Myanmar"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Administrative divisions of Moldova"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Administrative divisions of Latvia"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Administrative divisions of Georgia (country)"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Administrative divisions of Armenia"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Administrative division"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Achaemenid Empire"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "Absheron-Khizi Economic Region"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "2023 Nagorno-Karabakh clashes"
+    },
+    {
+      "de": "Administrative divisions of Azerbaijan",
+      "para": "2020 Nagorno-Karabakh war"
+    },
+    {
+      "de": "Achaemenid Empire",
+      "para": "Abbasid Caliphate"
+    }
+  ],
+  "total_arestas_arvore": 62,
+  "tempo_ms": 0.12
+}

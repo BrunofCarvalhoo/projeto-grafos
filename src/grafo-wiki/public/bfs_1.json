@@ -1,0 +1,204 @@
+{
+  "id": "bfs_1",
+  "algoritmo": "BFS",
+  "origem": "The Victorious Athlete",
+  "ordem_visita": [
+    "The Victorious Athlete",
+    "Accademia di San Luca",
+    "Antonio Canova",
+    "Apollo Belvedere",
+    "Bathsheba (Hayez)",
+    "Bathsheba at Her Bath (Hayez)",
+    "Brera Academy",
+    "Carlotta Chabert as Venus",
+    "Chiaroscuro",
+    "Discobolus",
+    "Doric order",
+    "Francesco Hayez",
+    "Francesco Maggiotto",
+    "ISBN (identifier)",
+    "La Meditazione",
+    "Lampugnani's Conspiracy",
+    "Lot and His Daughters (Hayez)",
+    "Mary Stuart Proclaiming Her Innocence",
+    "Melancholy (Hayez)",
+    "Odalisque in Her Sleep",
+    "Odysseus at the Court of Alcinous",
+    "Academia Secretorum Naturae",
+    "Academy",
+    "Academy of Sciences of the Institute of Bologna",
+    "Accademia Cosentina",
+    "Accademia Fiorentina",
+    "Accademia Galileiana",
+    "Accademia Nazionale delle Scienze detta dei XL",
+    "Accademia Pontaniana",
+    "Accademia Veneziana"
+  ],
+  "total_visitados": 283,
+  "nos_alcancados": 283,
+  "profundidade_maxima": 2,
+  "arvore": [
+    {
+      "de": "The Victorious Athlete",
+      "para": "Accademia di San Luca"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Antonio Canova"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Apollo Belvedere"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Bathsheba (Hayez)"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Bathsheba at Her Bath (Hayez)"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Brera Academy"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Carlotta Chabert as Venus"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Chiaroscuro"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Discobolus"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Doric order"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Francesco Hayez"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Francesco Maggiotto"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "ISBN (identifier)"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "La Meditazione"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Lampugnani's Conspiracy"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Lot and His Daughters (Hayez)"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Mary Stuart Proclaiming Her Innocence"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Melancholy (Hayez)"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Odalisque in Her Sleep"
+    },
+    {
+      "de": "The Victorious Athlete",
+      "para": "Odysseus at the Court of Alcinous"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Academia Secretorum Naturae"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Academy"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Academy of Sciences of the Institute of Bologna"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia Cosentina"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia Fiorentina"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia Galileiana"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia Nazionale delle Scienze detta dei XL"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia Pontaniana"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia Veneziana"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia degli Apatisti"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia degli Arcadi"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia degli Incamminati"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia degli Incogniti"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia degli Infiammati"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia degli Inquieti"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia degli Intronati"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia degli Oziosi"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia degli Svogliati"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia degli Umidi"
+    },
+    {
+      "de": "Accademia di San Luca",
+      "para": "Accademia degli Umoristi"
+    }
+  ],
+  "total_arestas_arvore": 282,
+  "tempo_ms": 0.15
+}
