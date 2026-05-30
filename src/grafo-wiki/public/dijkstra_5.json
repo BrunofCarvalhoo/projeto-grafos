@@ -1,0 +1,1 @@
+{"id": "dijkstra_5", "algoritmo": "Dijkstra", "origem": "Abrasive", "destino": "Lunette", "custo_total": 14.0, "passos": [{"de": "Abrasive", "para": "Ogee", "peso": 1.0}, {"de": "Ogee", "para": "Arch", "peso": 11.0}, {"de": "Arch", "para": "Lunette", "peso": 2.0}], "tempo_ms": 5186.34}
