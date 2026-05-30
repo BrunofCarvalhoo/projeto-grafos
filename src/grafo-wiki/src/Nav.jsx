@@ -26,6 +26,7 @@ export default function Nav() {
       </span>
       <NavLink to="/"           style={({ isActive }) => isActive ? ativo : base}>Visualização</NavLink>
       <NavLink to="/algoritmos" style={({ isActive }) => isActive ? ativo : base}>Algoritmos</NavLink>
+      <NavLink to="/analise"    style={({ isActive }) => isActive ? ativo : base}>Análises</NavLink>
     </nav>
   )
 }

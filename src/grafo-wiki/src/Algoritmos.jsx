@@ -206,7 +206,7 @@ export default function Algoritmos() {
 }
 
 const s = {
-  pagina:     { marginTop: 56, background: '#0a0c12', minHeight: 'calc(100vh - 56px)', padding: '28px 32px', display: 'flex', flexDirection: 'column', gap: 16 },
+  pagina:     { marginTop: 56, background: '#0a0c12', height: 'calc(100vh - 56px)', overflowY: 'auto', padding: '28px 32px', display: 'flex', flexDirection: 'column', gap: 16 },
   card:       { background: '#0f1420', border: '1px solid #1e2d3d', borderRadius: 12, padding: '20px 24px' },
   h2:         { fontSize: 18, fontWeight: 700, color: '#d0e0f0', marginBottom: 8 },
   btnAlg:     { padding: '8px 22px', borderRadius: 8, border: '1px solid', cursor: 'pointer', fontSize: 14, transition: 'all 0.15s' },
