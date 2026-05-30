@@ -1,0 +1,18 @@
+{
+  "bfs": {
+    "tempo_ms": 1.07,
+    "complexidade": "O(V + E)"
+  },
+  "dfs": {
+    "tempo_ms": 1.31,
+    "complexidade": "O(V + E)"
+  },
+  "dijkstra": {
+    "tempo_ms": 251.69,
+    "complexidade": "O((V + E) log V)"
+  },
+  "bellman_ford": {
+    "tempo_ms": 3160.09,
+    "complexidade": "O(V * E)"
+  }
+}
