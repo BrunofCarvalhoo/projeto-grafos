@@ -48,6 +48,45 @@ def carregar_dados(pasta_projeto: Path):
     return df_grau, df_regioes, df_distancias, df_ego, df_adj
 
 
+def preparar_fluxo_regional_nao_direcionado(df_adj, df_grau):
+    dados_aeroporto = df_grau[['aeroporto', 'regiao']].drop_duplicates()
+    df_fluxo = (
+        df_adj
+        .merge(
+            dados_aeroporto.rename(columns={'aeroporto': 'origem', 'regiao': 'regiao_origem'}),
+            on='origem',
+            how='left',
+        )
+        .merge(
+            dados_aeroporto.rename(columns={'aeroporto': 'destino', 'regiao': 'regiao_destino'}),
+            on='destino',
+            how='left',
+        )
+        .dropna(subset=['regiao_origem', 'regiao_destino'])
+    )
+    df_fluxo['regiao_a'] = df_fluxo[['regiao_origem', 'regiao_destino']].min(axis=1)
+    df_fluxo['regiao_b'] = df_fluxo[['regiao_origem', 'regiao_destino']].max(axis=1)
+    return df_fluxo
+
+
+def montar_matriz_regioes(df_fluxo):
+    regioes = sorted(set(df_fluxo['regiao_a']) | set(df_fluxo['regiao_b']))
+    matriz = pd.DataFrame(0, index=regioes, columns=regioes)
+    pares = df_fluxo.groupby(['regiao_a', 'regiao_b']).size().reset_index(name='conexoes')
+
+    for row in pares.itertuples():
+        matriz.loc[row.regiao_a, row.regiao_b] = row.conexoes
+        matriz.loc[row.regiao_b, row.regiao_a] = row.conexoes
+
+    return matriz
+
+
+def preparar_pesos_conexoes(df_adj):
+    df_pesos = df_adj.copy()
+    df_pesos['peso'] = pd.to_numeric(df_pesos['peso'], errors='coerce')
+    return df_pesos.dropna(subset=['peso', 'tipo_conexao'])
+
+
 def pagina_analise(df_grau, df_regioes, df_distancias):
     st.title("Análise de Graus e Regiões")
     st.markdown("Estatísticas gerais do grafo, métricas de conexões e distribuição regional.")
@@ -295,53 +334,53 @@ def pagina_avd(df_grau, df_regioes, df_ego, df_adj):
 
     st.divider()
 
-    st.subheader("Explanatoria - Integracao entre regioes no grafo nao direcionado")
+    st.subheader("Explanatória - Integração entre regiões no grafo não direcionado")
     st.caption(
         "Como as rotas do dataset representam um grafo nao direcionado, a matriz abaixo conta cada "
         "conexao uma unica vez por par de regioes. Por isso, a leitura correta e simetrica: Nordeste-Sudeste "
         "e Sudeste-Nordeste representam o mesmo tipo de relacao."
     )
 
-    dados_aeroporto = df_grau[['aeroporto', 'regiao']].drop_duplicates()
-    df_fluxo = (
-        df_adj
-        .merge(
-            dados_aeroporto.rename(columns={'aeroporto': 'origem', 'regiao': 'regiao_origem'}),
-            on='origem',
-            how='left',
-        )
-        .merge(
-            dados_aeroporto.rename(columns={'aeroporto': 'destino', 'regiao': 'regiao_destino'}),
-            on='destino',
-            how='left',
-        )
-        .dropna(subset=['regiao_origem', 'regiao_destino'])
-    )
-    df_fluxo[['regiao_a', 'regiao_b']] = df_fluxo.apply(
-        lambda row: pd.Series(sorted([row['regiao_origem'], row['regiao_destino']])),
-        axis=1,
-    )
-
-    regioes_fluxo = sorted(set(df_fluxo['regiao_a']) | set(df_fluxo['regiao_b']))
-    matriz_regioes = pd.DataFrame(0, index=regioes_fluxo, columns=regioes_fluxo)
-    pares_regioes = df_fluxo.groupby(['regiao_a', 'regiao_b']).size().reset_index(name='conexoes')
-
-    for row in pares_regioes.itertuples():
-        matriz_regioes.loc[row.regiao_a, row.regiao_b] = row.conexoes
-        matriz_regioes.loc[row.regiao_b, row.regiao_a] = row.conexoes
+    df_fluxo = preparar_fluxo_regional_nao_direcionado(df_adj, df_grau)
+    matriz_regioes = montar_matriz_regioes(df_fluxo)
 
     fig_heatmap_regioes = px.imshow(
         matriz_regioes,
         text_auto=True,
         color_continuous_scale=ESCALA_CONTINUA,
-        title='Heatmap Simetrico de Conexoes entre Regioes',
-        labels={'x': 'Regiao', 'y': 'Regiao', 'color': 'Conexoes'},
+        title='Heatmap Simétrico de Conexões entre Regiões',
+        labels={'x': 'Região', 'y': 'Região', 'color': 'Conexões'},
     )
     fig_heatmap_regioes.update_layout(height=560)
     st.plotly_chart(fig_heatmap_regioes, use_container_width=True)
 
-    total_conexoes = len(df_fluxo)
-    conexoes_interregionais = int((df_fluxo['regiao_a'] != df_fluxo['regiao_b']).sum())
+
+    st.divider()
+
+    st.subheader("Explanatória - Peso das rotas por tipo de conexão")
+    st.caption(
+        "Está análise usa o peso das arestas do grafo. O objetivo e explicar se conexões do tipo hub "
+        "tendem a ter custo maior que conexões regionais, o que ajuda a entender o papel dos hubs na malha."
+    )
+
+    df_pesos = preparar_pesos_conexoes(df_adj)
+
+    fig_pesos = px.box(
+        df_pesos,
+        x='tipo_conexao',
+        y='peso',
+        color='tipo_conexao',
+        points='all',
+        title='Distribuição dos Pesos das Arestas por Tipo de Conexão',
+        labels={
+            'tipo_conexao': 'Tipo de conexão',
+            'peso': 'Peso da aresta',
+        },
+        color_discrete_map={'hub': '#E76F51', 'regional': '#2A9D8F'},
+    )
+    fig_pesos.update_layout(height=560, showlegend=False)
+    st.plotly_chart(fig_pesos, use_container_width=True)
+
     
 
 

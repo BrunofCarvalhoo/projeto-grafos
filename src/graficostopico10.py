@@ -149,6 +149,52 @@ def heatmap_conexoes_regioes(arquivo_adj, arquivo_aeroportos, arquivo_saida):
     plt.close()
 
 
+def boxplot_pesos_tipo_conexao(arquivo_adj, arquivo_saida):
+    df_adj = pd.read_csv(arquivo_adj)
+    df_adj.columns = df_adj.columns.str.strip()
+    df_adj['tipo_conexao'] = df_adj['tipo_conexao'].str.strip()
+    df_adj['peso'] = pd.to_numeric(df_adj['peso'], errors='coerce')
+    df_adj = df_adj.dropna(subset=['tipo_conexao', 'peso'])
+
+    ordem = [tipo for tipo in ['regional', 'hub'] if tipo in df_adj['tipo_conexao'].unique()]
+    dados = [df_adj[df_adj['tipo_conexao'] == tipo]['peso'] for tipo in ordem]
+    cores = {'regional': '#2A9D8F', 'hub': '#E76F51'}
+
+    fig, ax = plt.subplots(figsize=(10, 7))
+    box = ax.boxplot(
+        dados,
+        tick_labels=ordem,
+        patch_artist=True,
+        showmeans=True,
+        meanprops=dict(marker='D', markerfacecolor='#264653', markeredgecolor='white'),
+        medianprops=dict(color='black', linewidth=1.5),
+    )
+
+    for patch, tipo in zip(box['boxes'], ordem):
+        patch.set_facecolor(cores.get(tipo, '#264653'))
+        patch.set_alpha(0.75)
+
+    for i, tipo in enumerate(ordem, start=1):
+        valores = df_adj[df_adj['tipo_conexao'] == tipo]['peso'].reset_index(drop=True)
+        deslocamento = ((valores.index % 7) - 3) * 0.015
+        ax.scatter(
+            i + deslocamento,
+            valores,
+            color='#264653',
+            alpha=0.45,
+            s=28,
+            zorder=3,
+        )
+
+    ax.set_title('Analise Explanatoria: Peso das Rotas por Tipo de Conexao', fontsize=14, pad=15)
+    ax.set_xlabel('Tipo de conexao', fontsize=12)
+    ax.set_ylabel('Peso da aresta', fontsize=12)
+    ax.grid(axis='y', linestyle='--', alpha=0.5)
+
+    plt.savefig(arquivo_saida, bbox_inches='tight')
+    plt.close()
+
+
 def main():
     scatter_grau_ego(
         'out/ego_aeroportos.csv',
@@ -163,6 +209,10 @@ def main():
         'data/adjacencias_aeroportos.csv',
         'data/aeroportos_data.csv',
         'out/heatmap_conexoes_regioes.png',
+    )
+    boxplot_pesos_tipo_conexao(
+        'data/adjacencias_aeroportos.csv',
+        'out/boxplot_pesos_tipo_conexao.png',
     )
 
 
