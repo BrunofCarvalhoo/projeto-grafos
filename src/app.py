@@ -34,7 +34,18 @@ def carregar_dados(pasta_projeto: Path):
     df_regioes["regiao"]    = df_regioes["regiao"].str.title()
 
     df_distancias = pd.read_csv(pasta_out / "distancias_rotas.csv")
-    return df_grau, df_regioes, df_distancias
+
+    df_ego = pd.read_csv(pasta_out / "ego_aeroportos.csv")
+    df_ego.columns = df_ego.columns.str.strip()
+    df_ego['aeroporto'] = df_ego['aeroporto'].str.strip()
+
+    df_adj = pd.read_csv(pasta_data / "adjacencias_aeroportos.csv")
+    df_adj.columns = df_adj.columns.str.strip()
+    df_adj['origem'] = df_adj['origem'].str.strip()
+    df_adj['destino'] = df_adj['destino'].str.strip()
+    df_adj['tipo_conexao'] = df_adj['tipo_conexao'].str.strip()
+
+    return df_grau, df_regioes, df_distancias, df_ego, df_adj
 
 
 def pagina_analise(df_grau, df_regioes, df_distancias):
@@ -199,6 +210,91 @@ def pagina_analise(df_grau, df_regioes, df_distancias):
     st.plotly_chart(fig_rot, use_container_width=True)
 
 
+def pagina_avd(df_grau, df_regioes, df_ego, df_adj):
+    PALETA = ["#264653", "#2A9D8F", "#E9C46A", "#F4A261", "#E76F51"]
+
+    st.title("Análise Exploratória e Explanatória (AVD)")
+    st.subheader("Exploratória — Grau vs Densidade da Ego-rede")
+    st.caption(
+        "Cada ponto é um aeroporto. Hubs com alto grau tendem a ter menor densidade local "
+        "porque seus vizinhos não se conectam entre si."
+    )
+
+    df_scatter = df_ego.merge(
+        df_grau[['aeroporto', 'regiao', 'cidade']],
+        on='aeroporto', how='left',
+    )
+
+    regioes_disp = sorted(df_scatter['regiao'].dropna().unique())
+    regioes_sel = st.multiselect(
+        "Filtrar regiões", options=regioes_disp, default=regioes_disp, key="avd_scatter_reg"
+    )
+    df_s = df_scatter[df_scatter['regiao'].isin(regioes_sel)].copy()
+
+    rank_no_grupo = df_s.groupby(['grau', 'densidade_ego']).cumcount()
+    tamanho_grupo = df_s.groupby(['grau', 'densidade_ego'])['grau'].transform('count')
+    df_s['grau_j'] = df_s['grau'].astype(float) + (rank_no_grupo - (tamanho_grupo - 1) / 2) * 0.35
+
+    posicoes = ['top center', 'bottom center'] * (len(df_s) // 2 + 1)
+    df_s = df_s.reset_index(drop=True)
+
+    fig_scatter = px.scatter(
+        df_s, x='grau_j', y='densidade_ego', color='regiao',
+        text='aeroporto', hover_data={'cidade': True, 'regiao': False, 'aeroporto': False, 'grau_j': False},
+        custom_data=['grau'],
+        title='Relação entre Grau e Densidade da Ego-rede por Aeroporto',
+        labels={'grau_j': 'Grau (conexões)', 'densidade_ego': 'Densidade da Ego-rede', 'regiao': 'Região'},
+        color_discrete_sequence=PALETA,
+    )
+    fig_scatter.update_traces(
+        marker=dict(size=9, line=dict(width=1, color='black')),
+        textfont=dict(size=8),
+    )
+    for i, trace in enumerate(fig_scatter.data):
+        trace.textposition = posicoes[i % 2]
+
+    fig_scatter.update_layout(
+        legend_title='Região',
+        height=650,
+        xaxis=dict(title='Grau (conexões)', tickmode='linear', dtick=1),
+    )
+    st.plotly_chart(fig_scatter, use_container_width=True)
+
+    st.divider()
+
+    st.subheader("Exploratória — Composição das Conexões por Aeroporto (Regional vs Hub)")
+    st.caption(
+        "Cada barra mostra o grau total de um aeroporto dividido em dois tipos: "
+        "**regional** = conexões com aeroportos da mesma região geográfica; "
+        "**hub** = conexões com aeroportos de outras regiões. "
+        "Aeroportos com barra predominantemente laranja são conectores inter-regionais."
+    )
+
+    df_orig = df_adj[['origem', 'tipo_conexao']].rename(columns={'origem': 'aeroporto'})
+    df_dest = df_adj[['destino', 'tipo_conexao']].rename(columns={'destino': 'aeroporto'})
+    df_tipo = pd.concat([df_orig, df_dest])
+    contagem = df_tipo.groupby(['aeroporto', 'tipo_conexao']).size().reset_index(name='qtd')
+    totais = contagem.groupby('aeroporto')['qtd'].sum().reset_index(name='total')
+    contagem = contagem.merge(totais, on='aeroporto').sort_values('total', ascending=False)
+
+    aeroportos_disp = contagem['aeroporto'].unique().tolist()
+    top_n = st.slider("Exibir top N aeroportos", 5, len(aeroportos_disp), len(aeroportos_disp), key="avd_topn")
+    top_aeroportos = totais.sort_values('total', ascending=False).head(top_n)['aeroporto'].tolist()
+    df_tipo_filtrado = contagem[contagem['aeroporto'].isin(top_aeroportos)]
+
+    fig_stack = px.bar(
+        df_tipo_filtrado, x='aeroporto', y='qtd', color='tipo_conexao',
+        barmode='stack',
+        title='Composição das Conexões por Aeroporto: Regional vs Hub',
+        labels={'aeroporto': 'Aeroporto (IATA)', 'qtd': 'Número de Conexões', 'tipo_conexao': 'Tipo'},
+        color_discrete_map={'hub': '#E76F51', 'regional': '#2A9D8F'},
+        category_orders={'aeroporto': top_aeroportos},
+    )
+    fig_stack.update_layout(xaxis_tickangle=-45, legend_title='Tipo de Conexão')
+    st.plotly_chart(fig_stack, use_container_width=True)
+
+
+
 def pagina_arvores(pasta_out):
     st.title("Árvores de Percurso (Menor Caminho)")
     st.markdown(
@@ -261,17 +357,20 @@ def main():
             "1. Análise de Graus e Regiões",
             "2. Árvores de Percurso (Menor Caminho)",
             "3. Mapa Interativo de Aeroportos",
+            "4. Análise Exploratória e Explanatória (AVD)",
         ],
     )
 
-    df_grau, df_regioes, df_distancias = carregar_dados(pasta_projeto)
+    df_grau, df_regioes, df_distancias, df_ego, df_adj = carregar_dados(pasta_projeto)
 
     if pagina == "1. Análise de Graus e Regiões":
         pagina_analise(df_grau, df_regioes, df_distancias)
     elif pagina == "2. Árvores de Percurso (Menor Caminho)":
         pagina_arvores(pasta_out)
-    else:
+    elif pagina == "3. Mapa Interativo de Aeroportos":
         pagina_mapa(pasta_projeto)
+    else:
+        pagina_avd(df_grau, df_regioes, df_ego, df_adj)
 
 
 if __name__ == "__main__":
