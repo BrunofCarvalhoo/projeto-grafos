@@ -293,6 +293,57 @@ def pagina_avd(df_grau, df_regioes, df_ego, df_adj):
     fig_stack.update_layout(xaxis_tickangle=-45, legend_title='Tipo de Conexão')
     st.plotly_chart(fig_stack, use_container_width=True)
 
+    st.divider()
+
+    st.subheader("Explanatoria - Integracao entre regioes no grafo nao direcionado")
+    st.caption(
+        "Como as rotas do dataset representam um grafo nao direcionado, a matriz abaixo conta cada "
+        "conexao uma unica vez por par de regioes. Por isso, a leitura correta e simetrica: Nordeste-Sudeste "
+        "e Sudeste-Nordeste representam o mesmo tipo de relacao."
+    )
+
+    dados_aeroporto = df_grau[['aeroporto', 'regiao']].drop_duplicates()
+    df_fluxo = (
+        df_adj
+        .merge(
+            dados_aeroporto.rename(columns={'aeroporto': 'origem', 'regiao': 'regiao_origem'}),
+            on='origem',
+            how='left',
+        )
+        .merge(
+            dados_aeroporto.rename(columns={'aeroporto': 'destino', 'regiao': 'regiao_destino'}),
+            on='destino',
+            how='left',
+        )
+        .dropna(subset=['regiao_origem', 'regiao_destino'])
+    )
+    df_fluxo[['regiao_a', 'regiao_b']] = df_fluxo.apply(
+        lambda row: pd.Series(sorted([row['regiao_origem'], row['regiao_destino']])),
+        axis=1,
+    )
+
+    regioes_fluxo = sorted(set(df_fluxo['regiao_a']) | set(df_fluxo['regiao_b']))
+    matriz_regioes = pd.DataFrame(0, index=regioes_fluxo, columns=regioes_fluxo)
+    pares_regioes = df_fluxo.groupby(['regiao_a', 'regiao_b']).size().reset_index(name='conexoes')
+
+    for row in pares_regioes.itertuples():
+        matriz_regioes.loc[row.regiao_a, row.regiao_b] = row.conexoes
+        matriz_regioes.loc[row.regiao_b, row.regiao_a] = row.conexoes
+
+    fig_heatmap_regioes = px.imshow(
+        matriz_regioes,
+        text_auto=True,
+        color_continuous_scale=ESCALA_CONTINUA,
+        title='Heatmap Simetrico de Conexoes entre Regioes',
+        labels={'x': 'Regiao', 'y': 'Regiao', 'color': 'Conexoes'},
+    )
+    fig_heatmap_regioes.update_layout(height=560)
+    st.plotly_chart(fig_heatmap_regioes, use_container_width=True)
+
+    total_conexoes = len(df_fluxo)
+    conexoes_interregionais = int((df_fluxo['regiao_a'] != df_fluxo['regiao_b']).sum())
+    
+
 
 
 def pagina_arvores(pasta_out):

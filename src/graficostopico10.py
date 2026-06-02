@@ -85,6 +85,70 @@ def barras_tipo_conexao(arquivo_adj, arquivo_saida):
     plt.close()
 
 
+def preparar_pares_regionais(arquivo_adj, arquivo_aeroportos):
+    df_adj = pd.read_csv(arquivo_adj)
+    df_adj.columns = df_adj.columns.str.strip()
+    df_adj['origem'] = df_adj['origem'].str.strip()
+    df_adj['destino'] = df_adj['destino'].str.strip()
+
+    df_aeroportos = pd.read_csv(arquivo_aeroportos)
+    df_aeroportos.columns = df_aeroportos.columns.str.strip()
+    df_aeroportos['iata'] = df_aeroportos['iata'].str.strip()
+
+    dados_origem = df_aeroportos[['iata', 'regiao']].rename(
+        columns={'iata': 'origem', 'regiao': 'regiao_origem'}
+    )
+    dados_destino = df_aeroportos[['iata', 'regiao']].rename(
+        columns={'iata': 'destino', 'regiao': 'regiao_destino'}
+    )
+
+    df_fluxo = (
+        df_adj
+        .merge(dados_origem, on='origem', how='left')
+        .merge(dados_destino, on='destino', how='left')
+        .dropna(subset=['regiao_origem', 'regiao_destino'])
+    )
+    df_fluxo[['regiao_a', 'regiao_b']] = df_fluxo.apply(
+        lambda row: pd.Series(sorted([row['regiao_origem'], row['regiao_destino']])),
+        axis=1,
+    )
+    return df_fluxo
+
+
+def heatmap_conexoes_regioes(arquivo_adj, arquivo_aeroportos, arquivo_saida):
+    df_fluxo = preparar_pares_regionais(arquivo_adj, arquivo_aeroportos)
+    regioes = sorted(set(df_fluxo['regiao_a']) | set(df_fluxo['regiao_b']))
+    matriz = pd.DataFrame(0, index=regioes, columns=regioes)
+    pares = df_fluxo.groupby(['regiao_a', 'regiao_b']).size().reset_index(name='conexoes')
+
+    for row in pares.itertuples():
+        matriz.loc[row.regiao_a, row.regiao_b] = row.conexoes
+        matriz.loc[row.regiao_b, row.regiao_a] = row.conexoes
+
+    fig, ax = plt.subplots(figsize=(10, 7))
+    im = ax.imshow(matriz.values, cmap='YlGnBu')
+
+    ax.set_title('Analise Explanatoria: Heatmap Simetrico entre Regioes', fontsize=14, pad=15)
+    ax.set_xlabel('Regiao', fontsize=12)
+    ax.set_ylabel('Regiao', fontsize=12)
+    ax.set_xticks(range(len(matriz.columns)))
+    ax.set_xticklabels(matriz.columns, rotation=35, ha='right')
+    ax.set_yticks(range(len(matriz.index)))
+    ax.set_yticklabels(matriz.index)
+
+    for i in range(len(matriz.index)):
+        for j in range(len(matriz.columns)):
+            valor = matriz.iloc[i, j]
+            cor_texto = 'white' if valor > matriz.values.max() / 2 else 'black'
+            ax.text(j, i, valor, ha='center', va='center', color=cor_texto, fontsize=10)
+
+    cbar = fig.colorbar(im, ax=ax)
+    cbar.set_label('Numero de conexoes')
+
+    plt.savefig(arquivo_saida, bbox_inches='tight')
+    plt.close()
+
+
 def main():
     scatter_grau_ego(
         'out/ego_aeroportos.csv',
@@ -94,6 +158,11 @@ def main():
     barras_tipo_conexao(
         'data/adjacencias_aeroportos.csv',
         'out/barras_tipo_conexao.png',
+    )
+    heatmap_conexoes_regioes(
+        'data/adjacencias_aeroportos.csv',
+        'data/aeroportos_data.csv',
+        'out/heatmap_conexoes_regioes.png',
     )
 
 
