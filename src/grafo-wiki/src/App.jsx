@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, useCallback } from 'react'
+import { useEffect, useRef, useState, useCallback, useMemo } from 'react'
 import ForceGraph2D from 'react-force-graph-2d'
 import Nav from './Nav.jsx'
 
@@ -9,25 +9,67 @@ const CORES_GRAU = (grau) => {
   return '#264653'
 }
 
+const MIN_ARESTAS = 200
+
 export default function App() {
-  const [grafoData, setGrafoData]   = useState({ nodes: [], links: [] })
-  const [nodeSelecionado, setNode]  = useState(null)
-  const [busca, setBusca]           = useState('')
-  const [status, setStatus]         = useState('Carregando dados...')
-  const [simulando, setSimulando]   = useState(false)
+  const [dadosCompletos, setDadosCompletos] = useState({ nodes: [], links: [] })
+  const [limiteArestas, setLimiteArestas]   = useState(MIN_ARESTAS)
+  const [nodeSelecionado, setNode]          = useState(null)
+  const [busca, setBusca]                   = useState('')
+  const [status, setStatus]                 = useState('Carregando dados...')
+  const [simulando, setSimulando]           = useState(false)
   const fgRef = useRef()
 
-  // ── Carrega JSON ────────────────────────────────────────────────
+  // ── Carrega JSON e ordena arestas pelos endpoints mais conectados ─
   useEffect(() => {
     setStatus('Carregando dados...')
     fetch('/grafo_data.json')
       .then(r => r.json())
       .then(data => {
-        setStatus(`Calculando layout — ${data.nodes.length.toLocaleString()} nós, ${data.links.length.toLocaleString()} arestas...`)
-        setSimulando(true)
-        setGrafoData(data)
+        // Mapa id → grau para ordenar arestas
+        const grauPorId = Object.fromEntries(data.nodes.map(n => [n.id, n.grau]))
+        const nodesPorId = Object.fromEntries(data.nodes.map(n => [n.id, n]))
+
+        // Ordena arestas pela "importância" = soma do grau dos dois lados.
+        // Assim, as primeiras N arestas conectam os hubs mais relevantes.
+        const linksOrdenados = [...data.links].sort((a, b) => {
+          const sa = typeof a.source === 'object' ? a.source.id : a.source
+          const ta = typeof a.target === 'object' ? a.target.id : a.target
+          const sb = typeof b.source === 'object' ? b.source.id : b.source
+          const tb = typeof b.target === 'object' ? b.target.id : b.target
+          const pesoB = (grauPorId[sb] || 0) + (grauPorId[tb] || 0)
+          const pesoA = (grauPorId[sa] || 0) + (grauPorId[ta] || 0)
+          return pesoB - pesoA
+        })
+
+        setDadosCompletos({ nodes: data.nodes, links: linksOrdenados, nodesPorId })
+        setStatus('')
       })
   }, [])
+
+  // ── Filtra grafo segundo o limite de arestas escolhido ─────────
+  const grafoData = useMemo(() => {
+    if (dadosCompletos.links.length === 0) return { nodes: [], links: [] }
+
+    const linksVisiveis = dadosCompletos.links.slice(0, limiteArestas)
+
+    // Coleta apenas os nós que participam dessas arestas
+    const idsUsados = new Set()
+    for (const l of linksVisiveis) {
+      const s = typeof l.source === 'object' ? l.source.id : l.source
+      const t = typeof l.target === 'object' ? l.target.id : l.target
+      idsUsados.add(s)
+      idsUsados.add(t)
+    }
+    const nodesVisiveis = dadosCompletos.nodes.filter(n => idsUsados.has(n.id))
+
+    return { nodes: nodesVisiveis, links: linksVisiveis }
+  }, [dadosCompletos, limiteArestas])
+
+  // Reinicia simulação quando o limite muda
+  useEffect(() => {
+    if (grafoData.nodes.length > 0) setSimulando(true)
+  }, [limiteArestas])
 
   // ── Clique em nó ────────────────────────────────────────────────
   const aoClicarNo = useCallback(node => {
@@ -44,7 +86,7 @@ export default function App() {
       n.id.toLowerCase().includes(termo)
     )
     if (encontrado) aoClicarNo(encontrado)
-    else alert(`"${busca}" não encontrado.`)
+    else alert(`"${busca}" não encontrado (talvez esteja fora do filtro atual).`)
   }
 
   // ── Vizinhos do nó selecionado ───────────────────────────────────
@@ -62,8 +104,10 @@ export default function App() {
         })
     : []
 
-  const largura = window.innerWidth
-  const altura  = window.innerHeight
+  const largura     = window.innerWidth
+  const altura      = window.innerHeight
+  const totalNos    = dadosCompletos.nodes.length
+  const totalLinks  = dadosCompletos.links.length
 
   return (
     <div style={{ position: 'relative', width: largura, height: altura }}>
@@ -72,14 +116,46 @@ export default function App() {
       {/* ── Cabeçalho ── */}
       <div style={estilos.cabecalho}>
         <span style={estilos.titulo}>Grafo Wikipedia</span>
-        {grafoData.nodes.length > 0 && (
+        {grafoData.links.length > 0 && (
           <span style={estilos.stats}>
-            {grafoData.nodes.length.toLocaleString()} vértices
-            · {grafoData.links.length.toLocaleString()} arestas
+            {grafoData.links.length.toLocaleString()} de {totalLinks.toLocaleString()} arestas
+            · {grafoData.nodes.length.toLocaleString()} vértices
             {simulando && ' · calculando layout...'}
           </span>
         )}
       </div>
+
+      {/* ── Filtro de quantidade de arestas ── */}
+      {totalLinks > 0 && (
+        <div style={estilos.filtro}>
+          <p style={{ fontSize: 11, color: '#aaa', marginBottom: 6, fontWeight: 600 }}>
+            Arestas exibidas (mais relevantes primeiro)
+          </p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <input
+              type="range"
+              min={MIN_ARESTAS}
+              max={totalLinks}
+              step={100}
+              value={limiteArestas}
+              onChange={e => setLimiteArestas(Number(e.target.value))}
+              style={estilos.slider}
+            />
+            <span style={estilos.contador}>
+              {limiteArestas.toLocaleString()}
+            </span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 4 }}>
+            <span style={{ fontSize: 10, color: '#555' }}>{MIN_ARESTAS}</span>
+            <button
+              style={estilos.botaoTudo}
+              onClick={() => setLimiteArestas(totalLinks)}
+            >
+              ver tudo ({totalLinks.toLocaleString()})
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* ── Barra de busca ── */}
       <div style={estilos.barraBusca}>
@@ -179,30 +255,26 @@ export default function App() {
           height={altura}
           backgroundColor="#0f1117"
 
-          // ── Otimizações de performance para grafos grandes ──
-          warmupTicks={60}           // roda 60 ticks de física antes de renderizar
-          cooldownTicks={200}        // para a simulação após 200 ticks
-          d3AlphaDecay={0.03}        // convergência mais rápida (padrão: 0.0228)
-          d3VelocityDecay={0.4}      // amortecimento maior → menos oscilação
+          warmupTicks={60}
+          cooldownTicks={200}
+          d3AlphaDecay={0.03}
+          d3VelocityDecay={0.4}
           onEngineStop={() => setSimulando(false)}
 
-          // ── Nós ──
-          nodeRelSize={2}            // nós menores para caber mais na tela
+          nodeRelSize={2}
           nodeVal={n => Math.max(1, n.grau / 15)}
           nodeColor={n => CORES_GRAU(n.grau)}
           nodeLabel={n => `${n.id}  (grau: ${n.grau})`}
           onNodeClick={aoClicarNo}
 
-          // ── Arestas ──
           linkColor={() => 'rgba(42,58,74,0.6)'}
           linkWidth={0.4}
           linkDirectionalArrowLength={2}
           linkDirectionalArrowRelPos={1}
 
-          // ── Labels: só mostra quando der zoom suficiente ──
           nodeCanvasObjectMode={n => n.grau >= 30 ? 'after' : undefined}
           nodeCanvasObject={(node, ctx, globalScale) => {
-            if (globalScale < 1.5) return   // não renderiza labels em zoom baixo
+            if (globalScale < 1.5) return
             const label    = node.id.length > 25 ? node.id.slice(0, 25) + '…' : node.id
             const fontSize = Math.max(6, 10 / globalScale)
             ctx.font       = `${fontSize}px Segoe UI`
@@ -218,14 +290,33 @@ export default function App() {
 
 const estilos = {
   cabecalho: {
-    position: 'absolute', top: 16, left: '50%', transform: 'translateX(-50%)',
+    position: 'absolute', top: 64, left: '50%', transform: 'translateX(-50%)',
     zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2,
     pointerEvents: 'none',
   },
   titulo: { fontSize: 18, fontWeight: 700, color: '#e0e0e0' },
   stats:  { fontSize: 12, color: '#888' },
+
+  filtro: {
+    position: 'absolute', top: 64, left: 16, zIndex: 10, width: 260,
+    background: 'rgba(15,17,23,0.92)', padding: '12px 14px',
+    borderRadius: 8, border: '1px solid #2a3a4a',
+  },
+  slider: {
+    flex: 1, accentColor: '#2a9d8f', cursor: 'pointer',
+  },
+  contador: {
+    minWidth: 48, textAlign: 'right',
+    fontSize: 13, fontWeight: 700, color: '#2a9d8f',
+  },
+  botaoTudo: {
+    background: 'none', border: 'none', color: '#2a9d8f',
+    cursor: 'pointer', fontSize: 10, padding: 0,
+    textDecoration: 'underline',
+  },
+
   barraBusca: {
-    position: 'absolute', top: 16, right: 16, zIndex: 10,
+    position: 'absolute', top: 64, right: 16, zIndex: 10,
     display: 'flex', gap: 6,
   },
   input: {
@@ -243,7 +334,7 @@ const estilos = {
     borderRadius: 8, border: '1px solid #2a3a4a',
   },
   painel: {
-    position: 'absolute', top: 60, left: 16, zIndex: 10, width: 240,
+    position: 'absolute', top: 170, left: 16, zIndex: 10, width: 260,
     background: 'rgba(15,17,23,0.92)', padding: '12px 14px',
     borderRadius: 8, border: '1px solid #2a3a4a',
   },
