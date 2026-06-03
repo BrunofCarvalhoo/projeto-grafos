@@ -178,10 +178,10 @@ html,body{{height:100%;overflow:hidden;font-family:'Segoe UI',sans-serif;
 <div id="wrap">
 
   <div id="topbar">
-    <span id="topbar-logo">✈ Aeroportos do Brasil</span>
+    <span id="topbar-logo">Aeroportos do Brasil</span>
     <input id="search-box" placeholder="Buscar IATA ou cidade..." oninput="onSearch(this.value)"/>
-    <button id="search-clear" onclick="clearSearch()">✕</button>
-    <button class="tbtn" onclick="resetAll()">↺ Resetar</button>
+    <button id="search-clear" onclick="clearSearch()">x</button>
+    <button class="tbtn" onclick="resetAll()">Resetar</button>
   </div>
 
   <div id="main">
@@ -201,7 +201,7 @@ html,body{{height:100%;overflow:hidden;font-family:'Segoe UI',sans-serif;
       <div>
         <div class="stitle">Caminhos obrigatórios</div>
         <div id="routes-panel"></div>
-        <button class="tbtn" style="width:100%;margin-top:2px" onclick="clearRoute()">✕ Limpar rota</button>
+        <button class="tbtn" style="width:100%;margin-top:2px" onclick="clearRoute()">Limpar rota</button>
       </div>
 
       <div>
@@ -536,4 +536,4 @@ setStatus(`Grafo pronto — ${{Object.keys(AP).length}} aeroportos, ${{EDGES.len
 if __name__ == "__main__":
     pasta_projeto = Path(__file__).resolve().parent.parent
     saida = gerar_mapa(pasta_projeto)
-    print(f"✓ Mapa gerado em {saida}")
+    print(f"Mapa gerado em {saida}")

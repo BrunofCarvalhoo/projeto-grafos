@@ -92,11 +92,34 @@ def passos_com_peso(caminho_nos):
         passos.append({"de": de, "para": para, "peso": round(peso, 1)})
     return passos
 
-def construir_arvore(veio_de):
-    return [
-        {"pai": GRAFO.nome_vertice[pai], "filho": GRAFO.nome_vertice[i]}
-        for i, pai in enumerate(veio_de) if pai is not None
-    ]
+def construir_arvore(veio_de, profundidade_por_indice=None):
+    arestas = []
+    for i, pai in enumerate(veio_de):
+        if pai is None:
+            continue
+        nome_pai   = GRAFO.nome_vertice[pai]
+        nome_filho = GRAFO.nome_vertice[i]
+        # Pega o peso da aresta pai → filho na lista de adjacência
+        peso = next((p for v, p in GRAFO.lista_adjacencia[pai] if v == i), 0.0)
+
+        if profundidade_por_indice is not None:
+            nivel = profundidade_por_indice.get(i, 0)
+        else:
+            # Calcula nivel andando para cima
+            atual, nivel = pai, 1
+            while veio_de[atual] is not None:
+                atual = veio_de[atual]
+                nivel += 1
+                if nivel > GRAFO.numero_vertices:
+                    break
+
+        arestas.append({
+            "pai":   nome_pai,
+            "filho": nome_filho,
+            "peso":  round(peso, 1),
+            "nivel": int(nivel),
+        })
+    return arestas
 
 @app.get("/nos")
 def listar_nos():
@@ -191,34 +214,61 @@ def executar(pedido: PedidoAlgoritmo):
         ordem_visita, distancias, veio_de = bfs(GRAFO, origem)
         tempo = (time.perf_counter() - inicio) * 1000
 
-        nivel_por_no = {
-            GRAFO.nome_vertice[i]: d
-            for i, d in enumerate(distancias)
-            if d != float("inf")
+        # Profundidade por índice (BFS retorna pronto)
+        prof_por_idx = {
+            i: int(d) for i, d in enumerate(distancias) if d != float("inf")
         }
+        profundidade_max = max(prof_por_idx.values()) if prof_por_idx else 0
+        dist_por_nivel = {}
+        for d in prof_por_idx.values():
+            dist_por_nivel[d] = dist_por_nivel.get(d, 0) + 1
+        dist_por_nivel = dict(sorted(dist_por_nivel.items()))
+
         return {
-            "algoritmo":       "BFS",
-            "origem":          origem,
-            "tempo_ms":        round(tempo, 2),
-            "total_visitados": len(ordem_visita),
-            "total_vertices":  GRAFO.numero_vertices,
-            "ordem_visita":    ordem_visita,
-            "nivel_por_no":    nivel_por_no,
-            "arestas_arvore":  construir_arvore(veio_de),
+            "algoritmo":           "BFS",
+            "origem":               origem,
+            "tempo_ms":             round(tempo, 2),
+            "total_visitados":      len(ordem_visita),
+            "total_vertices":       GRAFO.numero_vertices,
+            "profundidade_maxima":  int(profundidade_max),
+            "distribuicao_niveis":  dist_por_nivel,
+            "ordem_visita":         ordem_visita,
+            "arestas_arvore":       construir_arvore(veio_de, prof_por_idx),
         }
 
     if algoritmo == "DFS":
         ordem_visita, veio_de = dfs(GRAFO, origem)
         tempo = (time.perf_counter() - inicio) * 1000
 
+        indice_origem = GRAFO.mapa_indice[origem]
+        prof_por_idx = {indice_origem: 0}
+        for i in range(GRAFO.numero_vertices):
+            if veio_de[i] is None and i != indice_origem:
+                continue
+            atual, passos = i, 0
+            while atual is not None and atual != indice_origem:
+                atual = veio_de[atual]
+                passos += 1
+                if passos > GRAFO.numero_vertices:
+                    break
+            prof_por_idx[i] = passos
+
+        profundidade_max = max(prof_por_idx.values()) if prof_por_idx else 0
+        dist_por_nivel = {}
+        for d in prof_por_idx.values():
+            dist_por_nivel[d] = dist_por_nivel.get(d, 0) + 1
+        dist_por_nivel = dict(sorted(dist_por_nivel.items()))
+
         return {
-            "algoritmo":       "DFS",
-            "origem":          origem,
-            "tempo_ms":        round(tempo, 2),
-            "total_visitados": len(ordem_visita),
-            "total_vertices":  GRAFO.numero_vertices,
-            "ordem_visita":    ordem_visita,
-            "arestas_arvore":  construir_arvore(veio_de),
+            "algoritmo":           "DFS",
+            "origem":               origem,
+            "tempo_ms":             round(tempo, 2),
+            "total_visitados":      len(ordem_visita),
+            "total_vertices":       GRAFO.numero_vertices,
+            "profundidade_maxima":  int(profundidade_max),
+            "distribuicao_niveis":  dist_por_nivel,
+            "ordem_visita":         ordem_visita,
+            "arestas_arvore":       construir_arvore(veio_de, prof_por_idx),
         }
 
     raise HTTPException(400, f'Algoritmo "{algoritmo}" não reconhecido.')

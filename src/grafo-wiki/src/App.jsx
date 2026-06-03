@@ -205,7 +205,7 @@ export default function App() {
             <button
               style={estilos.fechar}
               onClick={() => { setNode(null); fgRef.current?.zoom(1, 600) }}
-            >✕</button>
+            >x</button>
           </div>
           <hr style={{ borderColor: '#333', margin: '8px 0' }} />
           <p style={{ fontSize: 12 }}>Grau: <strong>{nodeSelecionado.grau}</strong></p>

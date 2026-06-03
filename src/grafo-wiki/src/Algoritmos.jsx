@@ -1,5 +1,6 @@
 import { useEffect, useState, useMemo } from 'react'
 import Nav from './Nav.jsx'
+import ArvoreGrafo from './ArvoreGrafo.jsx'
 
 const API = 'http://localhost:5000'
 
@@ -86,7 +87,7 @@ export default function Algoritmos() {
         {/* Aviso de API offline */}
         {apiOff && (
           <div style={s.banner}>
-            ⚠ API offline. Em outro terminal, execute:{' '}
+            API offline. Em outro terminal, execute:{' '}
             <code style={s.code}>python src/api.py</code>
           </div>
         )}
@@ -213,9 +214,41 @@ function ResultadoTravessia({ r, cor }) {
       <div style={s.statsGrid}>
         <Metrica label="Visitados" valor={r.total_visitados.toLocaleString()} cor={cor} grande />
         <Metrica label="De um total de" valor={r.total_vertices.toLocaleString()} />
+        <Metrica
+          label={r.algoritmo === 'BFS' ? 'Profundidade máxima (saltos)' : 'Profundidade máxima'}
+          valor={r.profundidade_maxima ?? '—'}
+          cor={cor}
+          grande
+        />
         <Metrica label="Arestas da árvore" valor={r.arestas_arvore.length.toLocaleString()} />
         <Metrica label="Tempo (Python)" valor={`${r.tempo_ms} ms`} small />
       </div>
+
+      {/* Distribuição por nível */}
+      {r.distribuicao_niveis && Object.keys(r.distribuicao_niveis).length > 1 && (
+        <div style={{ ...s.boxCaminho, marginBottom: 14 }}>
+          <p style={s.tituloBox}>
+            Distribuição de nós por nível {r.algoritmo === 'BFS' ? '(profundidade BFS)' : '(profundidade DFS)'}
+          </p>
+          <div style={{ display: 'grid', gap: 4 }}>
+            {Object.entries(r.distribuicao_niveis).map(([nivel, qtd]) => {
+              const max = Math.max(...Object.values(r.distribuicao_niveis))
+              const pct = (qtd / max) * 100
+              return (
+                <div key={nivel} style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 12 }}>
+                  <span style={{ color: '#778', minWidth: 70 }}>nível {nivel}</span>
+                  <div style={{ flex: 1, height: 14, background: '#0a0c12', borderRadius: 3, overflow: 'hidden' }}>
+                    <div style={{ width: `${pct}%`, height: '100%', background: cor, opacity: 0.7 }} />
+                  </div>
+                  <span style={{ color: '#aab', minWidth: 60, textAlign: 'right', fontFamily: 'monospace' }}>
+                    {qtd.toLocaleString()}
+                  </span>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      )}
 
       {/* Ordem de visita */}
       <div style={s.boxCaminho}>
@@ -247,21 +280,16 @@ function ResultadoTravessia({ r, cor }) {
         )}
       </div>
 
-      {/* Árvore — apenas amostra */}
+      {/* Visualização da árvore de busca */}
       {r.arestas_arvore.length > 0 && (
         <div style={{ ...s.boxCaminho, marginTop: 14 }}>
-          <p style={s.tituloBox}>
-            Árvore de busca (amostra de {Math.min(20, r.arestas_arvore.length)} arestas)
-          </p>
-          <div style={{ display: 'grid', gap: 4 }}>
-            {r.arestas_arvore.slice(0, 20).map((a, i) => (
-              <div key={i} style={{ fontSize: 12, color: '#aab' }}>
-                <span style={{ color: '#667' }}>{a.pai}</span>
-                <span style={{ color: '#445', margin: '0 6px' }}>→</span>
-                <span>{a.filho}</span>
-              </div>
-            ))}
-          </div>
+          <p style={s.tituloBox}>Árvore de busca</p>
+          <ArvoreGrafo
+            origem={r.origem}
+            arestasArvore={r.arestas_arvore}
+            profundidadeMax={r.profundidade_maxima}
+            corAlgoritmo={cor}
+          />
         </div>
       )}
     </>
@@ -276,7 +304,7 @@ function ResultadoCaminho({ r, cor }) {
         <h2 style={s.h2}>{r.algoritmo} — Ciclo negativo</h2>
         <div style={s.boxCiclo}>
           <p style={{ fontWeight: 700, color: '#e76f51', marginBottom: 8 }}>
-            ⚠ Ciclo negativo detectado no grafo
+            Ciclo negativo detectado no grafo
           </p>
           <p style={{ fontSize: 13, color: '#ccc', lineHeight: 1.6 }}>
             O Bellman-Ford encontrou um ciclo cuja soma de pesos é negativa.
@@ -326,7 +354,7 @@ function ResultadoCaminho({ r, cor }) {
       <div style={s.boxCaminho}>
         <p style={s.tituloBox}>Caminho percorrido</p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4, alignItems: 'center' }}>
-          <span style={{ ...s.noTag, ...s.noOrigem }}>🟢 {r.origem}</span>
+          <span style={{ ...s.noTag, ...s.noOrigem }}>{r.origem}</span>
           {r.passos.map((p, i) => (
             <span key={i} style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
               <span style={{
@@ -339,7 +367,7 @@ function ResultadoCaminho({ r, cor }) {
                 ...s.noTag,
                 ...(i === r.passos.length - 1 ? s.noDestino : {}),
               }}>
-                {i === r.passos.length - 1 && '🔴 '}{p.para}
+                {p.para}
               </span>
             </span>
           ))}
