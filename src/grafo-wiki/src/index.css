@@ -8,5 +8,8 @@ body {
   background: #0f1117;
   color: #e0e0e0;
   font-family: 'Segoe UI', sans-serif;
+}
+
+body.no-scroll {
   overflow: hidden;
 }

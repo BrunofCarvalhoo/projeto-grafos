@@ -4,3 +4,5 @@ streamlit
 pillow
 numpy
 plotly
+fastapi
+uvicorn

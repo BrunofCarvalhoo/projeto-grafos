@@ -20,18 +20,19 @@ export default function App() {
   const [simulando, setSimulando]           = useState(false)
   const fgRef = useRef()
 
-  // ── Carrega JSON e ordena arestas pelos endpoints mais conectados ─
+  useEffect(() => {
+    document.body.classList.add('no-scroll')
+    return () => document.body.classList.remove('no-scroll')
+  }, [])
+
   useEffect(() => {
     setStatus('Carregando dados...')
     fetch('/grafo_data.json')
       .then(r => r.json())
       .then(data => {
-        // Mapa id → grau para ordenar arestas
         const grauPorId = Object.fromEntries(data.nodes.map(n => [n.id, n.grau]))
         const nodesPorId = Object.fromEntries(data.nodes.map(n => [n.id, n]))
 
-        // Ordena arestas pela "importância" = soma do grau dos dois lados.
-        // Assim, as primeiras N arestas conectam os hubs mais relevantes.
         const linksOrdenados = [...data.links].sort((a, b) => {
           const sa = typeof a.source === 'object' ? a.source.id : a.source
           const ta = typeof a.target === 'object' ? a.target.id : a.target
@@ -47,13 +48,11 @@ export default function App() {
       })
   }, [])
 
-  // ── Filtra grafo segundo o limite de arestas escolhido ─────────
   const grafoData = useMemo(() => {
     if (dadosCompletos.links.length === 0) return { nodes: [], links: [] }
 
     const linksVisiveis = dadosCompletos.links.slice(0, limiteArestas)
 
-    // Coleta apenas os nós que participam dessas arestas
     const idsUsados = new Set()
     for (const l of linksVisiveis) {
       const s = typeof l.source === 'object' ? l.source.id : l.source
@@ -66,19 +65,16 @@ export default function App() {
     return { nodes: nodesVisiveis, links: linksVisiveis }
   }, [dadosCompletos, limiteArestas])
 
-  // Reinicia simulação quando o limite muda
   useEffect(() => {
     if (grafoData.nodes.length > 0) setSimulando(true)
   }, [limiteArestas])
 
-  // ── Clique em nó ────────────────────────────────────────────────
   const aoClicarNo = useCallback(node => {
     setNode(node)
     fgRef.current?.centerAt(node.x, node.y, 600)
     fgRef.current?.zoom(6, 600)
   }, [])
 
-  // ── Busca ────────────────────────────────────────────────────────
   const aoFocarBusca = () => {
     const termo = busca.trim().toLowerCase()
     if (!termo) return
@@ -89,7 +85,6 @@ export default function App() {
     else alert(`"${busca}" não encontrado (talvez esteja fora do filtro atual).`)
   }
 
-  // ── Vizinhos do nó selecionado ───────────────────────────────────
   const vizinhos = nodeSelecionado
     ? grafoData.links
         .filter(l => {
