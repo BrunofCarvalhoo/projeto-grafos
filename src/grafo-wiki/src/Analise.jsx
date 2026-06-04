@@ -5,6 +5,8 @@ export default function Analise() {
   const [hoveredBar, setHoveredBar] = useState(null)
   const [hoveredHist, setHoveredHist] = useState(null)
   const [selectedCard, setSelectedCard] = useState('dijkstra')
+  const [hoveredCell, setHoveredCell] = useState(null)
+  const [heatmapData, setHeatmapData] = useState(null)
 
   // Dados reais aproximados para o Grafo Wikipédia (3.468 nós, 20.002 links)
   const metricas = [
@@ -86,6 +88,117 @@ export default function Analise() {
   // Altura máxima para normalizar barras do gráfico de performance
   const maxTempo = Math.max(...performance.map(d => d.tempo))
   const maxQtd = Math.max(...distribuicaoGraus.map(d => d.qtd))
+
+  // ── Helpers de cor para o heatmap (escala contínua normalizada) ──
+  const lerpCor = (c1, c2, t) => {
+    const h = hex => parseInt(hex, 16)
+    const r = Math.round(h(c1.slice(1,3)) + (h(c2.slice(1,3)) - h(c1.slice(1,3))) * t).toString(16).padStart(2,'0')
+    const g = Math.round(h(c1.slice(3,5)) + (h(c2.slice(3,5)) - h(c1.slice(3,5))) * t).toString(16).padStart(2,'0')
+    const b = Math.round(h(c1.slice(5,7)) + (h(c2.slice(5,7)) - h(c1.slice(5,7))) * t).toString(16).padStart(2,'0')
+    return `#${r}${g}${b}`
+  }
+
+  const corFromT = (t) => {
+    if (t < 0.33) return lerpCor('#2a9d8f', '#52b788', t / 0.33)
+    if (t < 0.66) return lerpCor('#52b788', '#e9c46a', (t - 0.33) / 0.33)
+    return lerpCor('#e9c46a', '#e76f51', (t - 0.66) / 0.34)
+  }
+
+  const distCorNorm = (val, maxDist) => {
+    if (val === null) return '#111827'
+    if (val === 0)    return '#060a10'
+    return corFromT(val / maxDist)
+  }
+
+  // ── Dijkstra (grafo não-dirigido) na amostra dos 10 vértices mais conectados ──
+  useEffect(() => {
+    fetch('/grafo_data.json')
+      .then(r => r.json())
+      .then(({ nodes, links }) => {
+
+        // Adjacência NÃO-DIRIGIDA com pesos (aresta nos dois sentidos)
+        const adjW = new Map()
+        nodes.forEach(n => adjW.set(n.id, []))
+        links.forEach(l => {
+          const src = typeof l.source === 'object' ? l.source.id : l.source
+          const tgt = typeof l.target === 'object' ? l.target.id : l.target
+          const w = typeof l.value === 'number' && l.value > 0 ? l.value : 1
+          if (!adjW.has(src)) adjW.set(src, [])
+          if (!adjW.has(tgt)) adjW.set(tgt, [])
+          adjW.get(src).push([tgt, w])
+          adjW.get(tgt).push([src, w])
+        })
+
+        // Amostra: top 10 por grau total
+        const sample = [...adjW.entries()]
+          .sort((a, b) => b[1].length - a[1].length)
+          .slice(0, 10)
+          .map(([id]) => id)
+
+        // Dijkstra com min-heap binário inline
+        const dijkstra = (start) => {
+          const dist = new Map()
+          const heap = [[0, start]]
+
+          const push = (cost, id) => {
+            heap.push([cost, id])
+            let i = heap.length - 1
+            while (i > 0) {
+              const p = (i - 1) >> 1
+              if (heap[p][0] <= heap[i][0]) break
+              ;[heap[p], heap[i]] = [heap[i], heap[p]]
+              i = p
+            }
+          }
+          const pop = () => {
+            const top = heap[0]
+            const last = heap.pop()
+            if (heap.length) {
+              heap[0] = last
+              let i = 0
+              while (true) {
+                const l = 2 * i + 1, r = 2 * i + 2
+                let m = i
+                if (l < heap.length && heap[l][0] < heap[m][0]) m = l
+                if (r < heap.length && heap[r][0] < heap[m][0]) m = r
+                if (m === i) break
+                ;[heap[m], heap[i]] = [heap[i], heap[m]]
+                i = m
+              }
+            }
+            return top
+          }
+
+          dist.set(start, 0)
+          while (heap.length) {
+            const [d, u] = pop()
+            if (d > (dist.get(u) ?? Infinity)) continue
+            for (const [v, w] of (adjW.get(u) ?? [])) {
+              const nd = d + w
+              if (nd < (dist.get(v) ?? Infinity)) {
+                dist.set(v, nd)
+                push(nd, v)
+              }
+            }
+          }
+          return dist
+        }
+
+        const distMaps = sample.map(dijkstra)
+
+        // Matriz de distâncias ponderadas (null = inalcançável)
+        const matrix = distMaps.map(dm =>
+          sample.map(tgt => dm.has(tgt) ? dm.get(tgt) : null)
+        )
+
+        // Distância máxima finita para normalização
+        let maxDist = 0
+        matrix.forEach(row => row.forEach(v => { if (v !== null && v > maxDist) maxDist = v }))
+
+        setHeatmapData({ nos: sample, matrix, maxDist })
+      })
+      .catch(err => console.error('Heatmap Dijkstra error:', err))
+  }, [])
 
   return (
     <>
@@ -330,6 +443,113 @@ export default function Analise() {
                 </p>
               )}
             </div>
+          </div>
+        </div>
+
+        {/* ── Heatmap de Distâncias entre Vértices ── */}
+        <div style={s.card}>
+          <h2 style={s.cardTitle}>Heatmap de Distâncias entre Vértices</h2>
+          <p style={s.cardDesc}>
+            Distância ponderada (Dijkstra) entre os 10 artigos com maior grau de conectividade, calculada no grafo não-dirigido — todos os vértices da amostra ficam alcançáveis entre si.
+            Cor normalizada pela maior distância encontrada: teal = próximo · vermelho = distante.
+          </p>
+
+          {!heatmapData ? (
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: 370, color: '#556e8a', fontSize: 13, fontStyle: 'italic' }}>
+              Calculando distâncias (Dijkstra) na amostra do grafo…
+            </div>
+          ) : (
+            <div style={{ ...s.svgContainer, height: 370 }}>
+              <svg viewBox="0 0 510 430" style={{ width: '100%', height: '100%' }}>
+
+                {/* X labels — destino (topo, rotacionado -45°) */}
+                {heatmapData.nos.map((nome, j) => {
+                  const lx = 130 + j * 28 + 14
+                  const ly = 107
+                  const label = nome.length > 13 ? nome.slice(0, 13) + '…' : nome
+                  return (
+                    <text key={j} x={lx} y={ly} fill="#889baf" fontSize="9"
+                      textAnchor="start" transform={`rotate(-45, ${lx}, ${ly})`}>
+                      {label}
+                    </text>
+                  )
+                })}
+
+                {/* Y labels — origem (esquerda) */}
+                {heatmapData.nos.map((nome, i) => {
+                  const label = nome.length > 13 ? nome.slice(0, 13) + '…' : nome
+                  return (
+                    <text key={i} x={123} y={116 + i * 28 + 18}
+                      fill="#889baf" fontSize="9" textAnchor="end">
+                      {label}
+                    </text>
+                  )
+                })}
+
+                {/* Células */}
+                {heatmapData.matrix.map((row, i) =>
+                  row.map((val, j) => {
+                    const cx = 130 + j * 28
+                    const cy = 116 + i * 28
+                    const cor = distCorNorm(val, heatmapData.maxDist)
+                    const isHov = hoveredCell !== null && hoveredCell[0] === i && hoveredCell[1] === j
+                    const tNorm = val !== null && val !== 0 ? val / heatmapData.maxDist : 0
+                    return (
+                      <g key={`${i}-${j}`}
+                        onMouseEnter={() => setHoveredCell([i, j])}
+                        onMouseLeave={() => setHoveredCell(null)}
+                        style={{ cursor: 'pointer' }}>
+                        <rect x={cx} y={cy} width={27} height={27}
+                          fill={cor} opacity={isHov ? 1 : 0.88} rx="2"
+                          stroke={isHov ? '#e0e9f0' : 'transparent'} strokeWidth="1.5"
+                          style={{ transition: 'opacity 0.1s' }} />
+                        {val !== null && val !== 0 && (
+                          <text x={cx + 13.5} y={cy + 18}
+                            fill={tNorm > 0.38 ? '#1a1a2e' : '#fff'}
+                            fontSize="10" fontWeight="700" textAnchor="middle">
+                            {Math.round(val)}
+                          </text>
+                        )}
+                      </g>
+                    )
+                  })
+                )}
+
+                {/* Legenda — barra de gradiente contínua */}
+                <text x={415} y={110} fill="#667" fontSize="9" fontWeight="700">Dist. norm.</text>
+                {Array.from({ length: 30 }, (_, k) => (
+                  <rect key={k} x={415} y={116 + k * 9.34} width={14} height={9.5}
+                    fill={corFromT(k / 29)} />
+                ))}
+                <text x={433} y={124} fill="#889baf" fontSize="8">Próximo</text>
+                <text x={433} y={399} fill="#889baf" fontSize="8">Distante</text>
+                <rect x={415} y={408} width={14} height={14} fill="#111827" rx="2" />
+                <text x={433} y={420} fill="#889baf" fontSize="8">Inalcançável</text>
+
+              </svg>
+            </div>
+          )}
+
+          <div style={s.tooltipContainer}>
+            {hoveredCell !== null && heatmapData ? (() => {
+              const val = heatmapData.matrix[hoveredCell[0]][hoveredCell[1]]
+              return (
+                <div style={{ ...s.tooltip, borderLeft: `4px solid ${distCorNorm(val, heatmapData.maxDist)}` }}>
+                  <strong>{heatmapData.nos[hoveredCell[0]]} → {heatmapData.nos[hoveredCell[1]]}</strong>
+                  <p style={{ marginTop: 4, fontSize: 12, color: '#bbb' }}>
+                    {val === null
+                      ? 'Inalcançável mesmo no grafo não-dirigido.'
+                      : val === 0
+                      ? 'Mesmo vértice (distância zero).'
+                      : `Distância ponderada: ${val.toFixed(1)} · Normalizado: ${(val / heatmapData.maxDist * 100).toFixed(0)}% da distância máxima (${heatmapData.maxDist.toFixed(1)}).`}
+                  </p>
+                </div>
+              )
+            })() : (
+              <p style={{ color: '#556', fontSize: 13, fontStyle: 'italic', textAlign: 'center', marginTop: 12 }}>
+                Passe o mouse sobre as células para ver a distância entre os vértices.
+              </p>
+            )}
           </div>
         </div>
 
