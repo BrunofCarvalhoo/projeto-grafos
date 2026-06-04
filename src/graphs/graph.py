@@ -16,4 +16,8 @@ class Grafo:
         if 0 <= origem < self.numero_vertices and 0 <= destino < self.numero_vertices:
             self.lista_adjacencia[origem].append((destino, peso))
             self.lista_adjacencia[destino].append((origem, peso))
+
+    def adicionar_aresta_dirigida(self, origem, destino, peso):
+        if 0 <= origem < self.numero_vertices and 0 <= destino < self.numero_vertices:
+            self.lista_adjacencia[origem].append((destino, peso))
         

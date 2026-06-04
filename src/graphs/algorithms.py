@@ -1,4 +1,11 @@
-def dijkstra(grafo, nome_origem, nome_destino=None):    
+def dijkstra(grafo, nome_origem, nome_destino=None):
+    for v in range(grafo.numero_vertices):
+        for _, peso in grafo.lista_adjacencia[v]:
+            if peso < 0:
+                raise ValueError(
+                    f"Dijkstra não suporta pesos negativos. Peso {peso} encontrado."
+                )
+
     indice_origem = grafo.mapa_indice[nome_origem]
     distancias = [float('inf')] * grafo.numero_vertices
     distancias[indice_origem] = 0
@@ -134,20 +141,37 @@ def dfs(grafo, nome_origem):
     visitados = [False] * grafo.numero_vertices
     veio_de = [None] * grafo.numero_vertices
     ordem_visita = []
-    
-    pilha = [indice_origem]
+    tem_ciclo = False
+    arestas_arvore = []
+    arestas_retorno = []
+    visto_retorno = set()
+
+    pilha = [(indice_origem, -1)]
 
     while pilha:
-        vertice_atual = pilha.pop()
-        
-        if not visitados[vertice_atual]:
-            visitados[vertice_atual] = True
-            ordem_visita.append(grafo.nome_vertice[vertice_atual])
-            
-            for vizinho, _ in reversed(grafo.lista_adjacencia[vertice_atual]):
-                if not visitados[vizinho]:
-                    if veio_de[vizinho] is None and vizinho != indice_origem:
-                        veio_de[vizinho] = vertice_atual
-                    pilha.append(vizinho)
-                    
-    return ordem_visita, veio_de
+        vertice_atual, pai = pilha.pop()
+
+        if visitados[vertice_atual]:
+            continue
+
+        visitados[vertice_atual] = True
+        ordem_visita.append(grafo.nome_vertice[vertice_atual])
+
+        if pai != -1:
+            arestas_arvore.append((grafo.nome_vertice[pai], grafo.nome_vertice[vertice_atual]))
+
+        for vizinho, _ in reversed(grafo.lista_adjacencia[vertice_atual]):
+            if not visitados[vizinho]:
+                if veio_de[vizinho] is None and vizinho != indice_origem:
+                    veio_de[vizinho] = vertice_atual
+                pilha.append((vizinho, vertice_atual))
+            elif vizinho != pai:
+                tem_ciclo = True
+                chave = (min(vertice_atual, vizinho), max(vertice_atual, vizinho))
+                if chave not in visto_retorno:
+                    visto_retorno.add(chave)
+                    arestas_retorno.append(
+                        (grafo.nome_vertice[vertice_atual], grafo.nome_vertice[vizinho])
+                    )
+
+    return ordem_visita, veio_de, tem_ciclo, arestas_arvore, arestas_retorno

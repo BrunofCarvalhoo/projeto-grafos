@@ -237,7 +237,7 @@ def executar(pedido: PedidoAlgoritmo):
         }
 
     if algoritmo == "DFS":
-        ordem_visita, veio_de = dfs(GRAFO, origem)
+        ordem_visita, veio_de, *_ = dfs(GRAFO, origem)
         tempo = (time.perf_counter() - inicio) * 1000
 
         indice_origem = GRAFO.mapa_indice[origem]
