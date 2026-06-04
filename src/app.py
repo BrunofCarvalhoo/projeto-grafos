@@ -359,31 +359,48 @@ def pagina_avd(df_grau, df_regioes, df_ego, df_adj):
 
     st.subheader("Explanatória - Peso das rotas por tipo de conexão")
     st.caption(
-        "Está análise usa o peso das arestas do grafo. O objetivo e explicar se conexões do tipo hub "
+        "Está análise usa o peso das arestas do grafo. O objetivo é explicar se conexões do tipo hub "
         "tendem a ter custo maior que conexões regionais, o que ajuda a entender o papel dos hubs na malha."
     )
 
     df_pesos = preparar_pesos_conexoes(df_adj)
 
-    fig_pesos = px.box(
+    medianas_peso = df_pesos.groupby('tipo_conexao')['peso'].median()
+    mediana_hub = medianas_peso.get('hub', 0)
+    mediana_regional = medianas_peso.get('regional', 0)
+
+    fig_pesos = px.ecdf(
         df_pesos,
-        x='tipo_conexao',
-        y='peso',
+        x='peso',
         color='tipo_conexao',
-        points='all',
-        title='Distribuição dos Pesos das Arestas por Tipo de Conexão',
+        ecdfnorm='percent',
+        markers=True,
+        title='Curva Acumulada dos Pesos das Arestas por Tipo de Conexão',
         labels={
             'tipo_conexao': 'Tipo de conexão',
             'peso': 'Peso da aresta',
+            'y': 'Percentual acumulado de rotas',
         },
         color_discrete_map={'hub': '#E76F51', 'regional': '#2A9D8F'},
     )
-    fig_pesos.update_layout(height=560, showlegend=False)
+    if mediana_hub:
+        fig_pesos.add_vline(
+            x=mediana_hub,
+            line_dash='dash',
+            line_color='#E76F51',
+            annotation_text=f'Mediana hub: {mediana_hub:.0f}',
+            annotation_position='top right',
+        )
+    if mediana_regional:
+        fig_pesos.add_vline(
+            x=mediana_regional,
+            line_dash='dash',
+            line_color='#2A9D8F',
+            annotation_text=f'Mediana regional: {mediana_regional:.0f}',
+            annotation_position='bottom right',
+        )
+    fig_pesos.update_layout(height=560, legend_title='Tipo de conexão')
     st.plotly_chart(fig_pesos, use_container_width=True)
-
-    
-
-
 
 def pagina_arvores(pasta_out):
     st.title("Árvores de Percurso (Menor Caminho)")
