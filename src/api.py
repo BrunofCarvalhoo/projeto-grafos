@@ -45,6 +45,34 @@ GRAFO, NOS = carregar_grafo()
 NOS_SET = set(NOS)
 
 
+def construir_grafo_positivo(grafo_origem):
+    """
+    Cria um novo Grafo contendo apenas as arestas de peso >= 0.
+    Usado pelo Dijkstra (que rejeita pesos negativos por design).
+    Os mesmos vértices são mantidos para preservar mapa_indice.
+    """
+    g = Grafo(grafo_origem.numero_vertices)
+    for i in range(grafo_origem.numero_vertices):
+        g.adicionar_vertice(i, grafo_origem.nome_vertice[i])
+    # Copia direto na lista de adjacência (sem usar adicionar_aresta
+    # que duplicaria nos dois sentidos)
+    for u in range(grafo_origem.numero_vertices):
+        for v, peso in grafo_origem.lista_adjacencia[u]:
+            if peso >= 0:
+                g.lista_adjacencia[u].append((v, peso))
+    return g
+
+
+print("Construindo subgrafo sem pesos negativos para o Dijkstra...")
+GRAFO_POSITIVO = construir_grafo_positivo(GRAFO)
+arestas_removidas = sum(
+    1 for u in range(GRAFO.numero_vertices)
+    for _, p in GRAFO.lista_adjacencia[u]
+    if p < 0
+)
+print(f"  {arestas_removidas} aresta(s) com peso negativo removidas.")
+
+
 def detectar_ciclos_negativos():
     ciclos = []
     vistos = set()
@@ -151,7 +179,13 @@ def executar(pedido: PedidoAlgoritmo):
     if algoritmo == "Dijkstra":
         if not destino:
             raise HTTPException(400, "Dijkstra exige um destino.")
-        custo, caminho_str = dijkstra(GRAFO, origem, destino)
+        # Dijkstra de algorithms.py rejeita pesos negativos (ValueError).
+        # Usamos um subgrafo só com arestas positivas (GRAFO_POSITIVO),
+        # já construído na inicialização. O try/except é cinto de segurança.
+        try:
+            custo, caminho_str = dijkstra(GRAFO_POSITIVO, origem, destino)
+        except ValueError as exc:
+            raise HTTPException(500, f"Dijkstra: {exc}")
         tempo = (time.perf_counter() - inicio) * 1000
 
         if custo == float("inf"):
