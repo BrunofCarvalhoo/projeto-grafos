@@ -1,6 +1,9 @@
 # Grafos-AVD
 Projeto de grafos e avd
 
+### Documentação do projeto
+https://docs.google.com/document/d/1jquqn2maJD1fjfvGnv9ONwBkvVQNSlphJQJz95pkfwQ/edit?usp=sharing
+
 # Parte 1
 ## Necessário para rodar o projeto:
 Python
