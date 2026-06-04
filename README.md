@@ -56,3 +56,8 @@ O React sobe em `http://localhost:5173`. Abra essa URL no navegador.
 ### Páginas disponíveis no React
 - **`/`** — visualização interativa do grafo (com filtro de quantidade de arestas)
 - **`/algoritmos`** — escolhe o algoritmo (BFS, DFS, Dijkstra, Bellman-Ford), digita origem e destino e roda em tempo real via API
+
+## Como rodar os testes
+```bash
+.\venv\Scripts\python.exe -m pytest tests/ -v
+```
