@@ -31,12 +31,15 @@ def carregar_grafo():
     for i, nome in enumerate(nos):
         grafo.adicionar_vertice(i, nome)
 
+    # Grafo DIRIGIDO: adiciona aresta só na direção do CSV (não usa
+    # adicionar_aresta, que adicionaria nos dois sentidos e transformaria
+    # qualquer peso negativo em ciclo negativo automático).
     for _, row in df.iterrows():
         oi = grafo.mapa_indice.get(row["origem"])
         di = grafo.mapa_indice.get(row["destino"])
         if oi is not None and di is not None:
-            peso = float(row["peso"]) + 1  
-            grafo.adicionar_aresta(oi, di, peso)
+            peso = float(row["peso"]) + 1
+            grafo.lista_adjacencia[oi].append((di, peso))
 
     print(f"  {len(nos):,} vértices carregados.")
     return grafo, nos
@@ -155,7 +158,8 @@ def listar_nos():
 
 @app.get("/info")
 def info():
-    total_arestas = sum(len(adj) for adj in GRAFO.lista_adjacencia) // 2
+    # Grafo dirigido: conta cada aresta uma vez (sem dividir por 2)
+    total_arestas = sum(len(adj) for adj in GRAFO.lista_adjacencia)
     return {
         "vertices": GRAFO.numero_vertices,
         "arestas":  total_arestas,
