@@ -7,6 +7,8 @@ export default function Analise() {
   const [selectedCard, setSelectedCard] = useState('dijkstra')
   const [hoveredCell, setHoveredCell] = useState(null)
   const [heatmapData, setHeatmapData] = useState(null)
+  const [inOutData, setInOutData] = useState(null)
+  const [hoveredInOut, setHoveredInOut] = useState(null)
 
   // Dados reais aproximados para o Grafo Wikipédia (3.468 nós, 20.002 links)
   const metricas = [
@@ -60,6 +62,28 @@ export default function Analise() {
   }
 
   const [performance, setPerformance] = useState(performanceDados)
+
+  useEffect(() => {
+    fetch('/grafo_data.json')
+      .then(r => r.json())
+      .then(({ nodes, links }) => {
+        const inDeg = new Map()
+        const outDeg = new Map()
+        nodes.forEach(n => { inDeg.set(n.id, 0); outDeg.set(n.id, 0) })
+        links.forEach(l => {
+          const src = typeof l.source === 'object' ? l.source.id : l.source
+          const tgt = typeof l.target === 'object' ? l.target.id : l.target
+          outDeg.set(src, (outDeg.get(src) || 0) + 1)
+          inDeg.set(tgt, (inDeg.get(tgt) || 0) + 1)
+        })
+        const ranked = nodes
+          .map(n => ({ id: n.id, entrada: inDeg.get(n.id) || 0, saida: outDeg.get(n.id) || 0 }))
+          .sort((a, b) => (b.entrada + b.saida) - (a.entrada + a.saida))
+          .slice(0, 15)
+        setInOutData(ranked)
+      })
+      .catch(err => console.error('InOut degree error:', err))
+  }, [])
 
   useEffect(() => {
     fetch('/parte2_report.json')
@@ -443,6 +467,131 @@ export default function Analise() {
                 </p>
               )}
             </div>
+          </div>
+        </div>
+
+        {/* ── Grau de Entrada vs Saída: Top 15 Artigos ── */}
+        <div style={s.card}>
+          <h2 style={s.cardTitle}>Grau de Entrada vs. Saída — Top 15 Artigos</h2>
+          <p style={s.cardDesc}>
+            Em um grafo dirigido, o <strong style={{ color: '#2a9d8f' }}>grau de entrada</strong> (quantos artigos apontam para este) mede autoridade na rede,
+            enquanto o <strong style={{ color: '#e76f51' }}>grau de saída</strong> (quantos links o artigo emite) mede abrangência temática.
+            Os 15 artigos mais conectados revelam o núcleo estrutural do grafo Wikipédia.
+          </p>
+
+          {!inOutData ? (
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: 300, color: '#556e8a', fontSize: 13, fontStyle: 'italic' }}>
+              Calculando graus de entrada e saída…
+            </div>
+          ) : (() => {
+            const maxVal = Math.max(...inOutData.flatMap(d => [d.entrada, d.saida]))
+            const xStart = 168
+            const xEnd = 530
+            const barW = xEnd - xStart
+            const yStart = 24
+            const rowH = 24
+            const barH = 8
+            const tickVals = [0, 0.25, 0.5, 0.75, 1].map(p => Math.round(p * maxVal))
+
+            return (
+              <div style={{ ...s.svgContainer, height: 430 }}>
+                <svg viewBox="0 0 560 445" style={{ width: '100%', height: '100%' }}>
+
+                  {/* Legenda */}
+                  <rect x={xStart} y={4} width={10} height={10} fill="#2a9d8f" rx="2" />
+                  <text x={xStart + 14} y={13} fill="#889baf" fontSize="10">Grau de Entrada</text>
+                  <rect x={xStart + 110} y={4} width={10} height={10} fill="#e76f51" rx="2" />
+                  <text x={xStart + 124} y={13} fill="#889baf" fontSize="10">Grau de Saída</text>
+
+                  {/* Grid lines verticais e rótulos X (topo) */}
+                  {tickVals.map((v, i) => {
+                    const x = xStart + (v / maxVal) * barW
+                    return (
+                      <g key={i}>
+                        <line x1={x} y1={yStart} x2={x} y2={yStart + 15 * rowH} stroke="#1e2d3d" strokeWidth="1" strokeDasharray="3,3" />
+                        <text x={x} y={yStart + 15 * rowH + 12} fill="#667" fontSize="9" textAnchor="middle">{v}</text>
+                      </g>
+                    )
+                  })}
+
+                  {/* Eixo X */}
+                  <line x1={xStart} y1={yStart + 15 * rowH} x2={xEnd} y2={yStart + 15 * rowH} stroke="#2a3a4a" strokeWidth="1.5" />
+
+                  {/* Barras e rótulos */}
+                  {inOutData.map((d, i) => {
+                    const yGroup = yStart + i * rowH
+                    const wEntrada = (d.entrada / maxVal) * barW
+                    const wSaida = (d.saida / maxVal) * barW
+                    const isHov = hoveredInOut === i
+                    const label = d.id.length > 18 ? d.id.slice(0, 18) + '…' : d.id
+
+                    return (
+                      <g key={i}
+                        onMouseEnter={() => setHoveredInOut(i)}
+                        onMouseLeave={() => setHoveredInOut(null)}
+                        style={{ cursor: 'pointer' }}>
+
+                        {/* Highlight de fundo no hover */}
+                        {isHov && (
+                          <rect x={0} y={yGroup} width={560} height={rowH}
+                            fill="#ffffff" opacity={0.04} />
+                        )}
+
+                        {/* Nome do artigo (Y label) */}
+                        <text x={xStart - 5} y={yGroup + rowH / 2 + 1}
+                          fill={isHov ? '#e0e9f0' : '#7f93a7'}
+                          fontSize="9" textAnchor="end" dominantBaseline="middle">
+                          {label}
+                        </text>
+
+                        {/* Barra de entrada (teal) */}
+                        <rect
+                          x={xStart} y={yGroup + 2}
+                          width={Math.max(wEntrada, 1)} height={barH}
+                          fill="#2a9d8f" opacity={isHov ? 1 : 0.75} rx="2"
+                          style={{ transition: 'opacity 0.15s' }}
+                        />
+
+                        {/* Barra de saída (laranja) */}
+                        <rect
+                          x={xStart} y={yGroup + 2 + barH + 2}
+                          width={Math.max(wSaida, 1)} height={barH}
+                          fill="#e76f51" opacity={isHov ? 1 : 0.75} rx="2"
+                          style={{ transition: 'opacity 0.15s' }}
+                        />
+
+                        {/* Valores no fim de cada barra (só no hover) */}
+                        {isHov && (
+                          <>
+                            <text x={xStart + wEntrada + 4} y={yGroup + 2 + barH - 1}
+                              fill="#2a9d8f" fontSize="9" fontWeight="700">{d.entrada}</text>
+                            <text x={xStart + wSaida + 4} y={yGroup + 2 + barH * 2 + 1}
+                              fill="#e76f51" fontSize="9" fontWeight="700">{d.saida}</text>
+                          </>
+                        )}
+                      </g>
+                    )
+                  })}
+                </svg>
+              </div>
+            )
+          })()}
+
+          <div style={s.tooltipContainer}>
+            {hoveredInOut !== null && inOutData ? (
+              <div style={{ ...s.tooltip, borderLeft: '4px solid #2a9d8f' }}>
+                <strong style={{ color: '#e0e9f0' }}>{inOutData[hoveredInOut].id}</strong>
+                <p style={{ marginTop: 6, fontSize: 12, color: '#bbb', display: 'flex', gap: 24 }}>
+                  <span><span style={{ color: '#2a9d8f', fontWeight: 700 }}>Entrada:</span> {inOutData[hoveredInOut].entrada} links recebidos</span>
+                  <span><span style={{ color: '#e76f51', fontWeight: 700 }}>Saída:</span> {inOutData[hoveredInOut].saida} links emitidos</span>
+                  <span style={{ color: '#aaa' }}>Total: {inOutData[hoveredInOut].entrada + inOutData[hoveredInOut].saida}</span>
+                </p>
+              </div>
+            ) : (
+              <p style={{ color: '#556', fontSize: 13, fontStyle: 'italic', textAlign: 'center', marginTop: 12 }}>
+                Passe o mouse sobre as linhas para ver o grau de entrada e saída de cada artigo.
+              </p>
+            )}
           </div>
         </div>
 
