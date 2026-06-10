@@ -1,0 +1,9 @@
+pandas
+matplotlib
+streamlit
+pillow
+numpy
+plotly
+fastapi
+uvicorn
+pytest

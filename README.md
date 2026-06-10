@@ -1,18 +1,66 @@
 # Grafos-AVD
 Projeto de grafos e avd
 
-# Documentação
+### Documentação do projeto
+https://docs.google.com/document/d/1jquqn2maJD1fjfvGnv9ONwBkvVQNSlphJQJz95pkfwQ/edit?usp=sharing
 
-- No início do projeto escolhemos adicionar mais aeropotos, para completar o csv e termos aeroportos de todas as capitais do Brasil, tendo uma visualização melhor e completa. Com isso ficam 28 aeroportos no total (tendo repetido 2 aeroportos distintos para o estado de São Paulo)
+# Parte 1
+## Necessário para rodar o projeto:
+Python
 
-## 1. Processo de pesquisa:
-Decidimos realizar a pesquisa fielmente ao mundo real, então começamos buscando no site https://www.flightconnections.com/pt onde pudemos checar se existiam as conexões entre os aeroportos do nosso csv.
+## Como rodar o projeto:
 
-## 2. Inserção dos dados coletados na nossa base e definiçaõ do peso
-Ao analisar os dados optamos por usar o tempo médio estimado do voo como peso das arestas que conectam os aeroportos (vértices), esse tempo sempre será representado em minutos.
+- Primeiro precisamos criar um ambiente virtual e ativa-lo:
+```bash
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
 
-Com esse e mais alguns dados é possível medir a ordem, tamanho e densidade de cada aeroporto, de cada região e de forma global.
+- Depois vamos instalar as bibliotecas necessárias:
+```bash
+pip install -r requirements.txt
+```
 
-## 3. Análise com os dados construídos
-- Aeroporto mais conectado: o aeroporto mais conectado é o de Brasilía com 27 conexões, logo ele se conecta com todos os aeroportos, já que no total (contando com ele mesmo) são 28 aeroportos no csv.
-- Aeroporto com maior densidade local: os aeroporto de Macapá (MCP) e o de Boa Vista (BVB), com exatos 0,5 de densidade.
+- Depois basta rodar o streamlit:
+```bash
+cd src
+streamlit run app.py
+```
+
+# Parte 2
+## Necessário para rodar o projeto:
+- **Node.js** (para o front-end React)
+- **Python** com as dependências do `requirements.txt` (para a API que executa os algoritmos)
+
+## Como rodar o projeto:
+
+A Parte 2 precisa de **dois terminais abertos ao mesmo tempo**: um para a API Python e outro para o front-end React. A API recebe as requisições do React, executa os algoritmos de `src/graphs/algorithms.py` e devolve os resultados.
+
+### Terminal 1 — API Python (FastAPI)
+
+```bash
+# Com o venv já ativado (ver Parte 1)
+python src/api.py
+```
+
+A API sobe em `http://localhost:5000`. Ela carrega o grafo do `data/dataset_parte2/links_reduzido.csv` na inicialização e expõe os endpoints usados pelo React. A documentação interativa fica em `http://localhost:5000/docs`.
+
+### Terminal 2 — Front-end React
+
+```bash
+cd src/grafo-wiki
+# Só precisa rodar npm install na primeira vez
+npm install
+npm run dev
+```
+
+O React sobe em `http://localhost:5173`. Abra essa URL no navegador.
+
+### Páginas disponíveis no React
+- **`/`** — visualização interativa do grafo (com filtro de quantidade de arestas)
+- **`/algoritmos`** — escolhe o algoritmo (BFS, DFS, Dijkstra, Bellman-Ford), digita origem e destino e roda em tempo real via API
+
+## Como rodar os testes
+```bash
+.\venv\Scripts\python.exe -m pytest tests/ -v
+```

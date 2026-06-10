@@ -1,0 +1,84 @@
+{
+  "dijkstra": [
+    {
+      "id": "dijkstra_1",
+      "algoritmo": "Dijkstra",
+      "origem": "Astara, Azerbaijan",
+      "destino": "Archi language"
+    },
+    {
+      "id": "dijkstra_2",
+      "algoritmo": "Dijkstra",
+      "origem": "Venetian window",
+      "destino": "Condiment"
+    },
+    {
+      "id": "dijkstra_3",
+      "algoritmo": "Dijkstra",
+      "origem": "Chert",
+      "destino": "Basement (geology)"
+    },
+    {
+      "id": "dijkstra_4",
+      "algoritmo": "Dijkstra",
+      "origem": "Afsharid Iran",
+      "destino": "History of Palestine"
+    },
+    {
+      "id": "dijkstra_5",
+      "algoritmo": "Dijkstra",
+      "origem": "Abrasive",
+      "destino": "Lunette"
+    }
+  ],
+  "bellman_ford": [
+    {
+      "id": "bf_negativo",
+      "algoritmo": "Bellman-Ford",
+      "origem": "Astara, Azerbaijan",
+      "destino": "Venetian window",
+      "tipo": "negativo"
+    },
+    {
+      "id": "bf_ciclo",
+      "algoritmo": "Bellman-Ford",
+      "origem": "(589683) 2010 RF43",
+      "destino": "\"10th Anniversary of the Armed Forces of Azerbaijan (1991–2001)\" Medal",
+      "tipo": "ciclo"
+    }
+  ],
+  "bfs": [
+    {
+      "id": "bfs_1",
+      "algoritmo": "BFS",
+      "origem": "The Victorious Athlete"
+    },
+    {
+      "id": "bfs_2",
+      "algoritmo": "BFS",
+      "origem": "Geology of Azerbaijan"
+    },
+    {
+      "id": "bfs_3",
+      "algoritmo": "BFS",
+      "origem": "Astara, Azerbaijan"
+    }
+  ],
+  "dfs": [
+    {
+      "id": "dfs_1",
+      "algoritmo": "DFS",
+      "origem": "The Victorious Athlete"
+    },
+    {
+      "id": "dfs_2",
+      "algoritmo": "DFS",
+      "origem": "Geology of Azerbaijan"
+    },
+    {
+      "id": "dfs_3",
+      "algoritmo": "DFS",
+      "origem": "Astara, Azerbaijan"
+    }
+  ]
+}
