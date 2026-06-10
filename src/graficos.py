@@ -105,12 +105,11 @@ def mapa_calor_distancias(arquivo_distancias, arquivo_saida):
 def ranking_rotas_por_distancia(arquivo_distancias, arquivo_saida):
     df = pd.read_csv(arquivo_distancias)
 
-    df['rota'] = df['origem'] + ' → ' + df['destino']
+    df['rota'] = df['origem'] + ' -> ' + df['destino']
     df = df.sort_values(by='custo', ascending=True)
 
     menores = df.head(5)
     maiores = df.tail(5).sort_values(by='custo', ascending=True)
-
     ranking = pd.concat([menores, maiores])
 
     normalizador = plt.Normalize(ranking['custo'].min(), ranking['custo'].max())
@@ -118,6 +117,7 @@ def ranking_rotas_por_distancia(arquivo_distancias, arquivo_saida):
 
     fig, ax = plt.subplots(figsize=(12, 7))
     ax.barh(ranking['rota'], ranking['custo'], color=cores, edgecolor='black')
+
     barra_cores = plt.cm.ScalarMappable(cmap='Blues', norm=normalizador)
     barra_cores.set_array([])
     fig.colorbar(barra_cores, ax=ax, label='Custo do menor caminho')
@@ -126,6 +126,70 @@ def ranking_rotas_por_distancia(arquivo_distancias, arquivo_saida):
     ax.set_xlabel('Custo do Menor Caminho', fontsize=12)
     ax.set_ylabel('Rotas', fontsize=12)
     ax.grid(axis='x', linestyle='--', alpha=0.7)
+
+    plt.savefig(arquivo_saida, bbox_inches='tight')
+    plt.close()
+
+
+def participacao_aeroportos_menores_caminhos(arquivo_distancias, arquivo_saida):
+    df_distancias = pd.read_csv(arquivo_distancias)
+
+    registros = []
+    for row in df_distancias.dropna(subset=['caminho']).itertuples():
+        aeroportos = [aeroporto.strip() for aeroporto in str(row.caminho).split('->')]
+        total_aeroportos = len(aeroportos)
+
+        for posicao, aeroporto in enumerate(aeroportos):
+            if posicao == 0:
+                papel = 'Origem'
+            elif posicao == total_aeroportos - 1:
+                papel = 'Destino'
+            else:
+                papel = 'Intermediario'
+
+            registros.append({'aeroporto': aeroporto, 'papel': papel})
+
+    if not registros:
+        return
+
+    df_participacao = pd.DataFrame(registros)
+    contagem = (
+        df_participacao
+        .groupby(['aeroporto', 'papel'])
+        .size()
+        .unstack(fill_value=0)
+    )
+
+    for coluna in ['Origem', 'Intermediario', 'Destino']:
+        if coluna not in contagem.columns:
+            contagem[coluna] = 0
+
+    contagem['total'] = contagem[['Origem', 'Intermediario', 'Destino']].sum(axis=1)
+    contagem = contagem.sort_values('total', ascending=False).head(10)
+    dados_plot = contagem[['Origem', 'Intermediario', 'Destino']]
+
+    cores = {
+        'Origem': '#264653',
+        'Intermediario': '#E76F51',
+        'Destino': '#2A9D8F',
+    }
+
+    fig, ax = plt.subplots(figsize=(12, 7))
+    dados_plot.plot(
+        kind='bar',
+        stacked=True,
+        ax=ax,
+        color=[cores[coluna] for coluna in dados_plot.columns],
+        edgecolor='black',
+        width=0.75,
+    )
+
+    ax.set_title('Participacao dos Aeroportos nos Menores Caminhos', fontsize=14, pad=15)
+    ax.set_xlabel('Aeroporto (IATA)', fontsize=12)
+    ax.set_ylabel('Frequencia nos menores caminhos', fontsize=12)
+    ax.legend(title='Papel no caminho', loc='upper right')
+    ax.grid(axis='y', linestyle='--', alpha=0.7)
+    plt.xticks(rotation=45, ha='right')
 
     plt.savefig(arquivo_saida, bbox_inches='tight')
     plt.close()
@@ -140,6 +204,7 @@ def main():
     arquivo_saida_densidade_regioes = 'out/densidade_regioes.png'
     arquivo_saida_mapa_calor_distancias = 'out/mapa_calor_distancias.png'
     arquivo_saida_ranking_rotas_distancia = 'out/ranking_rotas_distancia.png'
+    arquivo_saida_participacao_caminhos = 'out/participacao_aeroportos_menores_caminhos.png'
     
     distribuicao_graus(arquivo_grau, arquivo_saida_distribuicao_graus)
     graus_por_aeroporto(arquivo_grau, arquivo_saida_ranking_graus_aeroportos)
@@ -147,6 +212,7 @@ def main():
     comparacao_densidade_por_regiao(arquivo_regioes, arquivo_saida_densidade_regioes)
     mapa_calor_distancias(arquivo_distancias, arquivo_saida_mapa_calor_distancias)
     ranking_rotas_por_distancia(arquivo_distancias, arquivo_saida_ranking_rotas_distancia)
+    participacao_aeroportos_menores_caminhos(arquivo_distancias, arquivo_saida_participacao_caminhos)
 
 if __name__ == "__main__":
     main()
