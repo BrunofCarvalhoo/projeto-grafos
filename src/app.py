@@ -216,37 +216,96 @@ def pagina_analise(df_grau, df_regioes, df_distancias):
 
     st.divider()
 
-    st.subheader("Ranking de Rotas por Custo do Menor Caminho")
-    aeroportos_rot = sorted(
-        set(df_distancias["origem"].unique()) | set(df_distancias["destino"].unique())
+    st.subheader("Aeroportos Mais Frequentes nos Menores Caminhos")
+    st.caption(
+        "O gráfico mostra quantas vezes cada aeroporto aparece nas rotas de menor caminho, "
+        "separando sua participação como origem, destino ou ponto intermediário."
     )
-    aeroportos_sel = st.multiselect(
-        "Filtrar por aeroporto (origem ou destino)", options=aeroportos_rot,
-        default=[], key="rot_aeroportos", placeholder="Todos os aeroportos",
-    )
-    col_rot1, col_rot2 = st.columns(2)
-    with col_rot1:
-        n_menores = st.slider("Menores rotas", 1, 10, 5, key="rot_menores")
-    with col_rot2:
-        n_maiores = st.slider("Maiores rotas", 1, 10, 5, key="rot_maiores")
 
-    df_rot = df_distancias.copy()
-    if aeroportos_sel:
-        df_rot = df_rot[
-            df_rot["origem"].isin(aeroportos_sel) | df_rot["destino"].isin(aeroportos_sel)
-        ]
-    df_rot["rota"] = df_rot["origem"] + " -> " + df_rot["destino"]
-    df_sorted = df_rot.sort_values("custo")
-    ranking = pd.concat([df_sorted.head(n_menores), df_sorted.tail(n_maiores)]).drop_duplicates()
+    registros_caminhos = []
+    for row in df_distancias.dropna(subset=["caminho"]).itertuples():
+        aeroportos_caminho = [aeroporto.strip() for aeroporto in str(row.caminho).split("->")]
+        total_aeroportos = len(aeroportos_caminho)
 
-    fig_rot = px.bar(
-        ranking, y="rota", x="custo", orientation="h", color="custo",
-        color_continuous_scale=ESCALA_CONTINUA, hover_data=["caminho"],
-        title="Rotas com Menor e Maior Custo no Menor Caminho",
-        labels={"rota": "Rota", "custo": "Custo do Menor Caminho"},
-    )
-    fig_rot.update_layout(yaxis={"categoryorder": "total ascending"})
-    st.plotly_chart(fig_rot, use_container_width=True)
+        for posicao, aeroporto in enumerate(aeroportos_caminho):
+            if posicao == 0:
+                papel = "Origem"
+            elif posicao == total_aeroportos - 1:
+                papel = "Destino"
+            else:
+                papel = "Intermediário"
+
+            registros_caminhos.append({"aeroporto": aeroporto, "papel": papel})
+
+    df_participacao = pd.DataFrame(registros_caminhos)
+
+    if not df_participacao.empty:
+        aeroportos_part = sorted(df_participacao["aeroporto"].unique())
+        aeroportos_sel_part = st.multiselect(
+            "Filtrar aeroportos",
+            options=aeroportos_part,
+            default=[],
+            key="part_aeroportos",
+            placeholder="Todos os aeroportos",
+        )
+
+        contagem_part = (
+            df_participacao
+            .groupby(["aeroporto", "papel"])
+            .size()
+            .reset_index(name="frequencia")
+        )
+        totais_part = (
+            contagem_part
+            .groupby("aeroporto")["frequencia"]
+            .sum()
+            .reset_index(name="total")
+            .sort_values("total", ascending=False)
+        )
+
+        if aeroportos_sel_part:
+            aeroportos_top = [
+                aeroporto for aeroporto in totais_part["aeroporto"].tolist()
+                if aeroporto in aeroportos_sel_part
+            ]
+        else:
+            top_part = st.slider(
+                "Top N aeroportos por participação",
+                1,
+                max(1, len(totais_part)),
+                min(10, max(1, len(totais_part))),
+                key="part_topn",
+            )
+            aeroportos_top = totais_part.head(top_part)["aeroporto"].tolist()
+
+        df_part_plot = contagem_part[contagem_part["aeroporto"].isin(aeroportos_top)]
+
+        fig_part = px.bar(
+            df_part_plot,
+            x="aeroporto",
+            y="frequencia",
+            color="papel",
+            barmode="stack",
+            title="Participação dos Aeroportos nos Menores Caminhos",
+            labels={
+                "aeroporto": "Aeroporto (IATA)",
+                "frequencia": "Frequência nos menores caminhos",
+                "papel": "Papel no caminho",
+            },
+            color_discrete_map={
+                "Origem": "#264653",
+                "Destino": "#2A9D8F",
+                "Intermediário": "#E76F51",
+            },
+            category_orders={
+                "aeroporto": aeroportos_top,
+                "papel": ["Origem", "Intermediário", "Destino"],
+            },
+        )
+        fig_part.update_layout(xaxis_tickangle=-45, legend_title="Papel no caminho")
+        st.plotly_chart(fig_part, use_container_width=True)
+    else:
+        st.warning("Nenhum caminho encontrado para calcular a participação dos aeroportos.")
 
 
 def pagina_avd(df_grau, df_regioes, df_ego, df_adj):
