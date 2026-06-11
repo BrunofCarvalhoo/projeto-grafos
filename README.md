@@ -72,13 +72,19 @@ O React sobe em `http://localhost:5173`. Abra essa URL no navegador.
 
 | Origem |
 | --- |
-| `She's a Hottie` |
+| `The Loner (TV series)` |
+| `Underwater exploration` |
+| `Adati` |
 
 ### Dijkstra
 
 | Origem | Destino |
 | --- | --- |
+| `The Loner` | `Alan Baxter` |
 | `Henry Draper Catalog` | `2010 KZ39` |
+| `List of Solar System extremes` | `(231937) 2001 FO32` |
+| `Water supply and sanitation in Indonesia` | `1908 bombardment of the Majlis` |
+| `Henry Draper Catalog` | `2014 UZ224` |
 
 ### Bellman-Ford
 
