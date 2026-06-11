@@ -66,6 +66,40 @@ O React sobe em `http://localhost:5173`. Abra essa URL no navegador.
 .\venv\Scripts\python.exe -m pytest tests/ -v
 ```
 
+## Caminhos sugeridos para testar os algoritmos
+
+### BFS / DFS
+
+| Origem |
+| --- |
+| `She's a Hottie` |
+
+### Dijkstra
+
+| Origem | Destino |
+| --- | --- |
+| `Henry Draper Catalog` | `2010 KZ39` |
+
+### Bellman-Ford
+
+#### Caso normal (sem ciclo, sem peso negativo no caminho)
+
+| Origem | Destino |
+| --- | --- |
+| `Water supply and sanitation in Indonesia` | `1921 Persian coup d'état` |
+
+#### Caso com aresta negativa no caminho
+
+| Origem | Destino |
+| --- | --- |
+| `She's a Hottie` | `35 MPH Town` |
+
+#### Caso com ciclo negativo detectado
+
+| Origem | Destino |
+| --- | --- |
+| `(202421) 2005 UQ513` | `Bibcode (identifier)` |
+
 
 # Integrantes:
 - Arthur Leal
