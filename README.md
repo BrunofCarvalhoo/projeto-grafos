@@ -65,3 +65,11 @@ O React sobe em `http://localhost:5173`. Abra essa URL no navegador.
 # Na pasta raiz do projeto
 .\venv\Scripts\python.exe -m pytest tests/ -v
 ```
+
+
+# Integrantes:
+- Arthur Leal
+- Bruno Carvalho
+- Guilherme Coutinho
+- Igor Couto
+- William Souza
